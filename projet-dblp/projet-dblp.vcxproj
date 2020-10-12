@@ -151,7 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileParser.cpp" />
     <ClCompile Include="projet-dblp.cpp" />
+    <ClCompile Include="Reference.cpp" />
+    <ClCompile Include="Tag.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileParser.h" />
+    <ClInclude Include="Reference.h" />
+    <ClInclude Include="Tag.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
