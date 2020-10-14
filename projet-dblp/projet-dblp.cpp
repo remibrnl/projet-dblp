@@ -2,9 +2,19 @@
 //
 
 #include <iostream>
+#include <vector>
+#include "Tag.h"
 
-int main()
+int main(int argc, char* argv[])
 {
+    std::vector<Tag> tag_list;
+
+    for (int i = 0; i < argc; i++) {
+        Tag current(argv[i]);
+        tag_list.push_back(current);
+    }
+
+
     std::cout << "Hello World!\n";
 }
 
