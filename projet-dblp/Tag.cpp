@@ -3,7 +3,12 @@
 Tag::Tag(string name_tag)
 {
 	this->name_tag = name_tag;
-	
-	// initialisation de la matrix 2-gram
-	two_gram_matrix = vector<vector<int>>(36, vector<int>(36));
+
+	// zeroes in the 2-gram matrix
+
+	for (int row; row < CHAR_NUMBER; row++) {
+		for (int col; col < CHAR_NUMBER; col++) {
+			two_gram_matrix[row][col];
+		}
+	}
 }
