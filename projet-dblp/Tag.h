@@ -1,13 +1,16 @@
 #pragma once
+#include <vector>
+#include <string>
+
+using namespace std;
+
 class Tag
 {
 private:
-	char* name_tag;
-	
+	string name_tag;
+	string element_to_parse;
+	vector<vector<int>> two_gram_matrix;
 public:
-	Tag(char* name_tag) {
-		this->name_tag = name_tag;
-
-	}
+	Tag(string name_tag);
 };
 
