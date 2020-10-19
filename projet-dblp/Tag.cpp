@@ -13,6 +13,11 @@ Tag::Tag(string name_tag)
 	}
 }
 
+string Tag::getName()
+{
+	return this->name_tag;
+}
+
 void Tag::indexesTwoGram(int &coordX, int &coordY, std::string twogram)
 {
 	coordX = twogram.at(0);
