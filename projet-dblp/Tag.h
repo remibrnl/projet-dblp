@@ -16,6 +16,7 @@ public:
 	Tag();
 	Tag(string name_tag);
 
+	void indexesTwoGram(int &leftid, int &rightid, string twogram);
 	string getName();
 	void indexesTwoGram(int &coordX, int &coordY,string twogram);
 	int generateTwoGramMatrix(string toParse);
