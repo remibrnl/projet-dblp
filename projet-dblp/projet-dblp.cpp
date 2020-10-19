@@ -7,17 +7,28 @@
 
 int main(int argc, char* argv[])
 {
-    std::vector<Tag> tag_list;
+    /* std::vector<Tag> tag_list;
 
     for (int i = 0; i < argc; i++) {
         Tag current(argv[i]);
         tag_list.push_back(current);
-    
+
     std::cout << "Hello World!\n";
 }
 
-	Tag test();
+    Tag test();*/
 
+    Tag testtag("author");
+
+    string teststr = "aa";
+
+    int left = 0;
+    int right = 0;
+
+    testtag.indexesTwoGram(left, right, teststr);
+
+    std::cout << left << "," << right << std::endl;
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
