@@ -12,11 +12,11 @@ int main(int argc, char* argv[])
     for (int i = 0; i < argc; i++) {
         Tag current(argv[i]);
         tag_list.push_back(current);
-    }
-
-
+    
     std::cout << "Hello World!\n";
 }
+
+	Tag test();
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

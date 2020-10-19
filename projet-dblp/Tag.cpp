@@ -13,127 +13,128 @@ Tag::Tag(string name_tag)
 	}
 }
 
-int Tag::indiceTwoGram(std::string twogram)
+void Tag::indexesTwoGram(int &coordX, int &coordY, std::string twogram)
 {
-	char firstletter = twogram.at(0);
-	char secondletter = twogram.at(1);
+	coordX = twogram.at(0);
+	coordY = twogram.at(1);
 
 	int index = 0;
 
-	switch (firstletter) {
+
+	switch (coordX) {
 	case 'a':
 		break;
 	case 'b':
-		index+=37;
+		index +=1;
 		break;
 	case 'c':
-		index +=74;
+		index +=2;
 		break;
 	case 'd':
-		index += 111;
+		index +=3;
 		break;
 	case 'e':
-		index += 148;
+		index +=4;
 		break;
 	case 'f':
-		index += 185;
+		index +=5;
 		break;
 	case 'g':
-		index += 222;
+		index +=6;
 		break;
 	case 'h':
-		index += 259;
+		index +=7;
 		break;
 	case 'i':
-		index += 296;
+		index +=8;
 		break;
 	case 'j':
-		index += 333;
+		index +=9;
 		break;
 	case 'k':
-		index += 370;
+		index +=10;
 		break;
 	case 'l':
-		index += 407;
+		index +=11;
 		break;
 	case 'm':
-		index += 444;
+		index +=12;
 		break;
 	case 'n':
-		index += 481;
+		index +=13;
 		break;
 	case 'o':
-		index += 518;
+		index +=14;
 		break;
 	case 'p':
-		index += 555;
+		index +=15;
 		break;
 	case 'q':
-		index += 592;
+		index +=16;
 		break;
 	case 'r':
-		index += 629;
+		index +=17;
 		break;
 	case 's':
-		index += 666;
+		index +=18;
 		break;
 	case 't':
-		index += 703;
+		index +=19;
 		break;
 	case 'u':
-		index += 740;
+		index +=20;
 		break;
 	case 'v':
-		index += 777;
+		index +=21;
 		break;
 	case 'w':
-		index += 814;
+		index +=22;
 		break;
 	case 'x':
-		index += 851;
+		index +=23;
 		break;
 	case 'y':
-		index += 888;
+		index +=24;
 		break;
 	case 'z':
-		index += 925;
+		index +=25;
 		break;
 	case ' ':
-		index += 962;
+		index +=26;
 		break;
 	case '0':
-		index += 999;
+		index +=27;
 		break;
 	case '1':
-		index += 1036;
+		index +=28;
 		break;
 	case '2':
-		index += 1073;
+		index +=29;
 		break;
 	case '3':
-		index += 1110;
+		index +=30;
 		break;
 	case '4':
-		index += 1147;
+		index +=31;
 		break;
 	case '5':
-		index += 1194;
+		index +=32;
 		break;
 	case '6':
-		index += 1221;
+		index +=33;
 		break;
 	case '7':
-		index += 1258;
+		index +=34;
 		break;
 	case '8':
-		index += 1295;
+		index +=35;
 		break;
 	case '9':
-		index += 1332;
+		index +=36;
 		break;
 	}
 
-	switch (firstletter) {
+	switch (secondletter) {
 	case 'a':
 		break;
 	case 'b':
