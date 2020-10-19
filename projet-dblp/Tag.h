@@ -13,6 +13,11 @@ private:
 	string element_to_parse;
 	int two_gram_matrix[CHAR_NUMBER][CHAR_NUMBER];
 public:
+	Tag();
 	Tag(string name_tag);
+
+	int indiceTwoGram(string twogram);
+	int generateTwoGramMatrix(string toParse);
+
 };
 

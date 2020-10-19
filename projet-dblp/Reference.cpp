@@ -2,5 +2,5 @@
 
 Reference::Reference(int number) {
 	this->referenceNumber = number;
-	tags = new;
+	tags = new Tag*;
 };
