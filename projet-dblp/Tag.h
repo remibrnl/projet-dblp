@@ -18,7 +18,7 @@ public:
 
 	void indexesTwoGram(int &leftid, int &rightid, string twogram);
 	string getName();
-	void indexesTwoGram(int &coordX, int &coordY,string twogram);
+	int indexesTwoGram(string twogram);
 	int generateTwoGramMatrix(string toParse);
 
 };
