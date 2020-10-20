@@ -18,16 +18,15 @@ int main(int argc, char* argv[])
 
     Tag test();*/
 
-    Tag testtag("author");
+    Tag testtag("author", "Le test se Fait bIeN");
 
-    string teststr = "aa";
-
+    string teststr = "AA";
+	string toParse = "Le test se Fait bIeN";
     int left = 0;
     int right = 0;
 
-    testtag.indexesTwoGram(left, right, teststr);
 
-    std::cout << left << "," << right << std::endl;
+    //std::cout << left << "," << right << std::endl;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

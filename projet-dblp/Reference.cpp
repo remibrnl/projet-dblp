@@ -4,10 +4,13 @@ Reference::Reference(int number) {
 	this->referenceNumber = number;
 }
 
-Reference::Reference(int Number, vector<string>  tagNames, int namesArraySize)
+Reference::Reference(int Number, string URL_link, vector<string>  tagNames, int namesArraySize)
 {
 	//Give the reference a Number
 	this->referenceNumber = Number;
+
+	//as wished we keep the link to the DBLP reference
+	this->link_to_reference = URL_link;
 
 	//Give to the string array the names of the tag we want to parse, and create the tags objects
 	for (int i = 0; i < namesArraySize; i++) {
@@ -16,10 +19,13 @@ Reference::Reference(int Number, vector<string>  tagNames, int namesArraySize)
 	};
 }
 
-Reference::Reference(int Number, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList)
+Reference::Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList)
 {
 	//Give the reference a Number
 	this->referenceNumber = Number;
+
+	//as wished we keep the link to the DBLP reference
+	this->link_to_reference = URL_link;
 
 	//Give to the string array the names of the tag we want to parse, and create the tags objects
 	for (int i = 0; i < namesArraySize; i++) {
@@ -35,7 +41,7 @@ Reference::~Reference()
 	}
 }
 
-void Reference::AddTag(Tag * tag = nullptr, string tagName = nullptr)
+void Reference::AddTag(Tag * tag, string tagName)
 {
 	if (tag) {
 		this->tags.push_back(tag);
@@ -47,12 +53,12 @@ void Reference::AddTag(Tag * tag = nullptr, string tagName = nullptr)
 	}
 }
 
-void Reference::DelTag(Tag * tag = nullptr, string tagName = nullptr)
+void Reference::DelTag(Tag * tag, string tagName)
 {
 	if (tag) {
 		for (int i = 0; i < this->tagNames.size(); i++) {
-			if (this->tags.at(i)->getName.compare(tag->getName()) == 0) {
-				delete tags.at[i]; // Peut etre que la suppression se fait mal
+			if (this->tags.at(i)->getName().compare(tag->getName()) == 0) {
+				delete &tags.at(i); // Peut etre que la suppression se fait mal
 				tags.erase(tags.begin() + i);
 			}
 		}
@@ -61,8 +67,8 @@ void Reference::DelTag(Tag * tag = nullptr, string tagName = nullptr)
 	if (!tagName.empty())
 	{
 		for (int i = 0; i < this->tagNames.size(); i++) {
-			if (this->tags.at(i)->getName.compare(tagName) == 0) {
-				delete tags.at[i];
+			if (this->tags.at(i)->getName().compare(tagName) == 0) {
+				delete tags.at(i);
 				tags.erase(tags.begin() + i);
 			}
 		}

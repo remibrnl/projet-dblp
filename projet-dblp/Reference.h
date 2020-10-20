@@ -14,14 +14,15 @@ class Reference
 {
 	private:
 		int referenceNumber;
+		string link_to_reference;
 		vector<string> tagNames;
 		vector<Tag*> tags;
 
 	public:
 		//Constructeurs et destructeurs
 		Reference(int Number);
-		Reference(int Number, vector<string> tagNames, int namesArraySize);
-		Reference(int Number, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList);
+		Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize);
+		Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList);
 		~Reference();
 
 		//Methods
