@@ -27,6 +27,10 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 	this->element_to_parse = sentence_to_parse;
 	// initiate the 2-gram matrix
 
+	for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {
+		two_gram_matrix[col] = 0;
+	}
+
 	generateTwoGramMatrix(sentence_to_parse);
 }
 

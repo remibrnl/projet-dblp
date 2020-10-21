@@ -20,13 +20,51 @@ class Reference
 
 	public:
 		//Constructeurs et destructeurs
+
+		/**
+			\brief Confort Constructor
+			\param Number The number of the reference to instanciate
+			\return An new reference object 
+		*/
 		Reference(int Number);
-		Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize);
-		Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList);
+
+		/**
+			\brief Confort Constructor
+			\param Number Number of the reference to instanciate
+			\param URL_link The link to the web page of the reference
+			\param tagNames an Array of all the tags to parse
+			\post
+			\return the index of the corresponding two-gram in the matrix
+		*/
+		Reference(int Number, string URL_link, vector<string> tagNames);
+
+		/**
+			\brief Confort Constructor, used in case if we want to copy a referene=ce for any reason
+			\param Number Number of the reference to instanciate
+			\param URL_link The link to the web page of the reference
+			\param tagNames an Array of all the tags to parse
+			\param tagList 
+			\post 
+			\return the index of the corresponding two - gram in the matrix
+		*/
+		Reference(int Number, string URL_link, vector<string> tagNames, vector<Tag*> tagList);
+
+		/**
+			\brief Destructor of the class
+			\post All the Tags of the Array are deleted
+		*/
 		~Reference();
 
 		//Methods
+
+		/**
+			\brief this method add a tag to a reference
+		*/
 		void AddTag(Tag * tag = nullptr, string tagName = nullptr);
+
+		/**
+			\brief this methid delete a tag of a reference
+		*/
 		void DelTag(Tag* tag = nullptr, string tagName = nullptr);
 		
 

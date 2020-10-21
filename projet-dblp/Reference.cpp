@@ -4,7 +4,7 @@ Reference::Reference(int number) {
 	this->referenceNumber = number;
 }
 
-Reference::Reference(int Number, string URL_link, vector<string>  tagNames, int namesArraySize)
+Reference::Reference(int Number, string URL_link, vector<string>  tagNames)
 {
 	//Give the reference a Number
 	this->referenceNumber = Number;
@@ -13,13 +13,13 @@ Reference::Reference(int Number, string URL_link, vector<string>  tagNames, int 
 	this->link_to_reference = URL_link;
 
 	//Give to the string array the names of the tag we want to parse, and create the tags objects
-	for (int i = 0; i < namesArraySize; i++) {
+	for (int i = 0; i < tagNames.size(); i++) {
 		this->tagNames.push_back(tagNames[i]);
 		tags.push_back(new Tag(tagNames[i]));
 	};
 }
 
-Reference::Reference(int Number, string URL_link, vector<string> tagNames, int namesArraySize, vector<Tag*> tagList)
+Reference::Reference(int Number, string URL_link, vector<string> tagNames, vector<Tag*> tagList)
 {
 	//Give the reference a Number
 	this->referenceNumber = Number;
@@ -28,7 +28,7 @@ Reference::Reference(int Number, string URL_link, vector<string> tagNames, int n
 	this->link_to_reference = URL_link;
 
 	//Give to the string array the names of the tag we want to parse, and create the tags objects
-	for (int i = 0; i < namesArraySize; i++) {
+	for (int i = 0; i < tagNames.size(); i++) {
 		this->tagNames[i] = tagNames[i];
 	};
 }
