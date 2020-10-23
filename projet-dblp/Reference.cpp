@@ -4,6 +4,14 @@ Reference::Reference(int number) {
 	this->referenceNumber = number;
 }
 
+
+Reference::Reference(const Reference& copy)
+{
+	referenceNumber = copy.referenceNumber;
+	link_to_reference = copy.link_to_reference;
+	tagNames = copy.tagNames;
+	tags = copy.tags;
+}
 Reference::Reference(int Number, string URL_link, vector<string>  tagNames)
 {
 	//Give the reference a Number
