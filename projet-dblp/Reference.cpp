@@ -74,10 +74,3 @@ void Reference::DelTag(Tag * tag, string tagName)
 		}
 	}
 }
-
-
-
-
-
-
-;

@@ -2,24 +2,21 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include <algorithm>
 #include "Reference.h";
 
 using namespace std;
 
 class FileParser
 {
+	//TODO : test
 	private:
 		string path_to_file;
+		vector<Tag*> parseArray;
 
 	public:
-		FileParser();
-		FileParser(string path);
-
-		string getPath();
-		string setPath();
-
-		Reference* createReference();
-		vector<Reference> parseFile(int numberToCreate = -1);
+		FileParser(string path, int limit, vector<string*> tagNames);
 
 };
 
