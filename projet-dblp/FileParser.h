@@ -24,7 +24,7 @@ class FileParser
 		// pas sur ??
 		Reference& create_reference(iostream file);
 
-		vector<Reference>& parseFile(int numberToCreate = -1);
+		vector<Reference>& parseFile(int numberToCreate, vector<Tag> tags_list);
 
 };
 

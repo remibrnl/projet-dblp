@@ -10,7 +10,10 @@ Reference::Reference(const Reference& copy)
 	referenceNumber = copy.referenceNumber;
 	link_to_reference = copy.link_to_reference;
 	tagNames = copy.tagNames;
-	tags = copy.tags;
+	
+	for (Tag *tag : copy.tags) {
+		tags.push_back(new Tag(*tag));
+	}
 }
 Reference::Reference(int Number, string URL_link, vector<string>  tagNames)
 {
@@ -43,9 +46,8 @@ Reference::Reference(int Number, string URL_link, vector<string> tagNames, vecto
 
 Reference::~Reference()
 {
-	for (int i = 0; i < tagNames.size(); i++)
-	{
-		delete tags[i];
+	for (Tag* tag : tags) {
+		delete tag;
 	}
 }
 
