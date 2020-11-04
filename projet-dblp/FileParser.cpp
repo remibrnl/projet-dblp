@@ -20,7 +20,7 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-vector<Reference>& FileParser::parseFile(int numberToCreate, vector<Tag> tags_list)
+/*vector<Reference>& FileParser::parseFile(int numberToCreate, vector<Tag> tags_list)
 {
 	vector<Reference> references_vect;
 
@@ -52,4 +52,6 @@ vector<Reference>& FileParser::parseFile(int numberToCreate, vector<Tag> tags_li
 	}
 
 	input_stream.close();
-}
+
+	return;
+}*/

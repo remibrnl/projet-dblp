@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <regex>
 
 #define CHAR_NUMBER 37
 

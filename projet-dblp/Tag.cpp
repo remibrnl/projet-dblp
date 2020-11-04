@@ -24,7 +24,15 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 {
 	this->name_tag = name_tag;
 
-	this->element_to_parse = sentence_to_parse;
+	if (regex_match(sentence_to_parse, regex(("<.+>.+")))) {
+		size_t firstPos = sentence_to_parse.find_first_of('>') + 1;
+		size_t lastPos = sentence_to_parse.find_last_of("<");
+		this->element_to_parse = sentence_to_parse.substr(firstPos,lastPos-firstPos);
+	}
+	else {
+		this->element_to_parse = sentence_to_parse;
+	}
+	cout << this->element_to_parse;
 	// initiate the 2-gram matrix
 
 	for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {

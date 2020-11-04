@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 
     Tag test();*/
 
-    Tag testtag("author", "Le test se Fait bIeN");
+    Tag testtag("author", "<author>Nicolas est un giga PD</author>");
 
     string teststr = "AA";
 	string toParse = "Le test se Fait bIeN";
