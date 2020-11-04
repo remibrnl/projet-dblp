@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <regex>
+#include <omp.h>
 
 #define CHAR_NUMBER 37
 #define TOTAL_CHAR_NUMBER 1369

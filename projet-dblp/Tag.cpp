@@ -1,4 +1,6 @@
 #include "Tag.h"
+
+
 //This constructor is created more for the tests than the real code
 Tag::Tag()
 {
@@ -148,9 +150,11 @@ void Tag::generateTwoGramMatrix()
 
 	// à paralléliser faire attention aux conflits sur two_gram_matrix[indexToIncrement]
 
-	#pragma omp parallel for num_threads(6)
+	#pragma omp parallel for num_threads(6) private(indexToIncrement)
 	for (int i = 0; i < twogramList.size(); i++) {
-		
+
+		//cout << omp_get_thread_num() << endl;
+
 		indexToIncrement = indexesTwoGram(twogramList.at(i));
 		
 		if (indexToIncrement == -1) continue;
