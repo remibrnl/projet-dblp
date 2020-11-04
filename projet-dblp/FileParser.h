@@ -3,6 +3,8 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <fstream>
+#include <algorithm>
 #include "Reference.h";
 
 using namespace std;

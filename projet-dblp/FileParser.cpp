@@ -1,4 +1,5 @@
 #include "FileParser.h"
+#include "FileParser.h"
 
 FileParser::FileParser(string path_to_file)
 {
@@ -20,36 +21,26 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-vector<Reference>& FileParser::parseFile(int numberToCreate, vector<Tag> tags_list)
+FileParser::FileParser(string path, int limit, vector<string*> tagNames)
 {
-	vector<Reference> references_vect;
+	ifstream fileStream;
 
-	// open file
-	ifstream input_stream(path_to_file);
+	fileStream.open(path);
 
-	if (!input_stream) {
-		if (!input_stream.is_open()) std::cout << "EXCEPTION FSTREAM A FAIRE : le fichier n'a pas été ouvert correctement" << std::endl;
+	if (fileStream.is_open()) {
+		while (!fileStream.eof()) {
+			string line;
+			getline(fileStream, line);
+			if (line.empty()) break;
 
-		int i = 0;
-
-		// on veut parcour les références une par une
-		while (true) {
-			// creation d'une référence
-			Reference reference(i);
-
-			// lecture des différents tags ?
-			for (Tag tag : tags_list) {
-
-				Tag* new_tag = new Tag(tag);
-
-				// lire les balises puis envoyer les string dans new_tag.genereatetwogrammatrix
-
-
-				reference.AddTag(new_tag);
+			for (auto it = begin(tagNames); it != end(tagNames); ++it) {
+				if (line.find(**it) != string::npos) {
+					parseArray.push_back(new Tag(**it, line));
+				}
+				else break;
 			}
-
 		}
 	}
-
-	input_stream.close();
+	fileStream.close();
+	
 }
