@@ -150,20 +150,25 @@ void Tag::generateTwoGramMatrix()
 
 	// à paralléliser faire attention aux conflits sur two_gram_matrix[indexToIncrement]
 
-	#pragma omp parallel for private (i,indexToIncrement)
-	for (int i = 0; i < twogramList.size(); i++) {
 
-		cout << "Le Thread " <<   omp_get_thread_num() << " Gere l'iteration " << i << endl;
+	int i;
+	cout << "Il y a " << twogramList.size() << " 2-gram a analyser" << endl <<"Debut de la parallelisation" << endl;
+	
+	#pragma omp parallel
+	{
+		#pragma omp for private(i,indexToIncrement)
+			for (i=0; i < twogramList.size(); i++) {
 
-		int number = omp_get_num_threads();
-		cout <<"Il y a " << number<< "Threads" << endl;
-		indexToIncrement = indexesTwoGram(twogramList.at(i));
-		
-		if (indexToIncrement == -1) continue;
+				indexToIncrement = indexesTwoGram(twogramList.at(i));
 
-		//cout << twogramList.at(i) << ",";
-			two_gram_matrix[indexToIncrement] += 1;
+				if (indexToIncrement == -1) continue;
 
+				#pragma omp critical
+				{
+					two_gram_matrix[indexToIncrement] += 1;
+					cout << "Le Thread " << omp_get_thread_num() << " gere l'iteration " << i << endl;
+				}
+			}
 	}
 	//cout << endl;
 }

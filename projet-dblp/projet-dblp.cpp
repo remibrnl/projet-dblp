@@ -5,6 +5,8 @@
 #include <vector>
 #include "Tag.h"
 #include "FileParser.h"
+#include "Reference.h"
+#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -42,16 +44,17 @@ int main(int argc, char* argv[])
 
    
 
-    for (auto ref : *refs) {
+    /*for (auto ref : *refs) {
         auto ref_tags = ref->getTags();
         for (auto tag : ref_tags) {
             
-            tag->getTwoGramMatrix();
+            //tag->getTwoGramMatrix();
 
             cout << endl;
        }
-    }
+    }*/
 
+	cout << clock();
     //std::cout << left << "," << right << std::endl;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
