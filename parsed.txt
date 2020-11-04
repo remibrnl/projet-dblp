@@ -1,0 +1,2000 @@
+Modell zur Produktion von Online-Hilfen.
+Ein Verfahren zur thematisch spezialisierten Suche im Web und seine Realisierung im Prototypen HomePageSearch
+File System Performance and Transaction Support.
+Towards Middleware Support for Mobile and Cellular Networks: core problems and illustrated approaches.
+Tertiary Storage: An Evaluation of New Applications
+Speicherung und Anfragebearbeitung komplexer Geo-Objekte
+Quantization Design for Structured Overcomplete Expansions.
+The Temporal Deductive Database System ChronoLog
+Virtualising visualisation : a distributed service based approach to visualisation on the Grid.
+An Interactive Graphics Language.
+Design and specification of a program specification language for engineering applications.
+Accelerating reconfigurable financial computing.
+Adaption layer enhancement : an investigation of support for independent link ARQ.
+Registration techniques for computer assisted orthopaedic surgery.
+Tool support for refactoring Haskell programs.
+Evaluating formal specifications : a cognitive approach.
+Situated displays in telecommunication.
+Fuzzy logic data mining and machine learning and its applications.
+Search based software project management.
+Lazy exact real computation.
+A collection model for data management in object-oriented systems.
+Switching control systems and their design automation via genetic algorithms.
+Filing system services for distributed computer systems.
+Screw algebra based kinematics analysis and its uses in reconfiguration recognition of mechanisms.
+Design and implementation of a language for manipulating algebraic formulae.
+Reusing semantic web data in authoring Wikipedia.
+Techniques for the analysis of monotone Boolean networks.
+Collaborative narrative generation in persistent virtual environments.
+Study of result presentation and interaction for aggregated search.
+Ancillas in quantum computation: beyond two-level systems.
+The manipulation of trees and linear graphs within a computer and some applications.
+Support for an integrated approach to program understanding : an application of software visualisation.
+Boris : a framework for multi-agent systems design and deployment.
+Motivational attitudes and norms in a unified agent communication language for open multi-agent systems : a pragmatic approach.
+Visualisation of invisible substances using unicellular swarm intelligence.
+Scheduling in Or-parallel PROLOG systems.
+E-Service adoption in unstable societies.
+An ontology-based reengineering methodology for service orientation.
+Specifying and implementing secure mobile applications in the channel ambient system.
+Runtime verification of deontic and trust models in multiagent interactions.
+Distributed on-line safety monitor based on safety assessment model and multi-agent system.
+Security-driven software evolution using a model driven approach.
+Abstraction-level functional programming.
+Rendering and validation of high-fidelity graphics using region-of-interest.
+Impact analysis in description logic ontologies.
+A model of neural sequence detectors for sentence processing.
+Analysing the requirements for monitoring and switching : a problem-oriented approach.
+Monitoring individual cells within cell cultures using image processing and pattern recognition techniques.
+Analogue neuromorphic systems.
+HEDGEHOG : automatic verification of design patterns in Java.
+Semantic and organization considerations in database conceptual modelling : the Semantic Conceptual Organizational Model (SECOM).
+Threats to information systems and effective countermeasures.
+Aspects of Training and Connection in Some Cellular Learning Networks.
+Execution of Prolog by transformations on distributed memory multi-processors.
+Principled design of evolutionary learning systems for large scale data mining.
+An architecture for expert database system.
+Abstraction : a notion for reverse engineering.
+Towards abstractions for distributed systems.
+Software measurement for functional programming.
+Integrated innate and adaptive artificial immune systems applied to process anomaly detection.
+Silicon-based non-volatile nano-electro-mechanical switch with controlled van der Waals force.
+An integrated framework for CCTV infrastructures deployment in KSA: towards an automated surveillance.
+Visual simulation of falling water and plunge pools.
+Detecting underwater man-made objects in unconstrained video images.
+Agent-based modelling of transactive memory systems and knowledge processes in agile versus traditional software development teams.
+Utilising networked workstations to accelerate database queries.
+Quality of experience management in mobile content delivery systems.
+Decision rule approximations for dynamic optimization under uncertainty.
+Reinforcement learning for qualitative group behaviours applied to non-player computer game characters.
+Parallel implementation of funtional languages using divide-and-conquer strategies.
+Towards development of brain-computer interface based on point to point movements.
+New hybrid genetic algorithms for parameter search.
+Iterative parameter mixing for distributed large-margin training of structured predictors for natural language processing.
+A tool for collaborative online dialogue : CodeZebraOS.
+VLSI parallel processing architectures.
+Multi-modal recognition of manipulation activities through visual accelerometer tracking, relational histograms, and user-adaptation.
+An emergent framework for designers working in physical/digital spaces.
+An aspect-oriented approach to productivity improvement for a dynamic language using typing concerns.
+Chord sequence patterns in OWL.
+Efficient iterative decoding algorithms for turbo and low-density parity-check (LDPC) codes.
+Mobile robot navigation using a behavioural control strategy.
+Meta-APL : a general language for agent programming.
+Usability engineering for embodied conversational agents with older users.
+Model reduction techniques for probabilistic verification of Markov chains.
+From digital creations of space to analogous experiences of places : living in second life and acting in Flash Mob.
+Strain transducers for active control.
+Component based software architecture for interoperable databases and extensions to the results.
+MediaHub, Bayesian Decision-making in an Intelligent Multimodal Distributed Platform Hub.
+Rule model simplification.
+Shape analysis and pose from contour.
+Modelling the transition to complex, culturally transmitted communication.
+Image processing analysis of stem cell antigens.
+Digital black boxes: apprehending fast and dynamic sociotechnical networks.
+Condition monitoring of outdoor insulation using artificial intelligence techniques.
+Design and performance study of algorithms for consensus in sparse, mobile ad-hoc networks.
+Lexical simplification: optimising the pipeline.
+Visual identification of fine surface incisions.
+Data mining of vehicle telemetry data.
+The resilience and optimisation of cloud computing.
+Technical debt-aware elasticity management in cloud computing environments.
+Early detection of network problems using existing network indicators : local agent based approach.
+The use of virtual environments in internet-based teleoperation.
+Fixed-priority scheduling algorithms with multiple objectives in hard real-time systems.
+Intelligent content based video retrieval based on local region tracks.
+The transformational implementation of JSD process specifications via finite automata representation.
+Statistical data mining for Sina Weibo, a Chinese micro-blog: sentiment modelling and randomness reduction for topic modelling.
+Benchmarking object-relational database systems for adaptive design.
+Multilayered abstractions for partial differential equations.
+A processing framework for temporal analysis and its applications to instructional texts.
+An investigation of indoor positioning systems and their applications.
+A proof planning framework for Isabelle.
+Software visualization in Prolog.
+Formative evaluation method for website interface development.
+Using mobility and exception handling to achieve mobile agents that survive server crash failures.
+Verification in ASL and related specification languages.
+Infrastructure support for CSCW.
+From neural algorithms to parallel architectures : a practical design methodology.
+Clinical intelligence framework for decision-support.
+An interoperability framework for security policy languages.
+A machine learning framework for optimising file distribution across multiple cloud storage services.
+Deep binary representation learning for single/cross-modal data retrieval.
+The validation and verification of low-level code.
+High efficiency, character-oriented, local area networks.
+Composition integrity framework : an integrity monitor for aspect-oriented programs.
+Latent semantic sentence clustering for multi-document summarization.
+An ecologically valid evaluation of an observation-resilient graphical authentication mechanism.
+Enhancing workflow with a semantic description of scientific intent.
+Advancing human pose and gesture recognition.
+The use of knowledge-based systems techniques for risk assessment.
+Models of higher-order, type-safe, distributed computation over autonomous persistent object stores.
+Automated data classification using feature weighted self-organising map (FWSOM).
+Topics in kernal hypothesis testing.
+Modelling uncertainty in touch interaction.
+A visual metaphor-based tool for a search-engine user interface.
+Artificial ontogenesis : a connectionist model of development.
+Intelligent system based assessments of academic journals.
+Enhancing legacy software system analysis by combining behavioural and semantic information sources.
+A framework for distributed open hypermedia.
+Robust steganographic techniques for secure biometric-based remote authentication.
+Modality based perception for selective rendering.
+Measuring the experience of playing self-paced games.
+Programming for humans : a new paradigm for domain-specific languages.
+Learning to cope with small noisy data in software effort estimation.
+AMPM Adaptive multipoint multimedia over wireless internet protocol networks.
+A wide-area file system for migrating virtual machines.
+An investigation into the use of AffectiveWare in interactive computer applications.
+Text analysis, summarising and retrieval.
+Integration of classical and model-based technologies for the automated synthesis of plans.
+The domain name system advisor: a model-based quality assurance framework.
+Hardware fabrics for cryptographic algorithms.
+An improved computational model for effective 3D animation.
+Resolution-based methods for linear-time temporal logics : with applications to formal verification.
+Graph patterns : structure, query answering and applications in schema mappings and formal language theory.
+An evaluation of the use of task analysis in the development of interactive multimedia systems.
+Platforms for deployment of scalable on- and off-line data analytics.
+Watermarking for attack classification.
+Enhancing the usability of rely-guarantee conditions for atomicity refinement.
+From ephemerality to delicacy: applying delicacy in the design space of digital gifting.
+An exploratory study of the internal career orientation and the external career pattern of information technology workers in Nigeria.
+An expert system for career management within an army structure.
+A mobile diabetes management and internetworking system.
+Graphical creation of structured programs.
+Deep neural network acoustic models for multi-dialect Arabic speech recognition.
+Enterprise modelling and its application to organisational requirements, capture and definition.
+Analysis and transformation of proof procedures.
+Adaptive learning for segmentation and detection.
+An intelligent geographic information system for design.
+Budget-limited multi-armed bandits.
+Auxiliary computations : a framework for a step-wise, non-disruptive introduction of static guarantees to untyped programs using partial evaluation techniques.
+Tableau algorithms for categorial deduction and parsing.
+Multi-channel bulk queueing systems.
+Games 4 VRains: affective gaming for working memory training in virtual reality.
+Critical node identifcation for accessing network vulnerability: a necessary consideration.
+Robust stability and performance for multiple model switched adaptive control.
+Type-Checking Systems with Particular Applications to Functional Languages.
+Intention-oriented programming model for autonomic cloud applications.
+Application of recent programming techniques to data processing.
+PC-grade parallel processing and hardware acceleration for large-scale data analysis.
+Creative aspects of problem solving : A critical analysis and explanation of the attribution of meaning during interactive problem solving sessions, sequences and simulations.
+Supporting members of online communities through the use of visualisations.
+Higher-order central-moment neural architectures.
+The dynamics of continuous-time recurrent neural networks and their relevance to episodic memory.
+A text representation language for contextual and distributional processing.
+Towards better gameplay in educational computer games.
+HI-Risk : a socio-technical method for the identification and monitoring of healthcare information security risks in the information society.
+Contextuality and noncommutative geometry in quantum mechanics.
+A multidimensional sketching interface for visual interaction with corpus-based concatenative sound synthesis.
+Worst-case execution time analysis for dynamic branch predictors.
+Fuzzy logic programming based on α-cuts.
+Internal representation and biological plausibility in an artificial neural network.
+The evolution of modular artificial neural networks.
+Modelling, analysis and feedback control design for upright standing sways.
+Navigation problems for autonomous robots in distributed environments.
+Micromanipulator on the tip of a fibre: fabrication and analysis.
+A robust region-adaptive digital image watermarking system.
+Novel techniques for audio music classification and search.
+Sequential frame synchronization over binary symmetrical channel for unequally distributed data symbols.
+Autonomic behavioural framework for structural parallelism over heterogeneous multi-core systems.
+Video content-based QoE prediction for HEVC encoded videos delivered over IP networks.
+The nature of engagement and its role in hypermedia evaluation and design.
+The behaviour of S.C.R. amplifiers in closed loop control systems.
+A model of argumentation and its application in a cooperative expert system.
+Establishing species-specific 3D liver microtissues for repeat dose toxicology and advancing in vitro to in vivo translation through computational modelling.
+A cost analysis for a higher-order parallel programming model.
+The integration of tools in software engineering environments.
+Information systems strategy: an empirical investigation into the social complexity of its formation in practice.
+A computer aid for management.
+An embedded-agent approach to activity recognition in domestic ambient intelligent environments.
+Comparing the effectiveness of face to face and computer mediated collaboration in design.
+Learning generative models of mid-level structure in natural images.
+Strategies for partitioning data in association rule mining.
+Exploring human factors issues & possible countermeasures in password authentication.
+Framed aspects-A generative variability approach for aspect-oriented programming.
+Energy- and context-aware approaches to aiding human memory.
+Detecting salient information using RSVP and the P3 : computational and EEG explorations.
+Semi-automated co-reference identification in digital humanities collections.
+Component analysis of complex-valued data for machine learning and computer vision tasks.
+System design for periodic data production management.
+Inductive logic programming using bounded hypothesis space.
+Process algebra for located Markovian agents and scalable analysis techniques for the modelling of Collective Adaptive Systems.
+Semi-automatic segmentation of the hippocampus using magnetic resonance images.
+Observational models of requirements evolution.
+Data mining for heart failure : an investigation into the challenges in real life clinical datasets.
+Quality of service routing for real-time traffic.
+A formal approach to modelling and verification of context-aware systems.
+An architecture for domain based distributed systems management.
+A sublanguage of English for database query in a managerial environment.
+Design of Cross-Correlation Flow Control Loops.
+Mind the gap : formalising the development of scientific software.
+Trolling in computer-mediated communication : impoliteness, desception and manipulation online.
+Evolutionary and genetic strategies for topology optimization of frameworks : pareto-comparisons and hybrid methods.
+Fast algorithms for public key cryptography.
+Developing an interactive overview for non-visual exploration of tabular numerical information.
+Databases for concatenative text-to-speech synthesis systems : unit selection and knowledge-based approach.
+A rational scheme for conflict detection and resolution in distributed collaborative environments for enterprise integration.
+Towards meta-evolution via embodiment in artificial chemistries.
+SIQXC : Schema Independent Queryable XML Compression for smartphones.
+Statistical mechanics for network structure and evolution.
+Colocation aware content sharing in urban transport.
+Explorations into interactions between learning and evolution using genetic algorithms.
+An agent-based framework to support adaptive hypermedia.
+Group-based parallel multi-scheduling methods for grid computing.
+A visual approach to the development of spatial quaery languages for geographic information systems.
+COBOL report program generation by macro processor.
+A computational model of visual attention.
+Quantum corrections in the computer simulation of simple liquids and solids.
+Combinator reduction on networks of small processors.
+Human identification using soft biometrics.
+Algebraic specifications : investigations concerning their effectiveness for testing software, their quality and maintenance.
+Linearity and laziness.
+A typed operational semantics for type theory.
+Algorithms for breast cancer grading in digital histopathology images.
+Efficient programming models for neurocomputation.
+Instance-based Natural Language Generation.
+Perceptible affordances and feedforward for gestural interfaces : assessing effectiveness of gesture acquisition with unfamiliar interactions.
+Colourful life in cyberspace and the real world : visualising urban wi-fi landscapes with web colours.
+Object recognition by evolutionary search.
+Mobile security and smart systems: multi-modal biometric authentication on mobile devices.
+A one-field fictitious domain method for fluid-structure interactions.
+Operating system simulations for parallel processes and parallel processors.
+Polyethylene-montmorillonite nanocomposites.
+Representation decomposition for knowledge extraction and sharing using restricted Boltzmann machines.
+The design and implementation of RRCGS (Retargetable RISC Code Generator for the SUIF).
+LinkIt : design, development and testing of a semi-quantitative computer modelling tool.
+Pushing the limits of indoor localization in today's Wi-Fi networks.
+Investigation of multimodal template-free biometric techniques and associated exception handling.
+Reliable communication protocols for high-performance computing.
+Policy-based runtime tracking for e-learning environments.
+Data quality and data cleaning in database applications.
+Performance modeling and enhancement for IEEE 802.11 DCF.
+Sensorless control of surface mounted permanent magnet machine using fundamental PWM excitation.
+The role of virtual actors in collaborative virtual environments for learning.
+Navigation in non-immersive virtual environments.
+CODA : complex organic distributed architecture for intelligent reconfiguration of mobile networks.
+Risk eDecisions: online behaviour and decision making from the iGeneration to the 'silver surfer'.
+A method for re-modularising legacy code.
+Citizens' readiness for e-government in developing countries.
+An ontology based approach towards a universal description framework for home networks.
+The optimal control of a slab reheating furnace.
+The Design of a General Purpose Microprogrammable Emulator.
+A pragmatic approach to the formal development of safety-critical systems.
+Activity awareness in context-aware systems using software sensors.
+Interactive real-time three-dimensional visualisation of virtual textiles.
+The branch-and-bound paradigm.
+Medium-term planning in deregulated energy markets with decision rules.
+Handling data dependent memory accesses in custom hardware applications.
+Run-time support for parallel discrete event simulation languages.
+Attributes in lexical acquisition.
+Irregular variable length coding.
+A novel pre-processing method for the classification of data by a neural network.
+High redundancy actuator.
+Modelling and managing temporal data and its application to Scottish dental information systems.
+Ubiquitous Integration and Temporal Synchronisation (UbilTS) framework: a solution for building complex multimodal data capture and interactive systems.
+Automating the refinement of knowledge based systems.
+Meteorological modelling on the ICL distributed array processor and other parallel computers.
+Time constrained qualitative model-based parameter identification.
+Learning crowd dynamics using computer vision.
+3D face recognition using multicomponent feature extraction from the nasal region and its environs.
+Data Reuse and Parallelism in Hardware Compilation.
+Real-time sound spatialization, software design and implementation.
+Detecting anomalies in multivariate time series from automotive systems.
+Finger knuckle print and palmprint for efficient person recognition.
+The object and connection space approach to opening up hypermedia structure.
+Orchestrating high performance services : theory and practice.
+Functional Analysis and Identification of Separable Nonlinear Control Systems Using Pseudorandom Inputs.
+An executable formal semantics of PHP with applications to program analysis.
+Productive and efficient computational science through domain-specific abstractions.
+Performance related decision support for process modelling.
+Design of multiple classifier systems.
+Social laws for multi-agent systems.
+Application of software engineering methodologies to the development of mathematical biological models.
+Aspects of internet security - identity management and online child protection.
+The mathematical structure of non-locality and contextuality.
+An investigation of parallelism in document processing.
+Realtime vehicle route optimisation via DQN for sustainable and resilient urban transportation network.
+Software tools for the investigation of stochastic programming problems.
+The development of a generic, extensible and web-enabled cbr architecture.
+A framework for the systematic evaluation of malware forensic tools.
+A study of simulated annealing techniques for multi-objective optimisation.
+Terahertz spectrometry applied to proteins.
+A framework to support multilingual mobile learning : a South African perspective.
+Execution profiling for non-strict functional languages.
+An application of parallelism to compilation.
+Methods of (0-1) Integer Programming Using a Boolean Approach.
+Factors affecting electronic commerce acceptance and usage in Libyan ICT organizations.
+On the use of text classification methods for text summarisation.
+Usable, secure and deployable graphical passwords.
+Monitoring and control of biological textile wastewater treatment using artificial neural networks.
+An insider misuse threat detection and prediction language.
+Improving software model inference by combining state merging and Markov models.
+A High-level Computer Language for Modelling Structured Data.
+Object representation and recognition in machine vision.
+A correlation framework for continuous user authentication using data mining.
+Isogeometric boundary element methods for linear elastic fracture mechanics.
+Isosurface modelling of soft objects in computer graphics.
+An evaluation of factors affecting students' use of a web-based engineering resource.
+Enforcing complex policies in RBAC.
+Cross-modal semantic-associative labelling, indexing and retrieval of multimodal data.
+Optimal feature selection and machine learning for high-level audio classification: a random forests approach.
+Performance optimizations for compiler-based error detection.
+Lattice rescoring methods for statistical machine translation.
+Feature learning for RGB-D data.
+Grouping of semistructured data for efficient query processing.
+Weakly supervised learning of objects and attributes.
+Inducing rules in a higher-order framework.
+The role of external and endogenous noise in neural network dynamics and statistics.
+The evolution of complete software systems.
+The development of a conceptual model for supporting a case based reasoning selection among decision support systems for strategic asset allocation.
+A neural network and rule based system application in water demand forecasting.
+Computational recovery of enzyme haplotypes from a metagenome.
+Systematic analysis and modelling of diagnostic errors in medicine.
+Synthesis of geared Linkages as Function generators.
+A formal framework for the specification of interactive systems.
+A business-oriented framework for enhancing web services security for e-business.
+Relational database support for a rule based approach to information systems.
+Dialogues incorporating enthymemes and modelling of other agents' beliefs.
+Scalable image retrieval based on hand drawn sketches and their semantic information.
+Optical wireless communication systems.
+Student modelling by adaptive testing : a knowledge-based approach.
+Turing machine universality of the game of life.
+Quality of service support for service discovery and selection in service oriented computing environment.
+Schedulability of mode changes in flexible real-time distributed systems.
+A framework for cascading payment and content exchange within P2P systems.
+Sparse analysis model based dictionary learning and signal reconstruction.
+Modelling aggregation motivated interactions in descriptive text generation.
+Towards an integrated methodology for the development of hybrid information systems.
+Deep learning for automated sleep monitoring.
+Structure evaluation of computer human animation quality.
+Learning deformable models for tracking human motion.
+Detecting adverse drug reactions in the general practice healthcare database.
+A computational study and heuristic algorithms for the home healthcare scheduling and routing problem.
+Software evolution through UML-models extraction.
+Theory and implementation of coercive subtyping.
+Metric domains for completeness.
+Scheduling and data management for parallel ray tracing.
+User-centred and context-aware identity management in mobile ad-hoc networks.
+Source-to-source compilation of loop programs for manycore processors.
+MPLS controlled deflection routing for packet switched optical networks.
+Object oriented specification and refinement.
+Person re-Identification over distributed spaces and time.
+The use of advanced soft computing for machinery condition monitoring.
+An interactive talking head.
+The static and dynamic flow forces in a particular spool valve configuration.
+Guarded atomic actions and refinement in a system-on-chip development flow : bridging the specification gap with Event-B.
+Identifying and comparing opportunistic and social networks.
+Impedance spectroscopy for cellular and biomolecular analysis.
+Document flow model : a formal notation for modelling asynchronous web services.
+Policy-driven governance in cloud service ecosystems.
+Intention reconsideration.
+Exploring happiness indicators in cities and industrial sectors using Twitter and Urban GIS data.
+VMX-rootkit : implementing malware with hardware virtual machine extensions.
+Semantic agent support for managed open information retrieval services.
+Search-based generation of human readable test data and its impact on human oracle costs.
+Wavelet based approaches for detection and recognition in ear biometrics.
+Investigation into intelligent image preprocessor techniques for Artificial Neural Networks.
+Designing communication systems that work.
+Executable formal specification of programming languages with reusable components.
+Advanced methods for neural modelling and applications.
+Signature-based videos' visual similarity detection and measurement.
+Constructing runtime models with bigraphs to address ubiquitous computing service composition volatility.
+Corealisation : a radical respecification of the working division of labour in systems development.
+Object detection, recognition and re-identification in video footage.
+Collaborative knowledge building through multi-path video creation.
+Elicitation of software requirements : the role of natural language processing.
+Auditory-based processing of communication sounds.
+Parallel computational techniques for explicit finite element analysis.
+A multi-agent system for a bus crew rescheduling system.
+On reasoning with uncertainty and belief change.
+Development of virtual network computing (VNC) environment for networking and enhancing user experience.
+Parallel and distributed integer programming.
+Language support for service-level agreements for application-service provision.
+Arguing from experience : persuasive dialogue based on association rules.
+Role of description logic reasoning in ontology matching.
+Structured argumentation for simulation-based research.
+Probabilistic modeling of rumour stance and popularity in social media.
+Hierarchical decision making for semantic analysis and summarisation of sports videos.
+Game semantics for an object-oriented language.
+Automatic methods for videostreams analysis and self-evolving controllers.
+Parallel execution of Horn clause programs.
+Modelling visual objects regardless of depictive style.
+Scheduling of batch processing plants : constraint model and computer scheduling system.
+A computational framework for similarity estimation and stimulus reconstruction of Hodgkin-Huxley neural responses.
+Key-frame analysis and extraction for automatic summarization of real-time videos.
+Toward optimised skeletons for heterogeneous parallel architecture with performance cost model.
+Elliptic curve cryptography mapped with channel coding.
+Cooperative attack and defense in distributed networks.
+Virtual prototyping of embedded real-time systems.
+Easing the writing task : designing computer based systems to help authors.
+An integrated network-based mobile botnet detection system.
+Mixed Integer Programming on transputers.
+Improper colourings of graphs.
+Learning failure-free PRISM programs.
+A conceptual framework for understanding and evaluating information systems methodologies.
+Using local and global knowledge in wireless sensor networks.
+Architectural support for persistent memory systems.
+Approaches for the digital profiling of activities and their applications in design information push.
+On a case supported approach to object-oriented rapid prototyping.
+From approximative to descriptive fuzzy models.
+Adaptive scaling of evolvable systems.
+Eng-genes neural networks for nonlinear modelling and control.
+Automatic construction of immobilisation masks for use in radiotherapy treatment of head-and-neck cancer.
+The n-tuple network: coping with sub-optimality.
+Chinese character generation : a stroke oriented method.
+Realizability toposes and language semantics.
+Parametric and stochastic programming algorithms for process synthesis under uncertainty.
+Energy based dissolution simulation using smoothed particle hydrodynamic sampling.
+Multi-species evolutionary algorithms for complex optimisation problems.
+A language and toolkit for the specification, execution and monitoring of dependable distributed applications.
+A method for formal specification and verification of interactive systems.
+System analysis of structural networks by the use of mixed methods.
+Enhancing association rules algorithms for mining distributed databases : integration of fast BitTable and multi-agent association rules mining in distributed medical databases for decision support.
+Mobile computations over distributed semistructured data.
+Functional programs as reconfigurable networks of communicating processes.
+Community and thread methods for identifying best answers in online question answering communities.
+On modelling and simulation of plucked string instruments.
+Composing requirements dependencies across architectural views for improving change impact analysis.
+An object-oriented approach towards a collaborative environment for computer-aided engineering (C.A.E.).
+Automated optimization of reconfigurable designs.
+Distributed simulations on a computational Grid.
+Specifying agent communication languages.
+Implementation of symbolic model checking for probabilistic systems.
+Management of data quality when integrating data with known provenance.
+Investigation into low power and reliable system-on-chip design.
+Recovering the optical properties of a tissue using maximum a posteriori based estimation.
+Interaction design for live performance.
+Detection of packer based obfuscated executables.
+Applying the object-oriented paradigm to databases by extending the relational model.
+Development of technologies for low-cost oceanographic unmanned aeronautical vehicles.
+Provenance in distributed systems : a process algebraic study of provenance management and its role in establishing trust in data quality.
+Executive attention, action selection and attention-based learning in neurally controlled autonomous agents.
+Semantics of object-oriented languages.
+In Vivo quantification of complex neurite configurations using magnetic resonance imaging.
+Automatic product classification.
+A simulation method for design and development of magnetic shape memory actuators.
+Intelligent support for exploration of data graphs.
+Correlation-based networks for implementaion in CMOS analogue VLSI.
+The readying of applications for heterogeneous computing.
+OCCAM objects.
+A run time component model for building system software.
+Context aware body area networks.
+Strategies for non-uniform rate sampling in digital control theory.
+The design and evaluation of a novel vehicle navigation system.
+Deadlock free algorithmic parallelism : analysis, implementation and performance.
+Expert systems and simulation : an investigation of an expert system to facilitate the development and use of system dynamic simulation models.
+Adaptive motion synthesis and motor invariant theory.
+On analysing deformable (moving) objects.
+How manufacturing can learn from nature : exploration of ecological resilience.
+A Computer Link Between Design and Manufacture.
+Link layer protocol performance of indoor infrared wireless communications.
+Analogue Storage Techniques and Graphical Display Systems.
+An investigation of the effectiveness of open hypertext text techniques for qualitative decision support.
+Knowledge-based software engineering : a software quality management expert system prototype.
+Combining data integration and information extraction.
+Systolic arrays for the matrix iterative methods.
+Recursive structures in computer systems.
+Dynamic and fault tolerant three-dimensional cellular genetic algorithms.
+An investigation into server-side static and dynamic web content survivability using a web content verification and recovery (WVCR) system.
+An interest point based illumination condition matching approach to photometric registration within augmented reality worlds.
+Multi-level verification of microprocessor-based systems.
+Coordinated unmanned aerial vehicles for surveillance of targets.
+Implementation of an optimising object-oriented programming language compiler for embedded applications.
+A flexible mechanism for concurrency control in database systems.
+Trackbot : acoustic tracking with a peoplebot.
+Proof-theoretic investigations into integrated logical and functional programming.
+Content-driven superpixels and their applications.
+Information security awareness : improving current research and practice.
+A 3D landscape information model.
+Timing is everything : a spatio-temporal approach to the analysis of facial actions.
+A novel approach to rotation invariant correlation.
+Motion planning and reactive control on learnt skill manifolds.
+Negotiation and coordination using market-based agents in E-business applications.
+Exploiting concurrency in a general-purpose one-instruction computer architecture.
+Exploiting structure defined by data in machine learning : some new analyses.
+Bulk Synchronous Parallelism in object-relational database systems.
+Negative feedback as an organising principle for artificial neural networks.
+Quality of service of crash-recovery failure detectors.
+The application of multiple modalities to improve home care and reminder systems.
+Learning in a state of confusion : employing active perception and reinforcement learning in partially observable worlds.
+A framework for dynamic modelling of spatiotemporal systems.
+Modelling roundabout capacities.
+Model checking quantum protocols.
+A generic architecture for insider misuse monitoring in IT systems.
+Understanding how knowledge is exploited in Ant algorithms.
+Safety cases for the formal verification of automatically generated code.
+The ACCESS Framework : reinforcement learning for accessibility and cognitive support for older adults.
+Portable implementations of nested data-parallel programming languages.
+Artificial intelligence as writing : knowledge-based hypertext systems as a medium for communication.
+An agent-based ontological model to support outsourcing decision making.
+Silicon-germanium for photonic applications.
+An Odyssey with complexity and network science : from the brain to social organisation.
+Proper orthogonal decomposition & kriging strategies for design.
+Granular computing approach for intelligent classifier design.
+E-SCAPE : an extendible sonic composition and performance environment.
+Blackboard architecture for intelligent embedded systems.
+A type-based locality analysis for a functional distributed language.
+Software for on-line Process Control.
+Formal methods and reuse in software engineering.
+Learning from experience in the engineering of non-orthogonal architectural surfaces : a computational design system.
+Extracting significant phrases from documents in English and Chinese.
+Characterising action potential in virtual game worlds applied with the mind module.
+Documents as functions.
+Knowledge discovery in hybrid knowledge representation systems.
+Dynamic simulation of ion-atom interactions by hybrid computer.
+A refinement calculus for expressions.
+On the impact of network topology on systemic risk: network reconstruction, stress testing and control.
+Towards the automatic analysis of metric modulations.
+Exploration of variations of unrestricted blocking for description logics.
+Background-free detection and mixed-species crystals in micro- and macroscopic ion-traps for scalable QIP.
+Text-independent speaker verification with limited resources.
+Improving light detection and ranging based simultaneous localization and mapping with advanced map representations.
+A cybernetic perspective on policy-making and planning in local government.
+Towards systematic requirements reuse.
+Designing for the commercial exploitation of online identity.
+Chromatic monitoring with the use of embedded systems.
+Parameterising and modelling the Internet topology.
+Method oriented design environments in knowledge aided design.
+Development of digital filtering techniques in three-dimensional TLM models.
+A compositional framework for the development of secure access control systems.
+Using Class-Level Static Properties to Predict Object Lifetimes.
+WeDRisk : an approach to managing web and distributed software development risks.
+Novel text entry and mobile interaction techniques for Arabic language users.
+Parallel program monitoring : the logical clock approach and its deadlock avoidance.
+Modelling facial action units using partial differential equations.
+Augmenting user interfaces with haptic feedback.
+Reasoning about programs using operational semantics and the role of a proof support tool.
+A multilingual automated web usability evaluation agent.
+A pattern-based approach to changing software requirements in brown-field business contexts.
+Olfactory-enhanced multimedia : a user's perspective.
+Mapping relational databases to semantic web using domain-specific knowledge.
+Sensing and interactive intelligence in mobile context aware systems.
+Content based retrieval and classification of music using polyphonic timbre similarity.
+The design and implementation of a grammar-checking program for learners of English as a foreign language : information, processes, possibilities and limitations.
+Migrating relational databases into object-based and XML databases.
+Rigorous design of distributed transactions.
+Genetic algorithm optimisation of load cell geometry by finite element analysis.
+The influence of informal communication on learning in a political party: an integrated approach utilising information behaviour and organisational learning perspectives.
+Exact learning of description logic ontologies.
+Intrusion prediction system for cloud computing and network based systems.
+Development and implementation of a deflection amplification mechanism for capacitive accelerometers.
+Dynamic probabilistic routing discovery and broadcast schemes for high mobility ad-hoc networks.
+Fair division of the commons.
+Model-based 3D gait biometrics.
+Types, categories, actions.
+Geometric and probabilistic methods for non-Euclidean image analysis.
+Analytical approaches to games development.
+Web accessibility diagnosis, improvement and maintenance.
+An investigation into tournament poker strategy using evolutionary algorithms.
+Functional programming applications.
+Complexity modelling for case knowledge maintenance in case-based reasoning.
+Reasoning with !-graphs.
+Machine learning techniques for automated analysis of facial expressions.
+End-user documentation.
+Information bias and trust in bitcoin speculation.
+Advancement in content based retrieval applicatons : from features to users.
+The autonomous navigation of an electric vehicle.
+Mathematical Modelling and on-Line Computer Control of a Vaporiser.
+Model-driven engineering for analysing, modelling and comparing cloud computing service level agreements.
+Towards a uniform graphical representation of program construction, debugging and testing process.
+Interpreting modal natural deduction as resolution.
+Improved broadband adaptive beamformer performance.
+Three fundamental pillars of decision-centered teamwork.
+Personality representation : predicting behaviour for personalised learning support.
+Interface design for hypermedia learning systems : a study of individual differences and hypermedia system features.
+An extensible platform for specification of integrated languages for model management.
+Instant messaging in work-based virtual teams: the analysis of non-verbal communication used for the contextualisation of transactional and relational communicative goals.
+Model validation for robust control.
+Name-passing process calculi : operational models and structural operational semantics.
+ORPE : a high performance semantic transaction model for disconnected systems.
+Software based solutions for mobile positioning.
+Exploiting gene expression and protein data for predicting remote homology and tissue specificity.
+Theory, modelling and implementation of graphene field-effect transistor.
+A process-centered architecture for organisational transformation.
+Enhancing response time and reliability via speculative replication and redundancy.
+A study of cluster analysis techniques and their applications.
+Algorithms and data structures for three-dimensional packing.
+Temporal-numeric planning with control parameters.
+Concurrency control in multiple perspective software development.
+Computer perception of curved objects using a television camera.
+Medical quality of service for optimized ultrasound streaming in wireless robotic tele-ultrasonography system.
+The development and testing of an efficient data mining framework for intrusion detection.
+Intelligent analysis for multi-level data-driven prediction.
+Closure algorithms and the star-height problem of regular languages.
+Systematic trading : calibration advances through machine learning.
+Adaptive 3D modelling based on single images using non-uniform rational B-spline technique.
+Digital forensics : an integrated approach for the investigation of cyber/computer related crimes.
+Algorithmic problems in strings with applications to the analysis of biological sequences.
+An integrated architecture analysis framework for component-based software development.
+The DNA of Web Observatories.
+Engineering an adaptive and socially-aware feedback acquisition.
+Path-based computations in colour image processing.
+A Computer Simulation Model for Manpower Systems.
+Human behaviour modelling : an investigation using traditional discrete event and combined discrete event and agent-based simulation.
+Modelling and tracking objects with a topology preserving self-organising neural network.
+Self-organising techniques for tolerating faults in 2-dimensional processor arrays.
+Bio-inspired self-organizing swarm robotics.
+Evaluating the effectiveness of live peer assessment as a vehicle for the development of higher order practice in computer science education.
+Eliciting and describing users' models of computer systems.
+Parallel architectures for signal processing.
+On the ethical implications of personal health monitoring.
+The design of a run time system for a real time simulation language.
+Shape from shading under relaxed assumptions.
+Modelling of an axial flow compact separator using neural network.
+Sparse canonical correlation analysis using the Lasso.
+A study of application level information from the volatile memory of Windows computer systems.
+Computational semantics: a study of a class of verbs.
+Performance modelling and optimization for video-analytic algorithms in a cloud-like environment using machine learning.
+A constraint programming pre-processor for duty scheduling.
+Neural pipelines : for the co-ordination of activity in a multi-layered neural network.
+View-invariant feature selector and its application on gait recognition.
+An investigation into the suitability of genetic programming for computing visibility areas for sensor planning.
+Context-aware GPS integrity monitoring for Intelligent Transport Systems (ITS).
+A market model for controlled resource allocation in distributed operating systems.
+Fuzzy Control of Mobile Vehicles in Unconstrained Environments.
+Development of mathematical models for freight cars subject to dynamic loading.
+A model for managing information flow on the World Wide Web.
+Proactive caching in mobile networks.
+Issues in learning cause and effect relationships from examples : with particular emphasis on casting processes.
+Context Transfer Support for MobilityManagement in All-IP Networks.
+Reactive behaviour for autonomous virtual agents using fuzzy logic.
+Distributed cognition in joint music composition : exploring the role of language and artefacts in multi-session creative collaborative work.
+A new method for generic three dimensional human face modelling for emotional bio-robots.
+A constraint-based partial evaluator for functional logic programs and its application.
+Analysing timed properties of ad hoc network protocols via model checking.
+The building and application of a semantic platform for an e-research society.
+Visual rhetoric and the design of animated help.
+Statistical techniques and project monitoring.
+Biased search data structures and rectangular tiling.
+Reliable massively parallel symbolic computing: fault tolerance for a distributed Haskell.
+New probabilistic graphical models and meta-learning approaches for hierarchical classification, with applications in bioinformatics and ageing.
+An evaluation of software modelling in practice.
+Modelling visually perceived complexity of foreground and background type data.
+Investigations into the suitability of parallel computing architectures for the solution of sparse matrices using the preconditioned conjugate gradient method.
+Automatic dense 3D scene mapping from non-overlapping passive visual sensors for future autonomous systems.
+Deep component analysis: algorithms and applications.
+Style classification of cursive script recognition.
+Bandit problems on parallel machines.
+An empirical investigation of knowledge management support for software projects.
+Monitoring quality of service on broadband networks.
+Novel approaches for hierarchical classification with case studies in protein function prediction.
+Exploiting social networks for recommendation in online image sharing systems.
+Wavelet based automatic face recognition for constrained devices.
+The Web Engineering Security (WES) methodology.
+Adaptive models of Arabic text.
+A new computational model, OOGRS and its implementation.
+The development of an intelligent inventory management system.
+Providing personalised information based on individual interests and preferences.
+Evolving hierarchical visually guided neural network agents to investigate complex interactions.
+Colouring, centrality and core-periphery structure in graphs.
+Graph colourings and games.
+An incremental refinement approach to a development of a flash-based file system in Event-B.
+A quality of service architecture.
+Using pressure input and thermal feedback to broaden haptic interaction with mobile devices.
+Hybrid modelling of time-variant heterogeneous objects.
+The synthesis of dynamical models of plants and processes, with particular reference to aircraft.
+Acquiring data designs from existing data-intensive programs.
+Dynamic block encryption with self-authenticating key exchange.
+Model checking and compositional reasoning for multi-agent systems.
+Computer graphics for directed graph design methods.
+Bunched logics: a uniform approach.
+Design strategies for employing reusable software components.
+Opportunistic data collection in people-centric sensor networks.
+Code memory compression technologies for embedded arm/thumb processors.
+Topic models for short text data.
+Organisations as complex adaptive systems : implications for the design of information systems.
+Theories of information and uncertainty for the modelling of information retrieval : an application of situation theory and Dempster-Schafer's theory of evidence.
+An editor and transformation system for a Z animation CASE tool.
+Impact analysis of database schema changes.
+Repairing type errors in functional programs.
+Broadband millimetre-wave radio over fibre systems.
+Evaluation of QoS-based signalling for traffic engineering in an MPLS/ATM environment.
+Functional and structural descriptors for software component retrieval.
+Event-condition-action rule languages over semistructured data.
+Exploring a semiotics of new media.
+A combinational framework for parallel programming using algorithmic skeletons.
+Multifaceted facade textures for 3D city models.
+A cross-layer middleware architecture for time and safety critical applications in MANETs.
+Adaptive multiple importance sampling for Gaussian processes and its application in social signal processing.
+Influences on navigation in a desktop virtual environment.
+Semantic frameworks for complexity.
+The effect of computer-based technology in attempting to enhance subjective method of knowledge elicitation.
+Design and development of algorithms for fault tolerant distributed systems.
+Dynamic generalisation of continuous action spaces in reinforcement learning : a neurally inspired approach.
+Sparsity in machine learning: theory and practice.
+Analogy by mapping spreading and abstraction in large multifunctional knowledge bases.
+Some directed graph algorithms and their application to pointer analysis.
+Heuristically guided constraint satisfaction for AI planning.
+Improving performance of blackboard systems.
+Intelligent diagnostic feedback in virtual learning environment.
+Investigation into game-based crisis scenario modelling and simulation system.
+Activity understanding and unusual event detection in surveillance videos.
+Patch-based semantic labelling of images.
+Saliency for image description and retrieval.
+Efficient streaming for high fidelity imaging.
+Towards automated formal analysis of model transformation specifications.
+The automatic assessment of Z specifications.
+A probabilistic graphical model framework for higher-order term-based representations.
+Modelling empirical features and liquidity resilience in the Limit Order Book.
+Steady-state and response time analysis of modulated queues and networks with batches.
+Search-based and goal-oriented refactoring using unfolding of graph transformation systems.
+Design and application of the reconstruction software for the BaBar calorimeter.
+Theory grounded design of genetic programming and parallel evolutionary algorithms.
+Hybrid AI paradigms applied to power system damping controls.
+Evaluating cascade correlation neural networks for surrogate modelling needs and enhancing the Nimrod/O toolkit for multi-objective optimisation.
+Optimising reconfigurable systems for real-time applications.
+Enabling Cross-domain Workflow Reuse.
+Hybrid geo-spatial query processing on the semantic web.
+A User preference-based Matchmaking Approach for Services Discovery in B2B e-commerce Applications.
+A unifying language study of automatic parallelization.
+J-Spectral Factorisaiton for Automotive Powertrain Controls.
+Trusted cloud computing modelling with distributed end-user attestable multilayer security.
+Performance studies of file system design choices for two concurrent processing paradigms.
+Towards achieving autonomic performance resilience in dstributed service-oriented systems.
+Quantifying crackles in the lung of smoking and non-smoking young adults.
+How can digital educational games be used to improve engagement with mathematics in the classroom?
+The polymorphic Pi-calculus : theory and implementation.
+A probabilistic reasoning and learning system based on Bayesian belief networks.
+An automatic machine-learning framework for testing service-oriented architecure.
+Worst-case resource-usage analysis of Java Card classic editions application bytecode.
+RE-engineering relational scheme to object-oriented schema using a hybrid approach.
+Semi-automatic quantitative assessment of cancer-cell invasion 'in vitro' : an image-processing approach.
+The Use of Product Measures In Planning Monitoring and Controlling Software Maintenance Releases.
+Development and application of chemical robotics to formulation, synthesis and discovery.
+Implementation of onboard watermarking for satellite images.
+Data-based mechanistic modelling (DBM) of nonlinear environmental systems.
+Performance and energy-based cost prediction modelling of virtual machines in cloud computing environments.
+Motion capture based motion analysis and motion synthesis for human-like character animation.
+Trusting in computer systems.
+Construction heuristics for hard combinatorial optimisation problems.
+Symmetry and degeneracy in nonconvex optimisation problems: application to heat recovery networks.
+Enhanced resource discovery mechanisms for unstructured peer-to-peer network environments.
+A generic logic environment.
+Saturation methods for global model-checking pushdown systems.
+Ontology-based multiple-choice question generation.
+Reasoning with extended Venn-Peirce diagrammatic systems.
+Creation of a goal-driven and reactive agent architecture.
+Improving fault coverage and minimising the cost of fault identification when testing from finite state machines.
+Knowledge engineering techniques for automated planning.
+Machine learning techniques for high dimensional data.
+Statistical issues in oncologic clinical drug development.
+A development method for trusted real-time kernels.
+Parallel and Hardware Implementations of Collision Detection Algorithms.
+Computational analysis and modelling of graph-structured neuroimaging data.
+Simulation program generation for an array processor.
+Network-provider-independent overlays for resilience and quality of service.
+Envisioning technology through discourse : a case study of biometrics in the National Identity Scheme in the United Kingdom.
+Project schedule optimisation utilising genetic algorithms.
+Structural traffic analysis for network security monitoring.
+Using text mining to identify crime patterns from Arabic crime news report corpus.
+Behavioural aspects of term-rewriting systems.
+Large-scale learning of discriminative image representations.
+Automated norm synthesis in planning environments.
+Towards AND/OR parallel logic programming.
+The role of symmetry features in connectionist pattern recognition.
+Supervised and unsupervised weight and delay adaptation learning in temporal coding spiking neural networks.
+An investigation into possible attacks on HTML5 IndexedDB and their prevention.
+Software tools for dialogue design.
+Advances in educational support for software design methods.
+A method for limited speech recognition on a small computer.
+Modelling and evaluating timing constraints in real-time systems.
+Exploiting uncertainty in nonlinear stochastic control problem.
+A high-performance, cost-effective parallel non-numerical processing VLSI architecture.
+Real-time guarantees in high-level agent programming languages.
+Development of unsupervised feature selection methods for high dimensional biomedical data in regression domain.
+Energy efficient cloud computing based radio access networks in 5G: design and evaluation of an energy aware 5G cloud radio access networks framework using base station sleeping, cloud computing based workload consolidation and mobile edge computing.
+HyperCourseware: the development of software tools and techniques to enable courseware management.
+Multilevel optimisation for computer vision.
+Energy saving through voltage optimisation & non-intrusive load monitoring in domestic house.
+APT : an automatic Arabic part-of-speech tagger.
+A technique for clarifying the implementation of relationships between objects to enhance software reuse.
+Machine learning applications in generative design.
+Evolutionary environmental modelling in self-managing software systems.
+An evaluation of an extant proposed new theory of computing based on information-theoretic principles and data compression.
+Supporting distributed realtime computing.
+Compositional behaviour and reliability models for adaptive component-based architectures.
+Code generation and structured architectures.
+Semantic labelling of road scenes using supervised and unsupervised machine learning with lidar-stereo sensor fusion.
+A new conceptual and operational framework for the switching of IT outsourcing providers.
+Analysis of spatiotemporal cardiac excitation data and stimulated Brillouin scattering data using nonlinear dynamics principles.
+Towards a Godement calculus for dinatural transformations.
+Taxonomies for software security.
+JMorven : a framework for parallel non-constructive qualitative reasoning and fuzzy interval simulation.
+Evolvable hardware platform for fault-tolerant reconfigurable sensor electronics.
+The development and application of heuristic techniques for the data mining task of nugget discovery.
+The Clausal Theory of Types.
+Designing for embodied reflection.
+Scalable collision detection for distributed virtual environments.
+Standard cell and full custom power-balanced logic : ASIC implementation.
+The application of artificial intelligence techniques to process identification and control.
+Multiprocessor virtual machine systems with special control unit organisation.
+A study of effective variational models and efficient numerical methods for image registration.
+Learning and approximation algorithms for problems motivated by evolutionary trees.
+Web-based strategies in the manufacturing industry.
+A cloud-based architecture for distributed processing in networked games.
+Software reliability prediction.
+Hardware and algorithm architectures for real-time additive synthesis.
+A framework for the management of changing biological experimentation.
+QoS oriented framework for link selection in heterogeneous wireless environments.
+Complexity reduction in artificial neural networks with an emphasis on genetic algorithm based optimisation techniques.
+Performance prediction for parallel database management systems.
+Optimised rendering of geometrically complex natural virtual environments.
+Development and exploration of a timbre space representation of audio.
+Myriad : a distributed machine vision application framework.
+Functional nucleic acids as substrate for information processing.
+Trusted execution: applications and verification.
+Portable compilation systems.
+Studies in the design and implementation of programming languages for symbol manipulation.
+Software-implemented attack tolerance for critical information retrieval.
+Model checking pointer safety in compiled programs.
+Nonlinear evolution equations and applications in optimal control theory.
+A hybrid MIMD/DF compiler for parallel processing.
+Feature extraction and clustering techniques for digital image forensics.
+An approach to the highway alignment development process using genetic algorithm based optimisation.
+The Design of Pneumatic Servo - Mechanisms Using Optimization Techniques.
+Protocol level solutions for the packet reordering problem.
+Computational characterisation of gold nanocluster structures.
+A connectionist model using topological representation of state space graphs for sequence recognition.
+Designing human-centred visualisations to support collaboration.
+Ontology module extraction and applications to ontology classification.
+Proof methods and pragmatics for parallel programming.
+An integrated model for citizens to adopt e-government services in the Kingdom of Saudi Arabia.
+Fourier-Motzkin methods for fault diagnosis in discrete event systems.
+An investigation on question answering for an online feedable Chatbot.
+Techniques of design optimisation for algorithms implemented in software.
+Operating system design for large personal workstations.
+Spatial integration in computer-augmented realities.
+Deep visual feature learning for vehicle detection, recognition and re-identification.
+A trading model and security regime for mobile e-commerce via ad hoc wireless networking.
+Parallelization of the atomic R-matrix computer programs.
+Applying scientific method to program debugging.
+The use of multi-aperture magnetic cores as analogue memory elements.
+The artificial evolution of adaptive behaviour.
+General and automatic visualizations.
+Analytic knowledge discovery techniques for ad-hoc information retrieval and automatic text summarization.
+Performance characterization of computational resources for time-constrained job execution in P2P environments.
+On the identification of security vulnerabilities.
+Discovering and managing similarity knowledge in temporal case-based reasoning systems.
+User driven design of real time passenger information solutions for supporting rural passengers in the context of disruption.
+On the induction of temporal structure by recurrent neural networks.
+A speculative execution approach to provide semantically aware contention management for concurrent systems.
+Using argumentation to improve classification in natural language problems.
+Unsupervised texture segmentation using multiresolution Markov random fields.
+Visualizing set relations and cardinalities using Venn and Euler diagrams.
+Higher-order frameworks for profiling and matching heterogeneous data.
+A cybernetic methodology to study and design human activities.
+Architecture aware parallel programming in Glasgow parallel Haskell (GPH).
+Design of an analog fuzzy robot navigator.
+Query answering in distributed RDF databases.
+Investigating the requirements of a pedagogy for programming.
+SVG 3D graphical presentation for Web-based applications.
+Hybrid scene characterisation applied to natural images.
+Adaptive probabilistic models for learning semantic patterns.
+The use of EM-based neural network schemes for modelling and classification.
+An intelligent framework for dynamic web services composition in the semantic web.
+Usability and user centred design in hybrid intelligent information systems.
+Examining the use of visualisation methods for the design of interactive systems.
+Acceleration techniques for photo realistic computer generated integral images.
+A computation model for parallelism : self-adapting parallel servers.
+Formal modelling and analysis of dynamic reconfiguration of dependable systems.
+On some multivariate control charts.
+Finite-state abstractions for probabilistic computation tree logic.
+Organisations as social networks: understanding proactive information behaviour.
+Changing the way the world thinks about computer security.
+Implementation of gaussian process models for non-linear system identification.
+A hybrid technique for tracking network structured multiple deformable objects.
+Laterality differences in memory and attention.
+Representation of case law for argumentative reasoning.
+High-resolution finite volume methods for hydraulic flow modelling.
+Cloud intrusion detection systems: fuzzy logic and classifications.
+A design environment for deadlock-free concurrent software.
+Motion analysis of cinematographic image sequences.
+A software approach to enhancing quality of service in Internet Commerce.
+Constraint specification by example in a meta-CASE tool.
+Parametric synthesis of human animation.
+Towards a virtual domain based authentication solution for the MapReduce application.
+Integrity constraints in deductive databases.
+Wizard : learning macro-actions comprehensively for planning.
+A thesis regarding the vehicle routing problem including a range of novel techniques for its solution.
+An investigation into MetaCASE and object-oriented software engineering.
+An investigation into the representation of data for the neural implementation of a handwritten static signature verification system.
+The design philosophy of a small automatic digital computer.
+Applications of information sharing for code generation in process virtual machines.
+Object recognition in infrared imagery using appearance-based methods.
+The challenge of eLearning for healthcare professionals : an exploration in rural Thailand.
+Non-orthogonal random waveform based multiuser communications.
+Neural network simulation of dynamic speech perception.
+An incremental execution environment.
+Asynchronous two-way relay networks.
+Low-overhead fault-tolerant logic for field-programmable gate arrays.
+Combining meta information management and reflection in an architecture for configurable and reconfigurable middleware.
+Example-based water animation.
+Cost-efficient resource management for scientific workflows on the cloud.
+Telling your story : autobiographical metadata and the semantic web.
+Robust facial landmark detection in the wild.
+Modelling users by classification : an example-based approach.
+Systems of concepts and their extraction from text.
+The Design of Data Base Management Systems Using Linear Programming Techniques.
+Information discovery for interoperable autonomous database systems.
+Topology based global crowd control.
+Chaos and information in dynamic neural networks.
+Decision procedures for families of deterministic pushdown automata.
+Statistical feature ordering for neural-based incremental attribute learning.
+The formal generation of models for scientific simulations.
+The selective use of gaze in automatic speech recognition.
+Selected problems in graph exploration by mobile agents with small memory.
+Politics and public opinion in China : the impact of the Internet, 1993-2003.
+Practical measurement-based modeling and rendering of surface diffraction.
+Discrete value-based bandwith provisioning & routing complexity in IP networks.
+A generic high-level specification language for non-functional properties of component-based systems.
+Articulated human tracking and behavioural analysis in video sequences.
+A probabilistic perspective on ensemble diversity.
+Magnetoresistance in constrained domain walls.
+Bootstrapping structure into language : alignment-based learning.
+Structure, randomness and complexity in quantum computation.
+Coherence in machine translation.
+Trajectory planning for autonomous underwater vehicles.
+Computational models for contrastive opinion mining and aspect extraction.
+Speaker verification using support vector machines.
+Discrete event calculus using Semantic Web technologies.
+Wireless sensor networks and their industrial applications.
+Unified development of automatically adapted interactions : the software engineering paradigm and a supporting implementation tool.
+An automated marking system for graphical user interfaces.
+Monitoring and analysis of network traffic for information security.
+Prosody resources and symbolic prosodic features for automated phrase break prediction.
+The influence of counterparty risk on financial stability in a stylized banking system.
+Learning control knowledge within an explanation-based learning framework.
+Recognition of human actions and interactions in video sequences.
+A user administered database system.
+An investigation into the generation, encoding and retrieval of CCTV-derived knowledge.
+Neural plasticity and the limits of scientific knowledge.
+Entropy evaluation and security measures for reliable single/multi-factor biometric authentication and biometric keys.
+Exploring traffic and QoS management mechanisms to support mobile cloud computing using service localisation in heterogeneous environments.
+Software design prototyping through transformations applied to informal design representations.
+Structured programming aid.
+Algorithms and lower bounds for testing properties of structured distributions.
+Interactive video-realistic character animation from 4D performance capture.
+Task formulation in usability testing.
+New approaches to operating system security extensibility.
+Sentiment Analysis for micro-blogging platforms in Arabic.
+A content centric computing platform for the home.
+Type projections over sef-describing data.
+Towards the neurocomputer : an investigation of VHDL neuron models.
+Responsive and emotive wearable technology: physiological data, devices and communication.
+Empirical assessment of patterns and guidelines for web design.
+Argumentation for statistical model selection.
+Critical computer animation : an examination of "practice as research" and its reflection and review processes.
+IMCAT : an approach for verifying model-based code generators for conformance to source modelling language semantics.
+Role of semantic indexing for text classification.
+Improving TCP behaviour to non-invasively share spectrum with safety messages in VANET.
+Acoustic approaches to gender and accent identification.
+An adaptive computing system.
+Optimization of stochastic systems.
+Database and data structure representation for the efficient construction and display of three dimensional polyhedra.
+Development of a spring-less RF MEMS switch.
+A framework for building self-adaptive and autonomic computing systems.
+Strongly typed evolutionary programming.
+Robust generation of 3D models from video footage of urban scenes.
+Foundations research in information retrieval inspired by quantum theory.
+Application and development of fieldbus : executive summary.
+Investigation into the wafer-scale integration of fine-grain parallel processing computer systems.
+PAGOdA: pay-as-you-go ontology query answering using a datalog reasoner.
+Computational tonality estimation : signal processing and hidden Markov models.
+Design and run-time requirements modelling for adaptive systems.
+An approach to pathfinding for real-world situations.
+Capturing proof process.
+Towards a high-level language specification for associative string processing.
+Parallel computation techniques for virtual acoustics and physical modelling synthesis.
+Graph layout using subgraph isomorphisms.
+A temporal database model using nested relations.
+Cellular distributed and parallel computing.
+Knowledge sharing among ideal agents.
+Developmental learning of preconditions for means-end actions from 3D vision.
+OntoSoS.BPA.ChM: a semantically-enriched and business process architecture-driven framework for change management in 'System of Systems' context.
+The simulation and control of integrated steam systems.
+Unsupervised learning of object detectors for everyday scenes.
+A framework for integrating and transforming between ontologies and relational databases.
+On the security of signature schemes and signcryption schemes.
+Microcontroller-based transient signal analysis and distributed system for intelligent process monitoring.
+A performance analysis of a hybrid relational-XML approach to store partially-structured data.
+A FIFO spin-based resource control framework for symmetric multiprocessing.
+Approximate inference: new visions.
+A framework for the transformation of the creative industries in a digital age.
+Design of Experiments for the Tuning of Optimisation Algorithms.
+Distributed recovery in fault-tolerant interconnected networks.
+A multi-paradigm query interface for an object-oriented database.
+Data-driven system dynamics modelling: model formulation and KPI prediction in data-rich environments.
+Real-time signal processing for flying height measurement and control in hard drives subject to shock and vibration.
+First-order logic applied to the description and derivation of programs.
+The circumstantial occurrence methodology : a proposed way forward in strategic knowledge engineering.
+Developing learner autonomy and process improvement in software engineering team projects.
+A static, transaction based design methodology for hard real-time systems.
+An investigation into formal models of change in artificial intelligence.
+Prediction of user behaviour on the Web.
+Barriers facing e-service adopting and implementation at local environment level in Nigeria.
+Evaluation of relational database views.
+Nonlinear analysis of speech from a synthesis perspective.
+Hybrid tractability of constraint satisfaction problems with global constraints.
+A middleware service for fault-tolerant group communications.
+Conditional Partial Order Graphs.
+Applying computational intelligence to a real-world container loading problem in a warehouse environment.
+A decision support system for supplier selection integrating analytical hierarchy process with operations research methods.
+Key success factors impacting foreign direct investment and technology transfer : a comparative study of Libya and Egypt.
+The development of an expert advisory system for the Aquired Immune Deficiency System (AIDS).
+Intuition in formal proof : a novel framework for combining mathematical tools.
+B Annotations in CriticalControl SystemsDevelopment.
+Hellenic Local Government Management System using IDEFO methodology.
+NETCODE : an XOR-based warning dissemination scheme for vehicular wireless networks.
+'Implicit creation' : non-programmer conceptual models for authoring in interactive digital storytelling.
+A multiple-agent systems approach for resource configuration in communications network.
+An investigation into the use, application and evaluation of intelligent agents.
+Modelling and analysis of parallel information systems.
+Design of external interfaces for the integration of a generic logistics and distribution centre with associated systems.
+Improving the Process of Model Checking through State Space Reductions.
+Argumentation as a practical foundation for decision theory.
+Example-based methods for natural language processing with applications to machine translation and preposition correction.
+Computational analysis of face images.
+Low density parity check coding.
+Uncertainty and social considerations for mobile assistive robot navigation.
+Probability models for information retrieval based on divergence from randomness.
+Speech segmentation and speaker diarisation for transcription and translation.
+Playful haptic environment for engaging visually impaired learners with geometric shapes.
+High-level synthesis using structural input.
+Intelligent automatic interpretation of active marine sonar.
+Structure-preserving matrix methods for computations on univariate and bivariate Bernstein polynomials.
+Highly scalable 2D model-based video coding.
+The relationship between visual interface aesthetics, task performance, and preference.
+An intelligent-agent approach for managing congestion in W-CDMA networks.
+A memory-aware scheduling framework for streaming applications on multicore systems.
+An analysis of total correctness refinement models for partial relation semantics.
+Joint DLL and PHY layer design in wireless communications.
+Variable ordering heuristics for binary decision diagrams.
+Older people's appropriation of computers and the Internet.
+A support framework for distributed conferencing systems.
+Reconstruction, localisation, and segmentation in medical images.
+LnCm fault model: complexity and validation.
+Self-organising distributed component software architectures.
+Vowel synthesis using feed-forward neural networks.
+Interaction-driven user interface personalisation for mobile news systems.
+A filing service for a close coupled distributed computer system.
+Fuzzy evolutionary approaches for bus and rail driver scheduling.
+Handling emergent conflicts in adaptable rule-based sensor networks.
+Framework for the adoption of online banking.
+Virtual environments for science education : a schools-based development.
+Simultaneous incremental neuroevolution of motor control, navigation and object manipulation in 3D virtual creatures.
+Requirement validation with enactable descriptions of use cases.
+A computational logic approach for Web site synthesis and management.
+Evolutionary combinatorial optimisation for energy storage scheduling, and web-based power systems analysis using PHP.
+Resource allocation via competing marketplaces.
+Robust speaker identification against computer aided voice impersonation.
+Modelling scientific discovery.
+Theory and simulation of a language-learning automaton.
+Human feedback in Statistical Machine Translation.
+Implementation and programming techniques for functional languages.
+A study of young people's use of ICT in domestic environments : an activity theory perspective.
+Design and evaluation of security mechanism for routing in MANETs : elliptic curve Diffie-Hellman cryptography mechanism to secure Dynamic Source Routing protocol (DSR) in Mobile Ad Hoc Network (MANET).
+A query evaluation model supporting parallelism for logic programs.
+Infrastructure support for adaptive mobile applications.
+Computational analytics for venture finance.
+General theory relating to the implementation of concurrent symbolic computation.
+Space charge measurement and analysis in low density polyethylene films.
+Interpretation and mining of statistical machine learning (Q)SAR models for toxicity prediction.
+Learning in mobile context-aware applications.
+Performance evaluation of active network-based unicast and multicast congestion control protocols.
+Human layout estimation using structured output learning.
+Extracting and exploiting interaction information in constraint-based local search.
+Teaching mobile robots to use spatial words.
+Towards efficient texture classification and abnormality detection.
+Computer simulations of particulate recording media.
+A series of case studies to enhance the social utility of RSS.
+Aspects of software process assessment and improvement.
+Optimising communication structure for model checking.
+Segmentation-based and region-adaptive lossless image compression underpinned by a stellar-field image model.
+Proximity coherence for chip-multiprocessors.
+Memristor based neural networks : feasibility, theories and approaches.
+Intelligent object-oriented modelling.
+References to graphical objects in interactive multimodal queries.
+Conceptual metaphor, human-computer interaction and music : applying conceptual metaphor to the design and analysis of music interactions.
+A framework for the definiton of a generative design pattern.
+The changing character of power projection and maritime security in a digital age.
+Coherent versus differential multiple-input multiple-output systems.
+Models of argument for deliberative dialogue in complex domains.
+Escalation and de-escalation of commitment to information systems projects: an approach-avoidance perspective.
+Source location privacy in wireless sensor networks under practical scenarios: routing protocols, parameterisations and trade-offs.
+Towards identifying salient patterns in genetic programming individuals.
+An expert system approach to chemical hazard assessment.
+Numerical processing of time-varying holographic information.
+Improving access to clinical supervision through action research with community nurses : what are the build and design criteria for an online virtual environment for clinical supervision?
+Domain independent generation from RDF instance date.
+Security assessment of radial distribution networks by digital computer: an operational and design aid for area Electricity Boards.
+Creativity support in games for motivated learning.
+Approximation algorithms for packing and buffering problems.
+A modular architecture for systematic text categorisation.
+The specification and implementation of an Extended Relational Model and its application within an Integrated Project Support Environment.
+Tutoring systems based on user-interface dialogue specification.
+Deductive synthesis of recursive plans in linear logic.
+How micro-evolution can guide macro-evolution : multi-scale search via evolved modular variation.
+Active vision for autonomous 3D scene reconstruction.
+A Software Development Process Model for Students of Object Technology.
+A pipelined asynchronous self-checking RISC-based processor.
+Analytic proof systems for classical and modal logics of restricted quantification.
+An intelligent soft-computing texture classification system.
+Automatic facial expression analysis.
+Design of Interpreters for Programming Languages.
+Development of a Prolog vibration expert system for rotational machinery management.
+The design of numerical algorithms for transputer systems.
+Semantics of a synchronous parallel programming language.
+Application of overlay techniques to network monitoring.
+Exploring a striped XML world.
+A custom coprocessor for matrix algorithms.
+Parallel algorithms for hypergraph partitioning.
+A CSP approach to action systems.
+A hierarchal framework for recognising activities of daily life.
+Co-operative coevolution for computational creativity: a case study in videogame design.
+Efficient verification of universal and intermediate quantum computing.
+Software architectures for collaborative virtual environments.
+Working with objects in collaborative virtual environments.
+Neural network analysis and simulation.
+Multi-modal biometric authentication with cohort-based normalization.
+Flexible high performance agent based modelling on graphics card hardware.
+An intelligent multi-component distributed architecture for knowledge management.
+Implementation and optimisation of microwave medical imaging based on the multiple-frequency DBIM-TwIST algorithm.
+Personal named entity linking based on simple partial tree matching and context free grammar.
+Logics for resource-bounded agents.
+Free surface flows over submerged obstructions.
+PrologPF : parallel logic and functions on the Delphi machine.
+Proportional-integral-plus control of nonlinear systems.
+A network-aware virtual machine placement approach for data-intensive applications in a cloud environment.
+Predictive control of multivariable systems.
+3D human action recognition and motion analysis using selective representations.
+Large scale applications on distributed-memory parallel computers using efficient numerical methods.
+Culture dimensions of information systems security in Saudi Arabia national health services.
+Context-driven methodologies for context-aware and adaptive systems.
+Malaria elimination modelling in the context of antimalarial drug resistance.
+A study of the modelling and storage of objects for materials selection.
+Design and performance validation techniques for distributed systems using timed petrinets.
+Zero-shot visual recognition via latent embedding learning.
+A methodology for providing a relational interface to access hierarchical or network databases.
+A mechanism to facilitate the accessibility of data within a manufacturing company.
+Computing surfaces : a platform for scalable interactive displays.
+Prefetching and clustering techniques for network based storage.
+The engineering of an object-oriented software development methodology.
+Incremental model-to-text transformation.
+Use of performance predictors in visual analytics.
+Formal verification of cryptographic protocols with automated reasoning.
+Truth maintenance in knowledge-based systems.
+Petri nets approach for the analysis of MASCOT interprocess communications.
+Evolution of batch-oriented COBOL systems into object-oriented systems through unified modelling language.
+Games, call-by-value and Featherweight Java.
+A digital learning system for tracking pattern features.
+Automatic creation of boundary-representation models from single line drawings.
+Developing error handling software for object-oriented geographical information.
+Continuous-variables quantum cryptography: asymptotic and finite-size security analysis.
+Developing artificial life simulations of vegetation to support the virtual reconstruction of ancient landscapes.
+Information technology project success in Saudi Arabian public organisations: Chief Information Officers' perceptions.
+Efficient and robust video coding : metadata-assisted and multiple description video coding.
+Distributed concurrent persistent languages: an experimental design and implementation.
+A hybrid system for root locus computing.
+Viable computing systems : A set theory decomposition of Anthony Stafford Beer's viable system model; Aspirant of surpassing autonomic computing.
+Partial evaluation and mix computation in logic programming.
+Types for modules.
+Adaptive mobile P2P malware detection using social interactions based digital footprints.
+Authorization and antichains.
+Investigate multilingual mobile learning applications.
+Statistics of gradient directions in natural images.
+Verifying information flow and metaprogramming in dynamically typed languages.
+Hard and soft computing techniques for non-linear modeling and control with industrial applications.
+Evaluation of the community response of ecological networks using complexity science.
+Improving network extensibility and scalability through SDN.
+A high-fidelity microwave driven two-qubit quantum logic gate in 43Ca+.
+Information Security Risk Management for Ubiquitous Computing.
+Clustering methods for requirements selection and optimisation.
+Application of physics-based image formation models to change detection in the context of indoor workplace video surveillance.
+A fuzzy logic-based system for soccer video scenes classification.
+Rapid generation of hardware functionality in DSP systems on heterogeneous platforms.
+Voice synthesis using the three-dimensional digital waveguide mesh.
+Engineering communicative distributed safety-critical systems.
+From trees to networks and back.
+Coupling, code reuse and open implementation in reflective systems.
+Autonomous drone network: non-intrusive control and indoor formation positioning.
+Active expert sourcing: knowledge extraction from domain specific information.
+Novel Static Ward - Leonard Control.
+Fitness landscape analysis of a class of NP-hard problems.
+Diffeomorphic image registration with applications to deformation modelling between multiple data sets.
+Neural networks-on-chip for hybrid bio-electronic systems.
+Navigational patterns in interactive multimedia.
+Conversion of notations.
+Efficient simultaneous encryption and compression of digital videos in computationally constrained applications.
+Incorporating inter-sample variability into cardiac electrophysiology simulations.
+Mobile CSPIIB.
+A modelling approach to the evaluation of computer system performance.
+Knowledge refinement in constraint satisfaction and case classification problems.
+Electrical conductance and gating of porin channels in lipid bilayers.
+Peer to peer information retrieval in a small world.
+Optimizing the construction of information retrieval test collections.
+Self-management middleware services for autonomic grid computing.
+Predictive analysis and optimisation of pipelined wavefront applications using reusable analytic models.
+Principled design of nature inspired optimizers-generalizing a formal design methodology.
+Animation manifolds for representing topological alteration.
+Call-by-push-value.
+Towards more effective testing of communications-critical large scale systems.
+Applying social capital theory to the management of IT outsourcing.
+Cooperative resource pooling in multihomed mobile networks.
+Using interaction data for improving the offline and online evaluation of search engines.
+Logical aspects of quantum computation.
+Verification of compiled code.
+Towards better medication adherence apps: preventing forgetfulness by facilitating the formation of routine-based remembering strategies.
+A conceptual basis for software engineering measurement.
+Requirements Dilemma.
+Selective sharing: a dialogical approach to ontology matching.
+The NN k technique for image searching and browsing.
+Studies in robot programming.
+Emotion inference from human body motion.
+Transformation bias in mixed effects models of meta-analysis.
+Understanding object-oriented frameworks.
+Networks, acts and artefacts: exploring actor network theory through letterboxing.
+A natural language processing approach to generate SBVR and OCL.
+Powering the academic Web.
+An assessment of factors influencing neurogaming with motion-onset visual evoked potentials (mVEPs).
+Genetic design of robust predictive control systems.
+Software tools for the rapid development of signal processing and communications systems on configurable platforms.
+Aspect of image quality and the Internet.
+An object-oriented framework for the implementation of search techniques.
+Learning visually grounded meaning representations.
+Optimising structured P2P networks for complex queries.
+Introducing corpus-based rules and algorithms in a rule-based machine translation system.
+Abstraction and meta-level reasoning for program transformation.
+Parametric studies of linear process systems.
+Multipeer transport services : from fundamentals towards realisation.
+Applications of the genetic algorithms optimisation approach in the design of circular polarised microstrip antennas.
+Adaptive methodologies for real-time skin segmentation and large-scale face detection.
+A physically-based muscle and skin model for facial animation.
+DNA computation.
+Semantic based support for visualisation in complex collaborative planning environments.
+Data confidentiality and risk management in cloud computing.
+A machine learning classification framework for early prediction of Alzheimer's disease.
+An analysis of the effects of neutrality on problem hardness for evolutionary algorithms.
+Grammar-based preprocessing for PPM compression and classification.
+A learning based approach to modelling bilateral adaptive agent negotiations.
+Capacity planning in virtualised environments using model driven engineering.
+Aspect Oriented Software Fault Tolerance for Mission Critical Systems.
+End-user programming in multiple languages.
+Exact computing in positional weighted systems.
+The application of software and safety engineering techniques to security protocol development.
+Designing appropriate icons for Taiwanese computer users.
+Logical and computational specification of rational agents.
+An adaptation of Modula-2 for distributed computing systems.
+Improved sequential and batch learning in neural networks using the tangent plane algorithm.
+Spatial relationship based scene analysis and synthesis.
+Towards developing and improving effective interaction design tools.
+Deterministic chaos in digital cryptography.
+A multiple representation approach to constraint satisfaction.
+Methodological support for developing complex information systems.
+Enhancing questionnaire design through participant engagement to improve the outputs of evaluation.
+Compact and low cost quantum cryptography.
+Performance analysis of wormhole switched interconnections networks with virtual channels and finite buffers.
+Differential dynamic programming methods for determining optimal control of non-linear systems.
+Audio equalisation using natural language.
+Multiobjective genetic programming for financial portfolio management in dynamic environments.
+Functionalization of endohedral fullerenes and their application in quantum information processing.
+Automatic conversion of serial to parallel programs and the organization of computer systems for their execution.
+Denotational semantic models for real-time LOTOS.
+Advanced methods for nonlinear system modelling and identification.
+Higher-order queries and applications.
+Automated assessment of English-learner writing.
+A gene regulatory network model for control.
+Hyper-heuristic approaches to automatically designing heuristics as mutation operators for evolutionary programming on function classes.
+Evolutionary multiobjective optimisation for expensive and complex problems.
+The use of proofs-as-programs to build an analogy-based functional program editor.
+Automatic Web widgets prediction for Web 2.0 access technologies.
+Statistical physics of error-correcting codes.
+Modelling entity instantiations.
+Computer-aided diagnosis of complications of total hip replacement X-ray images.
+Heuristics and metaheuristics in forward-chaining planning.
+Formalisation of component-based systems.
+Heterogeneous networking for beyond 3G system in a high-speed train environment: investigation of handover procedures in a high-speed train environment and adoption of a pattern classification neural-networks approach for handover management.
+Angelic processes.
+Techniques for ubiquitous reliable data storage.
+View integration using the entity-relationship model.
+Managing Hybrid Reasoning on the Semantic Web using a Blackboard System.
+Towards the development and understanding of collaborative mixed-reality learning spaces.
+Design of intelligent ensembled classifiers combination methods.
+Quantum computation beyond the unitary circuit model.
+Investigating TCP performance in mobile ad hoc networks.
+Design for a Symbol Processing Associative Store.
+Cultural impacts on web : an empirical comparison of interactivity in websites of South Korea and the United Kingdom.
+Knowledge sharing in the introduction of a new technology : psychological contracts, subculture interactions and non-codified knowledge in CRM systems.
+Performance analysis and optimisation of in-network caching for information-centric future Internet.
+EXPRESS : resource-oriented and RESTful Semantic Web services.
+Motion tracking in low resolution imagery.
+Enterprise adoption oriented cloud computing performance optimization.
+Ways of guided listening: embodied approaches to the design of interactive sonifications.
+Real-time rendering of animated crowd scenes.
+A computer-based holistic approach to managing progress of distributed agile teams.
+Recognising and localising human actions.
+Collaborating through sounds : audio-only interaction with diagrams.
+Variability Capture and Realization for Software Lines.
+Analysis of obligatory disclosure regarding individual's privacy.
+Computation over metadata in knowledge transfer systems.
+Cooperative control of relay based cellular networks.
+A block-based approach to document formatting and hypertext.
+The controllability of elastic systems.
+On a purely categorical framework for coalgebraic modal logic.
+Compiling concurrency correctly : verifying software transactional memory.
+Musical instrument modelling using digital waveguides.
+Nonconvex many-objective optimisation.
+Design of a microwave tomography system for medical imaging applications.
+Image motion analysis using inertial sensors.
+General queueing networks with priorities : maximum entropy analysis of general queueing network models with priority pre-emptive resume or head-of-line and non-priority based service disciplines.
+Performance and cost optimization of multi-tenant in-memory database clusters.
+Web commerce usability : a user centred design method for web commerce systems.
+Intelligent skin cancer detection using enhanced Particle Swarm Optimization.
+Reasoning about contingent events in distributed systems.
+Task scheduling and merging in space and time.
+Simulation and algorithm design of robust coding for a DVB-S based multimedia wireless system.
+Acoustic model selection for recognition of regional accented speech.
+Parallel computing, interval derivative methods, heuristic algorithms, and their implementation in a numerical solver, for deterministic global optimization.
+Aspects of practical implementations of PRAM algorithms.
+An investigation into the use of negation in Inductive Rule Learning for text classification.
+The application of artificial intelligence techniques to a sequencing problem in the biological domain.
+Reinforcement learning and reward estimation for dialogue policy optimisation.
+Machine learning and sentiment analysis approaches for the analysis of Parliamentary debates.
+Web information systems : a study of maintenance, change and flexibility.
+Investigation of a novel formal model for mobile user interface design.
+An effective services framework for sharing educational resources.
+Multiobjective selection hyper-heuristics using reinforcement learning.
+A refinement calculus for concurrent systems with communications.
+Mitigating interference coexistence issues in wireless sensor networks.
+Towards the development of a mathematician's assistant for the specification and implementation of parallel linear algebra software.
+Contribution structures for requirements traceability.
+A knowledge-level model for concurrent design.
+Optimising subdomain aspect ratios for parallel load balancing.
+On the efficiency of applicative algorithms.
+Continuous-valued probabilistic neural computation in VLSI.
+Website boundary detection via machine learning.
+User-interface design for software based sound synthesis systems.
+A prototype parallel multi-FPGA accelerator for SPICE CMOS model evaluation.
+Precision measurement of carbon isotope ratio in exhaled breath for the detection of Helicobacter pylori.
+Towards inducing a simulation model description.
+The application of visual programming techniques to the low-level programming process.
+Output feedback sliding mode control for time delay systems.
+Self-configurable software agents.
+Gaze control for visually guided manipulation.
+Specifying distributed applications : the limits of formality.
+An intelligent computer- based tutoring approach for the management of negative transfer.
+A novel fluid-solid-growth-transport framework for modelling the evolution of arterial disease: application to aneurysms.
+Scalable wireless sensor networks for dynamic communication environments : simulation and modelling.
+Scalability in planning with limited resources.
+Model-based transmission reduction and virtual sensing in wireless sensor networks.
+Reasoning about goal-plan trees in autonomous agents : development of petri net and constraint-based approaches with resulting performance comparisons.
+Unwritten procedural modeling with the straight skeleton.
+Automatic methods for program transformation.
+Modelling progression and heterogeneity in Alzheimer's disease.
+On the structuring of distributed systems : the argument for mobility.
+Service composition based on SIP peer-to-peer networks.
+A 3-D computer modelled animation system, implemented in an object-oriented message-passing environment.
+Extensions to Guided Local Search.
+Crowd modelling and simulation.
+Procedure - Calling Mechanisms.
+Accelerating interpreted programming languages on GPUs with just-in-time compilation and runtime optimisations.
+Investigating opportunities for instruction-level parallelism for stack machine code.
+Modelling and analysing software requirements and architecture decisions under uncertainty.
+Data analytics and methods for improved feature selection and matching.
+Lindam and Tiamat : providing generative communications in a changing world.
+A class of distance-preserving matrix optimization models in data mining.
+Carrier signal injection based sensorless control of permanent magnet brushless AC machines.
+End to end solutions for a droplet microfluidic autonomous experimentation system.
+Learning representations for speech recognition using artificial neural networks.
+The algebra of entanglement and the geometry of composition.
+Model checking of mobile systems and diagnosability of weakly fair systems.
+Object oriented modelling and simulation of manufacturing systems.
+An investigation into the use of ethnography and participatory design in identifying and meeting collaborative needs : a case study of software development teams at Airbus.
+Incorporating objects and surfaces into SLAM maps.
+The systems organisation of incremental computers.
+Towards understanding and improving the process of small group collaborative learning in software engineering education.
+Processor scheduling for transputer networks.
+The use of computers and interactive graphics for the design of general networks.
+Investigating the deployment of electronic customer relationship management readiness and maturity models in the Iranian banking industry.
+A quest for a better simulation-based knowledge elicitation tool.
+Multiframe image enhancement using self-delaying dynamic networks.
+Machine learning methods for face modelling and analysis in-the-wild.
+The family snapshot: parental representations of family and children on Instagram.
+Detection and classification of multiple person interaction.
+Reconstruction of extended environments from image sequences.
+Prototyping Z specifications in extended lisp.
+Improving motion segmentation with combined classifiers.
+Multiple adaptive mechanisms for predictive models on streaming data.
+On automatic emotion classification using acoustic features.
+Nominal lambda calculus.
+Using object-oriented databases to model hydrocarbon reservoirs.
+Design and implementation of a distributed control system.
+Heuristics for computing sparse solutions for ill-posed inverse problems in signal and image recovery.
+Fingerprint based biometric recognition allied to fuzzy neural feature classification.
+QoS provisioning in the next generation Internet : the role of the network edge.
+A theorem-proving approach to database integrity.
+Computational approaches for the analysis and modelling of filamentous growth and branching of Steptomyces coelicolor.
+Intelligent parallel controllers.
+HYDRA : parallel and distributed Swarm computer architecture.
+Unified field multiplier for GF(p) and GF(2 n) with novel digit encoding.
+Analogue VLSI neural networks for phoneme recognition.
+The qualitative behaviour of dynamic physical systems.
+Safety assurance of aviation systems.
+Child-centred technologies as learning tools within the primary classroom: exploring the role of tablets and the potential of digital pens in schools.
+Supervisor and searcher co-operation algorithms for stochastic optimisation with application to neural network training.
+Abstract data types and the integrated project support environment database.
+Automatic problem decomposition using co-evolution and modular neural networks.
+Effective meta-programming in declarative languages.
+Distributing video content over wireless networks using Device-to-Device (D2D) communication.
+Replica management and optimisation for data grids.
+Internal memory sorting and searching.
+SMT goes ABMS : developing strategic management theory using agent-based modelling and simulation.
+A comparative study of in-band and out-of-band VOIP protocols in layer 3 and layer 2.5 environments.
+Constructing highly-available distributed metainformation systems.
+Hardware / Software Interaction in Graphical Display Systems.
+Using use-case models to estimate software development cost.
+Use of formal methods in the development of safety critical control software.
+The persistence of analogies in design decision-making.
+Fixture Layout Optimisation Based on Genetic Algorithm.
+Synthesizing and editing photo-realistic visual objects.
+Noncoherent fusion detection in wireless sensor networks.
+ASKNet : automatically creating semantic knowledge networks from natural language text.
+Visualising software in cyberspace.
+A virtual machine for high integrity real-time systems.
+Prediction Oriented Description of Database Systems.
+Developing scaffolded virtual learning environments for people with autism.
+Investigation of the relationship between aesthetics and perceived usability in web pages.
+A neural-symbolic system for temporal reasoning with application to model verification and learning.
+A genetic algorithm for automatic optical inspection.
+Incremental activity and plan recognition for human teams.
+An investigation into tool support for the development of reusable software.
+A tenant-aware identification scheme for Cloud Computing: Universal Cloud Classification (UCC).
+The relationship between three dimensional human cephalic animation, audiences perception and emotional response.
+Unknowledge economies: digital discourse and its effect in potentially rendering all information effectively subjective.
+Personalised search for the Social Semantic Web.
+Scheduling analysis of fixed priority hard real-time systems with multiframe tasks.
+Approximation lower and upper bounds for a selection of combinatorial optimization problems.
+The Presentation of Static Information on Air Traffic Control Displays.
+Design and evaluation of a multi-output-layer perceptron.
+Multi-agent exploration of unknown areas.
+Developing energy-aware workload offloading frameworks in mobile cloud computing.
+Identifying success factors in a public sector project : an empirical study of the Malaysian School Computer Laboratory Project.
+Service-oriented grids and problem solving environments.
+Hypercomplex scaling and wavelet filters: their discovery and their application to colour vector image processing.
+A soft-systems-conceived model with knowledge representation for informations systems in the office environment.
+On the Möbius function and topology of the permutation poset.
+Simultaneous localisation and mapping with prior information.
+The design, implementation and evaluation of a desktop virtual reality for teaching numeracy concepts via virtual manipulatives.
+On a three-dimensional gait recognition system.
+A multi-axial optical fibre and linear polarizer based force and torque sensor for dexterous robotic fingertips.
+Financial methods for online advertising.
+Intelligent techniques for handling uncertainty in the assessment of neonatal outcome.
+Practical and theoretical aspects of FORTH software development.
+An investigation of delay fault testing for multi voltage design.
+Any time probabilistic sensor validation.
+Cognitive work analysis : extensions and applications in command and control.
+Context-aware Personal Learning Environment.
+An investigation of multi-objective hyper-heuristics for multi-objective optimisation.
+Optimal control of non-linear systems.
+Statistical methods for facial shape-from-shading and recognition.
+Electronic functional test generation and scheduling using an intelligent knowledge-based system and heuristic techniques.
+A multi-layered approach to information extraction from tables in biomedical documents.
+Face age estimation using wrinkle patterns.
+Multidimensional quadrature.
+Raft : automated techniques for diagnosing, reproducing, and fixing concurrency bugs.
+Active learning : an explicit treatment of unreliable parameters.
+Linked data technologies to support higher education challenges : student retention, progression and completion.
+Distant speech recognition of natural spontaneous multi-party conversations.
+Text knowledge : the Quirk Experiments.
+Information extraction across sentences.
+Real-time detection of auditory : steady-state brainstem potentials evoked by auditory stimuli.
+Collaborative sensemaking.
+Parallel data processing for semistructured data.
+Neuro-fuzzy predictive control of an information-poor system.
+Optimisation of correlation matrix memory prognostic and diagnostic systems.
+Activity recognition in monitored environments using utility meter disaggregation.
+A software environment for discrete event simulation.
+A computer architecture with system attributes on individual instruction operands.
+Studies on the generalisation of Gaussian processes and Bayesian neural networks.
+Aspects of local linear complexity.
+A computer-assisted method for planning urban bus services.
+Open middleware for the rapid development and experimentation of configurable multicast protocols.
+Designing a method for discovering expertise in cyber security communities: an ontological approach.
+Le ton fait la musique : analysis of expressions in speech.
+High-level neighbourhood-based programming abstractions for parallel processing.
+An automatic proof-generating translation from higher-order to first-order logic : with applications to linking HOL4 and ACL2.
+An incompressible flow simulation environment for parallel and distributed computers.
+Exploiting dynamic deployment in a distributed query processor for the grid.
+Explaining recommendations.
+Practical uniform interpolation for expressive description logics.
+Improving reuse in object oriented design methods.
+Reflective computation in concurrent object-based languages : a transformational approach.
+Adaptive algorithms for real-world transactional data mining.
+Combinatorial structures in quantum information.
+Collaborative object manipulation in immersive virtual environments.
+Context awareness for wearable computers.
+Database query systems for the casual user.
+From diversity to convergence : British computer networks and the Internet, 1970-1995.
+Interpreted dependency networks : a general framework for belief revision.
+The Gello Machine : a self organising neural network with modifiable architecture.
+A Bayesian expected error reducation approach to active learning.
+Reservoir Computing in materio.
+A system for translating a sequential non-block-structured language to a parallel block-structured language.
+An object orientated approach to concurrent/parallel processing activities at Roll-Royce Motor Cars.
+Integrated information model for managing the product introduction process.
+From learning to e-learning : mining educational data : a novel, data-driven approach to evaluate individual differences in students' interaction with learning technology.
+Geometric control for analysing the quantum speed limit and the physical limitations of computers.
+Benders decomposition for 0-1 integer programs and its applications.
+Why does soft matter?: exploring the design space of soft robotic materials and programmable machines.
+Using networked multimedia to improve customer service in the UK utility market.
+Semantic models for communicating processes with value-passing.
+An application of formal specification techniques.
+Contention management for distributed data replication.
+Distributed target tracking in wireless camera networks.
+Cross-database representation and transfer learning of facial expressions.
+Software engineering risk : understanding and management.
+Optimising multimodal fusion for biometric identification systems.
+Correct model-to-model transformation for formal verification.
+Matching algorithms for interest management in distributed virtual environments.
+Behavioural analytics & clinical diagnostics using body sensor networks.
+Optimal investigation of a HVDC transmission system.
+Toward Shared Understanding : An Argumentation Based Approach for Communication in Open Multi-Agent Systems.
+The impact of architecture on the performance of artificial neural networks.
+A chip multiprocessor for a large-scale neural simulator.
+Mathematical model of concurrent computation.
+Separate compilation and the ADA programming language.
+Design-by-contract for software architectures.
+An activity-centric approach to configuration work in distributed interaction.
+Automatic identification of textual uncertainty.
+Digital Control of Electrohydraulic Servos for Interactive Investigations of Objects.
+A multi-dimensional analytical framework for hierarchical reasoning in space and time.
+Non-linear adaptive equalization based on a multi-layer perceptron architecture.
+The nonlinear g mode in the reverse field pinch.
+Automatic software generation and improvement through search based techniques.
+Modelling metrical flux: an adaptive frequency neural network for expressive rhythmic perception and prediction.
+Investigation into computer modelling, simulation and control of the stirling engine.
+Train driver scheduling with windows of relief opportunities.
+Multi-chromosomal genetic programming.
+Proving termination using abstract interpretation.
+Enabling cooperative and negotiated energy exchange in remote communities.
+A model for schema evolution in object-oriented database systems.
+Analysis of low-level interaction events as a proxy for familiarity.
+A framework for the visualisation and control of ubiquitous devices, services and digital content.
+Biologically-inspired machine vision.
+Multi-sensor fusion for human-robot interaction in crowded environments.
+Brains in dialogue: investigating accommodation in live conversational speech for both speech and EEG data.
+Automated self-assembly programming paradigm.
+From underground hacking to ethical hacking.
+Precision analysis for hardware acceleration of numerical algorithms.
+End-to-end 3D video communication over heterogeneous networks.
+Resource-constrained re-identification in camera networks.
+Automatically explaining literature based discoveries.
+Semantic models for texturing volume objects.
+Diagnosing runtime violations of security and dependability properties.
+Supporting network visualisation, control and management in distributed virtual worlds.
+Online algorithms for markets.
+Creating meaningful bodily expression in virtual worlds: inquiring methods for designers.
+Non-linear discrete-time observer design by sliding mode.
+Language-independent pre-processing of large document bases for text classification.
+Inference graphs : a structural model and measures for evaluating knowledge-based systems.
+Selective crossover as an adaptive strategy for genetic algorithms.
+Functional programming and input/output.
+Nonlinear prediction and classification.
+Object detection and tracking in moving background video sequences.
+Grid application meta-repository system.
+Contributions to the maturation of software engineering as a discipline and a recognised profession.
+The use of examples by novices learning Prolog.
+An empirical analysis of takeover predictions in the UK : application of artificial neural networks and logistic regression.
+Explorations of knowledge management in a defence engineering environment.
+Ray tracing on multiprocessor systems.
+An artificial neural network approach to authorship determination.
+Personal projected displays.
+Undergraduates' Internet literacies.
+Decision-making and action selection in honeybees: a theoretical and experimental study.
+Reverse engineering packet structures from network traces by segment-based alignment.
+Supporting the transfer of learning of freehand gestures.
+Animation prototyping of formal specifications.
+Fast variational methods for non-Gaussian likelihoods.
+Operator functional state modelling and adaptive control of automation in human-machine systems.
+Composite and comprehensive multimedia electronic health care records.
+Database tools for multi-language program support environments.
+Creating a systems development methodology within a nomadic component intergration centre.
+Combining MAS and P2P systems : the Agent Trees Multi-Agent System (ATMAS).
+The contour tree image encoding technique and file format.
+Dynamic configuration of distributed multimedia components.
+Converting polynomial and rational expressions to normal form.
+Securing DICOM images through automatic selective encryption.
+Named entity recognition : a local grammar-based approach.
+Axis : integrating group communication and information sharing to support an evolving group memory.
+Data sampling strategies in stochastic algorithms for empirical risk minimization.
+Investigating how computational tools can improve the production process of stop-motion animation.
+Run-time monitoring of goal-oriented requirements specification.
+A logic-based modelling language and integer-programming framework for multicriteria optimisation.
+A phylogenetic approach for hardware design and ontogentic architectures : Towards efficient and reliable bio-inspired hardware systems.
+Computational logic : structure sharing and proof of program properties.
+HiperLan 2 for the wireless local loop.
+Computer vision based techniques for fall detection with application towards assisted living.
+Physiological measurement based automatic driver cognitive distraction detection.
+The development of a structured methodology for the construction and integrity control of spreadsheet models.
+Object recognition by region matching using relaxation with relational constraints.
+The role of context in image annotation and recommendation.
+Graphical foundations for dialogue games.
+Implementation of an asynchronous real-time programming language.
+The electrification of language : computer-assisted language analysis of the constuction of Michael Faraday's ideas.
+Robust phase-based speech signal processing from source-filter separation to model-based robust ASR.
+Autocoding methods for networked embedded systems.
+The analysis and acquisition of proper names for robust text understanding.
+Software reuse : a knowledge-based approach.
+Learning and memory in genetic programming.
+A knowledge-based system aproach to helping engineers understand codes of practice.
+Image classification : a study in age-related macular degeneration screening.
+System architecture metrics : an evaluation.
+Dynamic rule covering classification in data mining with cyber security phishing application.
+Selecting and tailoring of images for online news content: a mixed-methods investigation of the needs and behaviour of image users in online journalism.
+Graph transformation and pointer structures.
+An empirical investigation into the estimation of software development effort.
+Computational models of morphology's effects on cellular dynamics.
+Malware tolerance: distributing trust over multiple devices.
+An integrated framework for ensuring runtime quality in service-oriented systems.
+Supervised learning in multilayer spiking neural networks.
+Towards a pedagogy for teaching computer ethics in universities in Bahrain.
+Using structured analysis and design technique (SADT) for simulation conceptual modelling.
+Slicing statecharts.
+Improving the realism of ground movement models.
+Supervisory system functioning in memory tasks and interference from secondary tasks.
+Gaussian process modelling for audio signals.
+Investigations into the scheduling of events and modelling of interrupts in discrete event simulation.
+Technical aspects of data mining.
+A data dependency recovery system for a heterogeneous multicore processor.
+Application of pattern recognition techniques to the synthesis and testing of nonlinear mechanisms including servomechanisms.
+Integrated Storage Area Networks (INSTANT).
+Resource allocation policies for service provisioning systems.
+Real-time feature detection in mass spectrometer data.
+Smartphone-powered citizen science for bioacoustic monitoring.
+The contestation of code : a political economy of free software and open source.
+High fidelity sky models.
+Algorithmic theory of randomness and its applications.
+Bayesian networks for inference with geographic information systems.
+Emergence in active networks.
+Intelligent routing algorithm for mobile Internet Protocol Television.
+The effective application of syntactic macros to language extensibility.
+Instantaneous Frequency Estimation Techniques in Sensorless Controlof AC Machines.
+A new Concept in the design of finite Automata.
+A procedural level data flow concept for real-time programming.
+Estimation techniques for ARMA time series models and random geometric series.
+Exploring emergent phenomena : towards analysis and synthesis of emergent formations in complex systems.
+Broadband adaptive beamforming with low complexity and frequency invariant response.
+Physics- and engineering knowledge-based geometry repair system for robust parametric CAD geometries.
+Adaptive evolution in static and dynamic environments.
+Rapid saliency identification for selectively rendering high fidelity graphics.
+Novel Internet based methods for chemical information control.
+3-D surface modelling of the human body and 3-D surface anthropometry.
+The optimization of control systems by the hill-climbing technique.
+Formal specifications for digital systems.
+The development of a parallel database environment for use with corporate geographic information systems.
+Supporting management interaction and composition of self-managed cells.
+Repertory Grid Technique: a pragmatic approach to evaluating user experience in visualisation navigation.
+Task-based parallelism for general purpose graphics processing units and hybrid shared-distributed memory systems.
+Perceptually guided textural methods for image retrieval.
+Adaptive learning for modelling non-stationarity in EEG-based brain-computer interfacing.
+Trajectory based video analysis in multi-camera setups.
+Indexed strings for large scale genomic analysis.
+A surface-potential-based compact model for partially-depleted silicon-on-insulator MOSFETs.
+Connectionist architectures for language disorder simulation.
+Data-driven and demand-driven evaluation of logic programs.
+Human urban mobility in location-based social networks : analysis, models and applications.
+Development of a generalized computer program for gas turbine performance simulation.
+The organisation of technology and the technology of organisation : the Vehicle Mounted Data System and the provision of UK fire services.
+Language definition and compiler writing : The correctness of an applicative language system.
+Design, implementation and evaluation of a declarative object-oriented programming language.
+A time-based model for OCCAM.
+Overcoming the limitations of statistical parametric speech synthesis.
+Artificial intelligence for cognitive agents and intelligent environments.
+A hypermedia framework to support requirements analysis.
+Articulated statistical shape models for the analysis of bone destruction in mouse models of rheumatoid arthritis.
+Automatic 3D facial modelling with deformable models.
+Adaptive flexible instruction processors.
+Impacts of globalisation and awareness of higher education policy in adoption and use of ICT in Libyan universities.
+Dynamic buffer management policy for shared memory packet switches by employing per-queue thresholds.
+The information rate and other parameters of probabilistic context free grammars and their parsers.
+Computational approaches to depression analysis: from detection to intention analysis.
+An integrated data dictionary.
+Word processing in groupoids language theory and automatic structures.
+Optimizing deep learning networks using multi-armed bandits.
+On collapsible pushdown automata, their graphs and the power of links.
+Looking deep at people: towards understanding and generating humans in images with deep learning.
+Higher order neural networks for financial time series prediction.
+Design patterns to support the migration between event-triggered and time-triggered software architectures.
+Importance of embodiment towards co-operation in multi robot systems.
+Moving from image steganalysis to motion vector based video steganalysis.
+Correct synthesis and integration of compiler-generated function units.
+Logical representations for automated reasoning about spatial relationships.
+Maintaining consistency in client-server database systems with client-side caching.
+Cross layer ultrasound video streaming over mobile WiMAX and HSUPA networks.
+Logic design testing.
+An investigation into MAC layer frame clustering for wirelass LAN intrusion detection.
+Utilising presence in places to support mobile interaction.
+Quarc : an architecture for efficient on-chip communication.
+An Aggregation Alogorithm for Multi-Stage Stochastic Quadratic Programs.
+Cryptographic schemes based on elliptic curve pairings.
+Spiky RBN: a sub-symbolic artificial chemistry.
+Management of object-oriented action-based distributed programs.
+Improving one-handed interaction with touchscreen smartphones.
+Parallel quantum computing: from theory to practice.
+An environment for non-functional oriented development of distributed configurable architectures.
+Networks & disputes.
+Robust subspace learning for static and dynamic affect and behaviour modelling.
+Player profiling and modelling in computer and video games.
+Synthesis of embedded supervisory controllers for discrete event systems.
+Semantic mapping of road scenes.
+An entagled Bayesian gestalt : Mean-field, Monte- Carlo and Quantum Inference in Hierarchical Perception.
+English as a second language user's information interaction in an e-governmental context.
+Video annotation: the role of specialist text.
+GPRM : a high performance programming framework for manycore processors.
+High level behavioural modelling of boundary scan architecture.
+Continuous evaluation framework for software architectures: an IoT case.
+An approach to scalable parallel programming.
+Adaption of reference patterns in word-based speech recognition.
+Augmenting the virtual : model, architecture and techniques for the representation of delay-induced phenomena in collaborative virtual environments.
+A method of program refinement.
+Extending access through touch : a specification for a haptic graphic display.
+Communication and control in distributed computer systems.
+Everything integrated : a framework for associative writing in the Web.
+Intrusion detection for communication network security in power systems.
+Investigation of the process and practice of animatronics.
+Computer based writing support for dyslexic adults using language constraints.
+Formal semantics for LIPS (Language for Implementing Parallel/distributed Systems).
+Make Grid systems IPv6-enabled and provide mobility support in Grid systems based on mobile IPv6.
+Software for a linked computer system.
+Dynamic data placement and discovery in wide-area networks.
+Experimental and theoretical techniques for quantum-enhanced metrology and optical quantum information processing.
+Sound spotting techniques using auditory models and self-organising maps.
+Network fluctuation as an explanatory factor in the evolution of cooperation.
+Arabic text to Arabic sign language example-based translation system.
+Augmenting visual perception with gaze-contingent displays.
+Tone mapping for high dynamic range images.
+Improving Internet path performance through detour routing.
+Hierarchies for efficient clausal entailment checking : with applications to satisfiability and knowledge compilation.
+Parallel and distributed simulation of timed Petri nets.
+Tools for discovery, refinement and generalization of functional properties by enumerative testing.
+A knowledge-based microcontroller software development system.
+Asynchronous VLSI design.
+Tracing fine-grained provenance in stream processing systems using a reverse mapping method.
+Supervised algorithm selection for flow and other computer vision problems.
+Improving automated layout techniques for the production of schematic diagrams.
+Loudspeaker compression-driver phase-plug design.
+Automatic facial age estimation.
+Computer-aided mangement of ADA systems.
+Scalable semi-supervised grammar induction using cross-linguistically parameterized syntactic prototypes.
+A visual framework for formal systems development using interval temporal logic.
+Mining real-world networks in systems biology and economics.
+Authoring access control policies with controlled natural language.
+A critical review of physical layer security in wireless networking.
+A co-ordinated business object approach for supporting tactical level management decisions.
+Improving cache utilisation.
+Audio-visual speech processing for multimedia localisation.
+Effectiveness of explanation facilities for intelligent systems.
+Volume graphics : field-based modelling and rendering.
+Probabilistic relational data mining with aggregates and hierarchies.
+Semantic clustering mechanisms for communication in wireless sensor networks.
+Investigating into cloud resource management mechanisms.
+Temporal difference learning in complex domains.
+An architectural framework for co-operative dialogue.
+Effective design, configuration, and use of digital CCTV.
+Investigation and development of efficient integer and integer goal programming systems.
+Graph network link analysis for Web service composition.
+Search satisfaction: choice overload, variety seeking and serendipity in search engine use.
+Nonlinear systems and cellular maps.
+Stochastic simulation of P2P VoIP network reconfiguration using graph transformation.
+A grid computing framework for commercial simulation packages.
+Operationalising the simulation theory of understanding others for social robots.
+An investigation of the factors affecting the lifecycle costs of COTS-based systems.
+Modelling of radio wave propagation using Finite Element Analysis.
+Unsupervised neural networks for visualisation of data.
+Sprite learning and object category recognition using invariant features.
+Computation of approximate welfare-maximizing correlated equilibria and pareto-optima with applications to wireless communication.
+Some Aspects of Simple Cellular Arrays.
+The practice of everyday (virtual) life: a participatory and performative artistic enquiry.
+Active capability support for cooperation strategies in cooperative information systems.
+Statistical methods on automatic aircraft recognition in aerial images.
+Reconfigurable resource management in grid computing.
+Management and programming of reconfigurable hardware resources.
+Computational analysis of eukaryotic metatranscriptomes from diverse marine environments.
+Interpretational overhead in system software.
+A security framework for detecting enterprise-wide attacks in computer networks.
+The utility of analogy in systems sciences.
+Intuitionistic fuzzy XML query matching and rewriting.
+Studies in Stochastic Control Theory.
+Logic for natural language analysis.
+Oscillations in nonlinear feedback systems.
+A domain specific language for dynamic interest management within virtual environments.
+Achieving privacy-preserving distributed statistical computation.
+Detecting TCP-based applications using packet size distributions.
+Navigating social systems: information behaviour in refugee integration.
+Qualitative representation and reasoning for spatial and spatio-temporal systems.
+Write errors in exchange coupled Bit Patterned Media.
+Dynamic priority management strategies of high-speed Internet services.
+Hybrid probabilistic broadcast schemes for mobile ad hoc networks.
+Robust portfolio optimisation using risk measures and applications.
+Dynamic user profiling for search personalisation.
+The architecture and acuity of critical systems thinking.
+Groupware design : principles, prototypes, and systems.
+Expert systems techniques for statistical data analysis.
+Compositional verification of model-level refactorings based on graph transformations.
+Priority in process calculi.
+Large scale agent interactions : mathematical modelling and simulation.
+Service-oriented grid computing in engineering optimisation and design search.
+The re-eduation of upper limb movement post stroke using iterative learning control mediated by electrical stimulation.
+Context-aware aided parking solutions based on VANET.
+Parallel persistent object-oriented simulation with applications.
+Extensions to the support vector method.
+Understanding and supporting collaborative sensemaking in collaborative information seeking.
+Fault-tolerance for collaborative strong group communication.
+Development of amorphous SiC based resistive memories.
+Computer games use in an educational system.
+Knowledge acquisition from user reviews for interactive question answering.
+Semi-supervised lexical acquisition for wide-coverage parsing.
+Language identification using text, audio and video feature mapping.
+Multiresolution image modelling and estimation.
+Modelling and analysis of resource management schemes in wireless networks : analytical models and performance evaluation of handoff schemes and resource re-allocation in homogeneous and heterogeneous wireless cellular networks.
+Efficient extraction of semantic information from medical images in large datasets using random forests.
+Spatially structured cognitive models of semantic information : the implications for computerised databases.
+Ray tracing methods fo hybrid global illumination algorithms.
+Expert systems for polymer characterisation.
+The influence of intrinsic perceptual cues on navigation and route selection in virtual environments.
+Second-order algebraic theories.
+Implicit, view-invariant modelling of 3D non-rigid objects.
+An approach to implementing cloud service oriented legacy application evolution.
+Vision-based neural network classifiers and their applications.
+WEBFRAME : a framework for informing web developers' methodology selection.
+An object-oriented architecture for the multilingual generation of instructions : supporting knowledge re-use and user task performance.
+Receiver architectures and algorithms for MIMO-OFDM WLANs.
+Computer aided reliability based design of ring-stiffened cylindrical shells under external pressure.
+Object-oriented query language design and processing.
+A cross-linguistic study of requestive speech acts in email communication.
+Using subgoal chaining to address the local minimum problem.
+Pilot contamination mitigation for massive MIMO system using novel channel estimation techniques.
+Fuel pump motor-drive systems for more electric aircraft.
+The application of workflows to digital heritage systems.
+Data driven low-level object detection and segmentation.
+Cheap deforestation for non-strict functional languages.
+Extensions and applications of dynamic epistemic logic.
+Performance issues of variability design in embedded system application families.
+Binary sequences with prescribed autocorrelations.
+Assessing the reliability of digital evidence from live investigations involving encryption.
+Delivering the benefits of persistence to system construction and execution.
+Ensuring the real-time behaviour of expert systems.
+Targeted feedback collection for data source selection with uncertainty.
+Complexity management for video encoders.
+Semantic Web technologies in the provision of personalised patient education.
+Using context to integrate hypermedia with information retrieval systems.
+Hardware design for content addressable data-bases.
+A formal framework in VDM for the specification of parallel discrete event simulation.
+The use of multimedia in telecare systems to improve the performance of users with different cognitive skills.
+Reasoning about systems with evolving structure.
+Model-based high-density functional diffuse optical tomography of human brain.
+Spatial properties of online social services : measurement, analysis and applications.
+Visual scene recognition with biologically relevant generative models.
+Computer-aided localisation, segmentation and quantification of focal liver lesions in contrast-enhanced ultrasound.
+Modelling of tumour-induced angiogenesis.
+Application of digital computers to on-line optimisation.
+Adaptive control for real-time dynamic substructuring tests.
+Adaptive spectral analysis for speech-sound recognition.
+Generic silicon architectures for encryption algorithm.
+Cooperative heuristics for autonomous agents : an artificial intelligence perspective.
+Formal relationships in sequential object systems.
+Ensemble meta-learning for regression.
+New routes to HCI: a transdisciplinary approach.
+Computer control of a distributed multi-machine system.
+Neighbour discovery and distributed spatio-temporal cluster detection in pocket switched networks.
+Interactive multimedia : an investigation into its potential for communicating ideas and arguments.
+An exploratory investigation into personality characteristics associated with systems development team roles.
+The rôle of metaphor in the teaching of computing : towards a taxonomy of pedagogic content knowledge.
+Dynamic editable models of fire from video.
+Development of machine learning techniques for characterising changes in time-lapse resistivity monitoring.
+Space-variant image compression for gaze-contingent stereoscopic displays.
+Automated generation of high-integrity test suites from graphical specifications.
+Model-driven approaches to analysing time- and location-dependent access control specifications.
+Program transformation of embedded systems.
+Dialogue structure models : an engineering approach to machine analysis and generation of dialogue.
+Statistical parametric speech synthesis based on sinusoidal models.
+An analysis of certain storage allocation policies.
+Architectures for Embodied Imagination.
+Problem hardness for randomized search heuristics with comparison-based selection : a focus on evolutionary algorithms.
+The Eigensolution of symmetric matrices on distributed memory computers.
+Making navigation easier in object-oriented programming systems.
+Estimating general motion and intensity from event cameras.
+Machine learning for high-level social behaviour.
+Factors affecting spacial awareness in non-stereo visual representations of virtual, real and digital image environments.
+Inductive learning of answer set programs.
+Unobtrusive and personalised monitoring of Parkinson's disease using smartphones.
+Predicting the content of peer-to-peer interactions.
+A data-driven framework for investigating customer retention.
+Investigation of a teleo-reactive approach for the development of autonomic manager systems.
+Personalising learning with dynamic prediction and adaptation to learning styles in a conversational intelligent tutoring system.
+An interactive inventory simulation model.
+A study of the transient response of a control system having an intentional non-linearity.
+An investigation of nonlinear speech synthesis and pitch modification techniques.
+The source of individual differences in face recognition.
+Visual analysis of large, time-dependent, multi-dimensional smart sensor tracking data.
+Speed Sensorless Control for Induction Motor Drives with AI-Based MRAS.
+Increasing service visibility for future, softwarised air traffic management data networks.
+A computer flowsheeting programme incorporating algebraic analysis of the problem structure.
+An extensibly dynamically typed object orientated language with an application to model transformations.
+Provision of adaptive and context-aware service discovery for the Internet of Things.
+A Conversational Problem Solving System Represented as Procedures with Natural Language Conceptual Structure.
+Simulation of complex microstructural geometries using X-FEM and the application to solder joint lifetime prediction.
+Enhancing user experience with olfaction in virtual reality.
+Virtual memory on a many-core NoC.
+Characterisation of the in-vivo terahertz communication channel within the human body tissues for future nano-communication networks.
+A framework for authoring databases based on the WebDAV protocol : WebDAD.
+Real-time processor architectures for worst case execution time reduction.
+Evolution and learning in heterogeneous environments.
+Animal-computer interaction: designing specialised technology with canine workers.
+Towards efficient big data processing in data centres.
+Complexity issues in general purpose parallel computing.
+Mobile learning evaluation : the development of tools and techniques for the evaluation of learning exploiting mobile devices through the analysis of automatically collected usage logs - an iterative approach.
+Self-adaptive containers: a novel framework for building scalable QoS-aware software with low programmer overhead.
+Performance evaluation of systems of concurrent evaluation.
+Mobile network and cloud based privacy-preserving data aggregation and processing.
+Computational model of visual attention : integrative approach.
+Parallel algorithms for MIMD parallel computers.
+Intelligent associations selection in intelligent inhabited environments and artefacts.
+Algorithmic and complexity aspects of simple coalitional games.
+Automatic template creation for information extraction.
+Improving the performance and scalability of patten subgraph queries.
+Investigation of a computer-aided detection solution for breast focal asymmetry.
+Abstract interpretation of functional languages: from theory to practice.
+Robust surface modelling of visual hull from multiple silhouettes.
+Whole system railway modelling.
+Low cost motion tools for animation.
+A semi-supervised learning approach to interactive visual computing.
+Internet protocol - based information systems : an investigation into integration issues and iterative organisational change strategies.
+Image segmentation using local surface fitting.
+Topic indexing and retrieval for open domain factoid question answering.
+A modular, open-source information extraction framework for identifying clinical concepts and processes of care in clinical narratives.
+On the synthesis of integral and dynamic recurrences.
+Inferring the geolocation of tweets at a fine-grained level.
+Speculative parallelisation with dynamic data structures.
+A portable natural language interface from Arabic to SQL.
+Translation of APL to other high-level languages.
+Selective rendering for high-fidelity graphics.
+Program analysis and scheduling for a synchronous multiprocessor machine.
+Employing variation in the object of learning for the design-based development of serious games that support learning of conditional knowledge.
+Computing and estimating information leakage with a quantitative point-to-point information flow model.
+BOR2G: Building Optimal Regularised Reconstructions with GPUs (in cubes).
+Dynamic flexible constraint satisfaction and its application to AI planning.
+A multi-agent system for hypermedia information discovery on the WWW.
+Null controllability of a class of nonlinear systems.
+Classification and enumeration of finite semigroups.
+On emotion, learning and uncertainty : a cognitive modelling approach.
+Generic reusable business object modelling.
+Empirical assessment of extreme programming.
+Supporting webpage revisiting with history data and visualization.
+Paraphrase identification using knowledge-lean techniques.
+Analysing web-based malware behaviour through client honeypots.
+Immaculate depth perception: recovering 3D scene information via depth completion and prediction.
+Multi-objective genetic programming optimal search for feature extraction.
+A theoretical study of quantum memories in ensemble-based media.
+The development of a BPO-IT framework.
+Mechanism selection for multi-robot task allocation.
+The development and application of a simulation system for diffusion-weighted MRI.
+High frequency internet protocol for wide area networks.
