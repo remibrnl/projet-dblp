@@ -44,19 +44,26 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 				// debut nouvelle reference
 
 				if (current_ref == nullptr) current_ref = new Reference(i_reference);
+
+				continue;
 			}
 			else if (line.find("</ref>") != string::npos) {
 				// fin reference
 
 				references->push_back(current_ref);
+				current_ref = nullptr;
 
 				i_reference++;
+
+				continue;
 			}
 
 			for (auto tag : tagNames) {
 
 				if (line.find(tag) != string::npos) {
-					current_ref->AddTag(new Tag(tag, line));
+					current_ref->AddTag(new Tag(tag, line), tag);
+
+					continue;
 				}
 			}
 		}

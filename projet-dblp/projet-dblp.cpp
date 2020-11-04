@@ -40,12 +40,12 @@ int main(int argc, char* argv[])
 
     refs = fileParser.parseFile(0, tags);
 
-    for (auto ref : *refs) {
+    /*for (auto ref : *refs) {
         auto ref_tags = ref->getTags();
         for (auto tag : ref_tags) {
-            cout << tag->getSentence();
+            cout << tag->getSentence() << endl;
        }
-    }
+    }*/
 
     //std::cout << left << "," << right << std::endl;
 }

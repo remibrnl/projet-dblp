@@ -32,7 +32,7 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 	else {
 		this->element_to_parse = sentence_to_parse;
 	}
-	cout << this->element_to_parse;
+	//cout << this->element_to_parse;
 	// initiate the 2-gram matrix
 
 	for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {
@@ -114,6 +114,10 @@ int Tag::indexesTwoGram(std::string twogram)
 	else if (rightc >= 48 && rightc <= 57) {
 		index += rightc - 21;
 	}
+	else {
+		index = -1;
+	}
+
 	return index;
 }
 
@@ -143,8 +147,12 @@ void Tag::generateTwoGramMatrix(string toParse)
 
 		
 		indexToIncrement = indexesTwoGram(twogramList.at(i));
+		
+		if (indexToIncrement == -1) continue;
+
 		cout << twogramList.at(i) << ",";
 
 		two_gram_matrix[indexToIncrement] += 1;
 	}
+	cout << endl;
 }
