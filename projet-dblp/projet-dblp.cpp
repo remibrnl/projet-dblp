@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "Tag.h"
+#include "FileParser.h"
 
 int main(int argc, char* argv[])
 {
@@ -17,14 +18,34 @@ int main(int argc, char* argv[])
 }
 
     Tag test();*/
-
+    /*
     Tag testtag("author", "Le test se Fait bIeN");
 
     string teststr = "AA";
 	string toParse = "Le test se Fait bIeN";
     int left = 0;
     int right = 0;
+    */
 
+    string url = "test_parser.txt";
+
+    FileParser fileParser(url);
+
+    vector<Reference*>* refs;
+
+    vector<string> tags;
+
+    tags.push_back("author");
+    tags.push_back("title");
+
+    refs = fileParser.parseFile(0, tags);
+
+    for (auto ref : *refs) {
+        auto ref_tags = ref->getTags();
+        for (auto tag : ref_tags) {
+            cout << tag->getSentence();
+       }
+    }
 
     //std::cout << left << "," << right << std::endl;
 }
