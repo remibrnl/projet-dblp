@@ -21,7 +21,7 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-vector<Reference*>* FileParser::parseFile(string path, int limit, vector<string*> tagNames)
+vector<Reference*>* FileParser::parseFile(string path, int limit, vector<string> tagNames)
 {
 	vector<Reference*>* references;
 
@@ -56,10 +56,9 @@ vector<Reference*>* FileParser::parseFile(string path, int limit, vector<string*
 
 			for (auto tag : tagNames) {
 
-				if (line.find(*tag) != string::npos) {
-					current_ref->AddTag(new Tag(*tag, line));
+				if (line.find(tag) != string::npos) {
+					current_ref->AddTag(new Tag(tag, line));
 				}
-				//else break;
 			}
 		}
 	}
