@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 
     refs = fileParser.parseFile(0, tags);
 
-    int* matrix;
+   
 
     for (auto ref : *refs) {
         auto ref_tags = ref->getTags();
