@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <fstream>
 #include <vector>
 #include "Reference.h";
 
@@ -10,16 +11,20 @@ class FileParser
 {
 	private:
 		string path_to_file;
+		//iostream input_stream;
 
 	public:
 		FileParser();
-		FileParser(string path);
+		FileParser(string path_to_file);
+		FileParser(const FileParser& copy);
 
 		string getPath();
-		string setPath();
+		void setPath(string path_to_file);
 
-		Reference* createReference();
-		vector<Reference> parseFile(int numberToCreate = -1);
+		// pas sur ??
+		Reference& create_reference(iostream file);
+
+		vector<Reference>& parseFile(int numberToCreate, vector<Tag> tags_list);
 
 };
 

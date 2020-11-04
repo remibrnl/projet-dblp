@@ -34,6 +34,21 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 	generateTwoGramMatrix(sentence_to_parse);
 }
 
+Tag::Tag(const Tag& copy)
+{
+	name_tag = copy.name_tag;
+	element_to_parse = copy.element_to_parse;
+
+	// matrix copy
+
+	int size = CHAR_NUMBER * CHAR_NUMBER;
+
+	for (int i = 0; i < size; i++) {
+		two_gram_matrix[i] = copy.two_gram_matrix[i];
+	}
+
+}
+
 string Tag::getName()
 {
 	return this->name_tag;

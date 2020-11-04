@@ -50,6 +50,11 @@ class Reference
 		Reference(int Number, string URL_link, vector<string> tagNames, vector<Tag*> tagList);
 
 		/**
+			\brief Copy constructor
+		*/
+		Reference(const Reference& copy);
+
+		/**
 			\brief Destructor of the class
 			\post All the Tags of the Array are deleted
 		*/

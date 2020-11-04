@@ -39,6 +39,11 @@ public:
 	*/
 	Tag(string name_tag, string sentence_to_parse);
 
+	/**
+		\brief Copy constructor
+	*/
+	Tag(const Tag& copy);
+
 	/**	
 		\brief Getter on the name of the Tag
 		\return The name of the tag parsed
