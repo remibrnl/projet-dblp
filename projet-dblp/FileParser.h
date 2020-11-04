@@ -3,7 +3,9 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "Reference.h"
+#include <fstream>
+#include <algorithm>
+#include "Reference.h";
 
 using namespace std;
 
@@ -24,7 +26,7 @@ class FileParser
 		// pas sur ??
 		Reference& create_reference(iostream file);
 
-		vector<Reference>& parseFile(int numberToCreate, vector<Tag> tags_list);
+		vector<Reference*>* parseFile(int limit, const vector<string>& tagNames);
 
 };
 

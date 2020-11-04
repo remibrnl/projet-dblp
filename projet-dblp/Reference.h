@@ -72,6 +72,6 @@ class Reference
 		*/
 		void DelTag(Tag* tag = nullptr, string tagName = nullptr);
 		
-
+		vector<Tag*> getTags();
 };
 

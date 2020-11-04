@@ -85,9 +85,7 @@ void Reference::DelTag(Tag * tag, string tagName)
 	}
 }
 
-
-
-
-
-
-;
+vector<Tag*> Reference::getTags()
+{
+	return tags;
+}

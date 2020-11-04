@@ -141,8 +141,9 @@ void Tag::generateTwoGramMatrix(string toParse)
 	int indexToIncrement = 0;
 	for (int i = 0; i < twogramList.size(); i++) {
 
-		cout << twogramList.at(i)<<",";
+		
 		indexToIncrement = indexesTwoGram(twogramList.at(i));
+		cout << twogramList.at(i) << ",";
 
 		two_gram_matrix[indexToIncrement] += 1;
 	}

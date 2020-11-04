@@ -20,38 +20,48 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-/*vector<Reference>& FileParser::parseFile(int numberToCreate, vector<Tag> tags_list)
+vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNames)
 {
-	vector<Reference> references_vect;
+	vector<Reference*>* references = new vector<Reference*>;
 
-	// open file
-	ifstream input_stream(path_to_file);
+	ifstream fileStream;
 
-	if (!input_stream) {
-		if (!input_stream.is_open()) std::cout << "EXCEPTION FSTREAM A FAIRE : le fichier n'a pas été ouvert correctement" << std::endl;
+	fileStream.open(path_to_file);
 
-		int i = 0;
+	if (fileStream.is_open()) {
 
-		// on veut parcour les références une par une
-		while (true) {
-			// creation d'une référence
-			Reference reference(i);
+		Reference* current_ref = new Reference(0);
+		int i_reference = 1;
 
-			// lecture des différents tags ?
-			for (Tag tag : tags_list) {
+		while (!fileStream.eof()) {
+			string line;
+			
+			getline(fileStream, line);
 
-				Tag* new_tag = new Tag(tag);
+			if (line.empty()) break;
 
-				// lire les balises puis envoyer les string dans new_tag.genereatetwogrammatrix
+			if (line.find("<ref>") != string::npos) {
+				// debut nouvelle reference
 
+				if (current_ref == nullptr) current_ref = new Reference(i_reference);
+			}
+			else if (line.find("</ref>") != string::npos) {
+				// fin reference
 
-				reference.AddTag(new_tag);
+				references->push_back(current_ref);
+
+				i_reference++;
 			}
 
+			for (auto tag : tagNames) {
+
+				if (line.find(tag) != string::npos) {
+					current_ref->AddTag(new Tag(tag, line));
+				}
+			}
 		}
 	}
-
-	input_stream.close();
-
-	return;
-}*/
+	fileStream.close();
+	
+	return references;
+}
