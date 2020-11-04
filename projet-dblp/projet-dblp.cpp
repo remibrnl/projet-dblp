@@ -40,12 +40,17 @@ int main(int argc, char* argv[])
 
     refs = fileParser.parseFile(0, tags);
 
-    /*for (auto ref : *refs) {
+    int* matrix;
+
+    for (auto ref : *refs) {
         auto ref_tags = ref->getTags();
         for (auto tag : ref_tags) {
-            cout << tag->getSentence() << endl;
+            
+            tag->getTwoGramMatrix();
+
+            cout << endl;
        }
-    }*/
+    }
 
     //std::cout << left << "," << right << std::endl;
 }

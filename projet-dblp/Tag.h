@@ -5,6 +5,7 @@
 #include <regex>
 
 #define CHAR_NUMBER 37
+#define TOTAL_CHAR_NUMBER 1369
 
 using namespace std;
 
@@ -13,7 +14,7 @@ class Tag
 private:
 	string name_tag;
 	string element_to_parse;
-	int two_gram_matrix[CHAR_NUMBER*CHAR_NUMBER];
+	int two_gram_matrix[TOTAL_CHAR_NUMBER];
 public:
 
 	/**
@@ -49,14 +50,14 @@ public:
 		\brief Getter on the name of the Tag
 		\return The name of the tag parsed
 	*/
-	string getName();
+	string getName() const;
 
 	/**
 		\brief Getter on the sentence we want to parse
 		\post pVECArray is copied, the user have to disalocate the object if he dynamically did
 		\return A new CMatrix object
 	*/
-	string getSentence();
+	string getSentence() const;
 
 	/**
 		\brief Getter on the sentence we want to parse
@@ -67,14 +68,15 @@ public:
 		This methode take as parameter a two-gram like: "ar" , "F4", " r" or "aA"
 		It returns an index of the column number in the matrix, corresponding to the two-gram
 	*/
-	int indexesTwoGram(string twogram);
+	int indexesTwoGram(const string& twogram) const;
 
 	/**
 		\brief The method wich instantiate the matrix of the corresponding two-grams of a sentence
 		\param toParse the sentence we want to parse 
 		\post The values in the matrix have changed corresponding to the number of occurences of a two-gram in the sentence
 	*/
-	void generateTwoGramMatrix(string toParse);
+	void generateTwoGramMatrix();
 
+	void getTwoGramMatrix() const;
 };
 

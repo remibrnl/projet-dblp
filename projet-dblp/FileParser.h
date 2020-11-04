@@ -24,7 +24,7 @@ class FileParser
 		void setPath(string path_to_file);
 
 		// pas sur ??
-		Reference& create_reference(iostream file);
+		// Reference& create_reference(iostream file);
 
 		vector<Reference*>* parseFile(int limit, const vector<string>& tagNames);
 

@@ -35,11 +35,13 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 	//cout << this->element_to_parse;
 	// initiate the 2-gram matrix
 
-	for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {
+	#pragma omp parallel for num_threads(6)
+	for (int col = 0; col < TOTAL_CHAR_NUMBER; col++) {
 		two_gram_matrix[col] = 0;
 	}
 
-	generateTwoGramMatrix(sentence_to_parse);
+	//generateTwoGramMatrix(sentence_to_parse);
+	generateTwoGramMatrix();
 }
 
 Tag::Tag(const Tag& copy)
@@ -57,17 +59,17 @@ Tag::Tag(const Tag& copy)
 
 }
 
-string Tag::getName()
+string Tag::getName() const
 {
 	return this->name_tag;
 }
 
-string Tag::getSentence()
+string Tag::getSentence() const
 {
 	return this->element_to_parse;
 }
 
-int Tag::indexesTwoGram(std::string twogram)
+int Tag::indexesTwoGram(const string& twogram) const
 {
 	char leftc = twogram.at(0);
 	char rightc = twogram.at(1);
@@ -121,7 +123,7 @@ int Tag::indexesTwoGram(std::string twogram)
 	return index;
 }
 
-void Tag::generateTwoGramMatrix(string toParse)
+void Tag::generateTwoGramMatrix()
 {
 	vector<string> twogramList;
 	string twoGram = "";
@@ -143,16 +145,30 @@ void Tag::generateTwoGramMatrix(string toParse)
 	}
 	
 	int indexToIncrement = 0;
-	for (int i = 0; i < twogramList.size(); i++) {
 
+	// à paralléliser faire attention aux conflits sur two_gram_matrix[indexToIncrement]
+
+	#pragma omp parallel for num_threads(6)
+	for (int i = 0; i < twogramList.size(); i++) {
 		
 		indexToIncrement = indexesTwoGram(twogramList.at(i));
 		
 		if (indexToIncrement == -1) continue;
 
-		cout << twogramList.at(i) << ",";
+		//cout << twogramList.at(i) << ",";
 
-		two_gram_matrix[indexToIncrement] += 1;
+		#pragma omp atomic
+		{
+			two_gram_matrix[indexToIncrement] += 1;
+		}
 	}
-	cout << endl;
+	//cout << endl;
 }
+
+void Tag::getTwoGramMatrix() const
+{
+	for (int i = 0; i < TOTAL_CHAR_NUMBER; i++) {
+		cout << two_gram_matrix[i];
+	}
+}
+

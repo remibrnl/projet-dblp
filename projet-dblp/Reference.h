@@ -36,7 +36,7 @@ class Reference
 			\post
 			\return the index of the corresponding two-gram in the matrix
 		*/
-		Reference(int Number, string URL_link, vector<string> tagNames);
+		// Reference(int Number, string URL_link, vector<string> tagNames);
 
 		/**
 			\brief Confort Constructor, used in case if we want to copy a referene=ce for any reason
@@ -47,7 +47,7 @@ class Reference
 			\post 
 			\return the index of the corresponding two - gram in the matrix
 		*/
-		Reference(int Number, string URL_link, vector<string> tagNames, vector<Tag*> tagList);
+		Reference(int Number, const string& URL_link, const vector<string>& tagNames);
 
 		/**
 			\brief Copy constructor
@@ -72,6 +72,7 @@ class Reference
 		*/
 		void DelTag(Tag* tag = nullptr, string tagName = nullptr);
 		
-		vector<Tag*> getTags();
+		
+		vector<Tag*> getTags() const;
 };
 
