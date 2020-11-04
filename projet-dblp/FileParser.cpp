@@ -21,23 +21,45 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-FileParser::FileParser(string path, int limit, vector<string*> tagNames)
+vector<Reference*>* FileParser::parseFile(string path, int limit, vector<string*> tagNames)
 {
+	vector<Reference*>* references;
+
 	ifstream fileStream;
 
 	fileStream.open(path);
 
 	if (fileStream.is_open()) {
+
+		int i_reference = 0;
+		Reference* current_ref;
+
 		while (!fileStream.eof()) {
 			string line;
+			
 			getline(fileStream, line);
+
 			if (line.empty()) break;
 
-			for (auto it = begin(tagNames); it != end(tagNames); ++it) {
-				if (line.find(**it) != string::npos) {
-					parseArray.push_back(new Tag(**it, line));
+			if (line.find("<ref>") != string::npos) {
+				// debut nouvelle reference
+
+				current_ref = new Reference(i_reference);
+			}
+			else if (line.find("</ref>") != string::npos) {
+				// fin reference
+
+				references->push_back(current_ref);
+
+				i_reference++;
+			}
+
+			for (auto tag : tagNames) {
+
+				if (line.find(*tag) != string::npos) {
+					current_ref->AddTag(new Tag(*tag, line));
 				}
-				else break;
+				//else break;
 			}
 		}
 	}
