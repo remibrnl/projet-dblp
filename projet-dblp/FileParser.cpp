@@ -40,14 +40,14 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 
 			if (line.empty()) break;
 
-			if (line.find("<ref>") != string::npos) {
+			if (line.find(REFERENCE_BEGIN_TAG) != string::npos) {
 				// debut nouvelle reference
 
 				if (current_ref == nullptr) current_ref = new Reference(i_reference);
 
 				continue;
 			}
-			else if (line.find("</ref>") != string::npos) {
+			else if (line.find(REFERENCE_END_TAG) != string::npos) {
 				// fin reference
 
 				references->push_back(current_ref);

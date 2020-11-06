@@ -7,6 +7,9 @@
 #include <algorithm>
 #include "Reference.h"
 
+#define REFERENCE_BEGIN_TAG "<ref>"
+#define REFERENCE_END_TAG "</ref>"
+
 using namespace std;
 
 class FileParser
