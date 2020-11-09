@@ -32,6 +32,7 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 
 		Reference* current_ref = new Reference(0);
 		int i_reference = 1;
+		bool opened_reference = false;
 
 		while (!fileStream.eof()) {
 			string line;
@@ -43,6 +44,11 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 			if (line.find(REFERENCE_BEGIN_TAG) != string::npos) {
 				// debut nouvelle reference
 
+				if (opened_reference) throw exception("Reference markup read exception");
+
+				// open reference
+				opened_reference = true;
+
 				if (current_ref == nullptr) current_ref = new Reference(i_reference);
 
 				continue;
@@ -53,6 +59,8 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 				references->push_back(current_ref);
 				current_ref = nullptr;
 
+				// close reference
+				opened_reference = false;
 				i_reference++;
 
 				continue;

@@ -7,8 +7,8 @@
 #include <algorithm>
 #include "Reference.h"
 
-#define REFERENCE_BEGIN_TAG "<ref>"
-#define REFERENCE_END_TAG "</ref>"
+constexpr auto REFERENCE_BEGIN_TAG = "<ref>";
+constexpr auto REFERENCE_END_TAG = "</ref>";
 
 using namespace std;
 
