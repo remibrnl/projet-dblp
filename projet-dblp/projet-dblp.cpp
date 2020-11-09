@@ -31,18 +31,41 @@ int main(int argc, char* argv[])
 
     string url = "test_parser.txt";
 
-    FileParser fileParser(url);
+    //FileParser fileParser(url);
 
-    vector<Reference*>* refs;
+    //vector<Reference*>* refs;
 
     vector<string> tags;
 
     tags.push_back("author");
     tags.push_back("title");
 
-    refs = fileParser.parseFile(0, tags);
+    //refs = fileParser.parseFile(0, tags);
 
-   
+    
+
+    vector<FileParser> files;
+
+
+    files.push_back(FileParser("test_parser_1.txt"));
+    files.push_back(FileParser("test_parser_2.txt"));
+    files.push_back(FileParser("test_parser_3.txt"));
+    files.push_back(FileParser("test_parser_4.txt"));
+    files.push_back(FileParser("test_parser_5.txt"));
+    files.push_back(FileParser("test_parser_6.txt"));
+    files.push_back(FileParser("test_parser_7.txt"));
+    files.push_back(FileParser("test_parser_8.txt"));
+
+    vector<vector<Reference*>*> refs;
+
+    #pragma omp parallel for num_threads(files.size())
+    for (int i = 0; i < files.size(); i++) {
+        refs.push_back(files[i].parseFile(0, tags));
+        cout << " thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
+    }
+
+
+
 
     /*for (auto ref : *refs) {
         auto ref_tags = ref->getTags();
