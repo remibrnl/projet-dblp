@@ -60,8 +60,9 @@ int main(int argc, char* argv[])
 
     #pragma omp parallel for num_threads(files.size())
     for (int i = 0; i < files.size(); i++) {
+        cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " started." << endl;
         refs.push_back(files[i].parseFile(0, tags));
-        cout << " thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
+        cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
     }
 
 
@@ -77,7 +78,7 @@ int main(int argc, char* argv[])
        }
     }*/
 
-	cout << clock();
+	cout << "temps:" << clock();
     //std::cout << left << "," << right << std::endl;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
