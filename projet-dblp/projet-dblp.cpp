@@ -8,8 +8,81 @@
 #include "Reference.h"
 #include <time.h>
 
-int main(int argc, char* argv[])
+int main(int argc, char* argv[], char *envp[])
 {
+    // command:
+    // ./prog.exe -t <list of tags>  -f <paths of files> -o <output bitmap>
+    
+    vector<string> tags;
+    vector<FileParser> files;
+    char* output_path = nullptr;
+
+    bool reading[3] = {false, false, false};
+    // 0     1      2
+    // tags, files, output_path
+
+    for (int i = 1; argv[i] != NULL; ++i) {
+        // tags
+        if (strcmp(argv[i], "-t") == 0) {
+            reading[0] = true;
+
+            reading[1] = false;
+            reading[2] = false;
+
+            continue;
+        }
+        
+
+        // files
+        if (strcmp(argv[i], "-f") == 0) {
+            reading[1] = true;
+
+            reading[0] = false;
+            reading[2] = false;
+
+            continue;
+        }
+
+
+        // output bitmap
+        if (strcmp(argv[i], "-o") == 0) {
+            reading[2] = true;
+
+            reading[0] = false;
+            reading[1] = false;
+
+            continue;
+        }
+
+        if (reading[0]) {
+            tags.push_back(argv[i]);
+
+            continue;
+        }
+        if (reading[1]) {
+            files.push_back(FileParser(argv[i]));
+
+            continue;
+        }
+        if (reading[2]) {
+
+            output_path = argv[i];
+
+            continue;
+        }
+    }
+
+    // error verification
+    if (tags.empty() || files.empty() || !output_path) {
+        cout << "Error in command line argument." << endl;
+        cout << "Usage:" << endl;
+        cout << argv[0] << " -t <list of tags>  -f <paths of files> -o <output bitmap>" << endl;
+
+        ::exit(EXIT_FAILURE);
+    }
+
+    
+
     /* std::vector<Tag> tag_list;
 
     for (int i = 0; i < argc; i++) {
@@ -29,24 +102,24 @@ int main(int argc, char* argv[])
     int right = 0;
     */
 
-    string url = "test_parser.txt";
+    //string url = "test_parser.txt";
 
     //FileParser fileParser(url);
 
     //vector<Reference*>* refs;
 
-    vector<string> tags;
+    
 
-    tags.push_back("author");
-    tags.push_back("title");
+    //tags.push_back("author");
+    //tags.push_back("title");
 
     //refs = fileParser.parseFile(0, tags);
 
     
 
-    vector<FileParser> files;
+    
 
-
+    /*
     files.push_back(FileParser("test_parser_1.txt"));
     files.push_back(FileParser("test_parser_2.txt"));
     files.push_back(FileParser("test_parser_3.txt"));
@@ -55,13 +128,14 @@ int main(int argc, char* argv[])
     files.push_back(FileParser("test_parser_6.txt"));
     files.push_back(FileParser("test_parser_7.txt"));
     files.push_back(FileParser("test_parser_8.txt"));
+    */
 
-    vector<vector<Reference*>*> refs;
+    vector<vector<Reference*>*> output_refs;
 
     #pragma omp parallel for num_threads(files.size())
     for (int i = 0; i < files.size(); i++) {
         cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " started." << endl;
-        refs.push_back(files[i].parseFile(0, tags));
+        output_refs.push_back(files[i].parseFile(0, tags));
         cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
     }
 
@@ -78,8 +152,9 @@ int main(int argc, char* argv[])
        }
     }*/
 
-	cout << "temps:" << clock();
-    //std::cout << left << "," << right << std::endl;
+	cout << "time elapsed:" << clock();
+   
+    ::exit(EXIT_SUCCESS);
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
