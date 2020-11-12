@@ -7,12 +7,17 @@
 #include "FileParser.h"
 #include "Reference.h"
 #include <time.h>
+#include <chrono>
 
 int main(int argc, char* argv[], char *envp[])
 {
     // command:
     // ./prog.exe -t <list of tags>  -f <paths of files> -o <output bitmap>
     
+    //clock_t clock_begin = clock();
+    
+    chrono::steady_clock::time_point time_begin = chrono::steady_clock::now();
+
     vector<string> tags;
     vector<FileParser> files;
     char* output_path = nullptr;
@@ -54,16 +59,21 @@ int main(int argc, char* argv[], char *envp[])
             continue;
         }
 
+        // tags reading
         if (reading[0]) {
             tags.push_back(argv[i]);
 
             continue;
         }
+
+        // files readings
         if (reading[1]) {
             files.push_back(FileParser(argv[i]));
 
             continue;
         }
+
+        // output bitmap reading
         if (reading[2]) {
 
             output_path = argv[i];
@@ -72,7 +82,7 @@ int main(int argc, char* argv[], char *envp[])
         }
     }
 
-    // error verification
+    // error command parameters check
     if (tags.empty() || files.empty() || !output_path) {
         cout << "Error in command line argument." << endl;
         cout << "Usage:" << endl;
@@ -81,55 +91,8 @@ int main(int argc, char* argv[], char *envp[])
         ::exit(EXIT_FAILURE);
     }
 
-    
 
-    /* std::vector<Tag> tag_list;
-
-    for (int i = 0; i < argc; i++) {
-        Tag current(argv[i]);
-        tag_list.push_back(current);
-
-    std::cout << "Hello World!\n";
-}
-
-    Tag test();*/
-    /*
-    Tag testtag("author", "<author>Nicolas est un giga PD</author>");
-
-    string teststr = "AA";
-	string toParse = "Le test se Fait bIeN";
-    int left = 0;
-    int right = 0;
-    */
-
-    //string url = "test_parser.txt";
-
-    //FileParser fileParser(url);
-
-    //vector<Reference*>* refs;
-
-    
-
-    //tags.push_back("author");
-    //tags.push_back("title");
-
-    //refs = fileParser.parseFile(0, tags);
-
-    
-
-    
-
-    /*
-    files.push_back(FileParser("test_parser_1.txt"));
-    files.push_back(FileParser("test_parser_2.txt"));
-    files.push_back(FileParser("test_parser_3.txt"));
-    files.push_back(FileParser("test_parser_4.txt"));
-    files.push_back(FileParser("test_parser_5.txt"));
-    files.push_back(FileParser("test_parser_6.txt"));
-    files.push_back(FileParser("test_parser_7.txt"));
-    files.push_back(FileParser("test_parser_8.txt"));
-    */
-
+    // output refs
     vector<vector<Reference*>*> output_refs;
 
     #pragma omp parallel for num_threads(files.size())
@@ -152,7 +115,13 @@ int main(int argc, char* argv[], char *envp[])
        }
     }*/
 
-	cout << "time elapsed:" << clock();
+    // clock_t clock_end = clock();
+    
+    chrono::steady_clock::time_point time_end = chrono::steady_clock::now();
+
+	// cout << "time elapsed: " << double(clock_end - clock_begin) / CLOCKS_PER_SEC << "s";
+
+    cout << "time elapsed: " << chrono::duration_cast<chrono::milliseconds> (time_end - time_begin).count() << "ms" << endl;
    
     ::exit(EXIT_SUCCESS);
 }
