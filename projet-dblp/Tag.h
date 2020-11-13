@@ -15,7 +15,7 @@ class Tag
 private:
 	string name_tag;
 	string element_to_parse;
-	int two_gram_matrix[TOTAL_CHAR_NUMBER];
+	uint8_t two_gram_matrix[TOTAL_CHAR_NUMBER];
 public:
 
 	/**

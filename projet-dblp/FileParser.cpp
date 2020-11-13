@@ -28,6 +28,9 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 
 	fileStream.open(path_to_file);
 
+	// pas sur
+	fileStream.imbue(std::locale(std::locale::empty(), new std::codecvt_utf8<wchar_t>));
+
 	if (fileStream.is_open()) {
 
 		Reference* current_ref = new Reference(0);
@@ -37,7 +40,9 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 		while (!fileStream.eof()) {
 			string line;
 			
-			getline(fileStream, line);
+			fileStream >> line;
+
+			//getline(fileStream, line);
 
 			if (line.empty()) break;
 
@@ -66,7 +71,7 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 				continue;
 			}
 
-			for (auto tag : tagNames) {
+			for (string tag : tagNames) {
 
 				if (line.find(tag) != string::npos) {
 					current_ref->AddTag(new Tag(tag, line), tag);

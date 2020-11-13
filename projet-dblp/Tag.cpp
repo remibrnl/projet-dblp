@@ -17,18 +17,21 @@ Tag::Tag(string name_tag)
 
 	// zeroes in the 2-gram matrix
 
-	for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {
+	/*for (int col = 0; col < CHAR_NUMBER*CHAR_NUMBER; col++) {
 		two_gram_matrix[col] = 0;
-	}
+	}*/
 }
 
 Tag::Tag(string name_tag, string sentence_to_parse)
 {
 	this->name_tag = name_tag;
 
+	size_t firstPos;
+	size_t lastPos;
+
 	if (regex_match(sentence_to_parse, regex(("<.+>.+")))) {
-		size_t firstPos = sentence_to_parse.find_first_of('>') + 1;
-		size_t lastPos = sentence_to_parse.find_last_of("<");
+		firstPos = sentence_to_parse.find_first_of('>') + 1;
+		lastPos = sentence_to_parse.find_last_of("<");
 		this->element_to_parse = sentence_to_parse.substr(firstPos,lastPos-firstPos);
 	}
 	else {
@@ -37,10 +40,10 @@ Tag::Tag(string name_tag, string sentence_to_parse)
 	//cout << this->element_to_parse;
 	// initiate the 2-gram matrix
 
-	#pragma omp parallel for num_threads(6)
+	/*
 	for (int col = 0; col < TOTAL_CHAR_NUMBER; col++) {
 		two_gram_matrix[col] = 0;
-	}
+	}*/
 
 	//generateTwoGramMatrix(sentence_to_parse);
 	generateTwoGramMatrix();
@@ -52,6 +55,8 @@ Tag::Tag(const Tag& copy)
 	element_to_parse = copy.element_to_parse;
 
 	// matrix copy
+
+	cout << "COPY";
 
 	int size = CHAR_NUMBER * CHAR_NUMBER;
 
@@ -141,7 +146,8 @@ void Tag::generateTwoGramMatrix()
 		twogramList.push_back(twoGram);
 
 		//and we reinitialize the string for the next twogram
-		twoGram = "";
+		twoGram.clear();
+		// twogram = "";
 		firstLetter++;
 		secondLetter++;
 	}

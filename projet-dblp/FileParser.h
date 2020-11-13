@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <algorithm>
+#include <codecvt>
 #include "Reference.h"
 
 #define REFERENCE_BEGIN_TAG "<ref>"
