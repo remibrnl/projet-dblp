@@ -98,7 +98,12 @@ int main(int argc, char* argv[], char *envp[])
     #pragma omp parallel for num_threads(files.size())
     for (int i = 0; i < files.size(); i++) {
         cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " started." << endl;
-        output_refs.push_back(files[i].parseFile(0, tags));
+        try {
+            output_refs.push_back(files[i].parseFile(0, tags));
+        }
+        catch (const exception& e) {
+            cout << "Exception : " << e.what();
+        }
         cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
     }
 
