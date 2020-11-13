@@ -259,3 +259,15 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Fichier a parser
+projet-dblp/parsed_dblp.00.xml
+projet-dblp/parsed_dblp.01.xml
+projet-dblp/parsed_dblp.02.xml
+projet-dblp/parsed_dblp.03.xml
+projet-dblp/parsed_dblp.04.xml
+projet-dblp/parsed_dblp.05.xml
+projet-dblp/parsed_dblp.06.xml
+projet-dblp/parsed_dblp.07.xml
+projet-dblp/parsed_dblp.08.xml
+projet-dblp/parsed_dblp.09.xml
