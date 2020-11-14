@@ -27,6 +27,9 @@
     <ClCompile Include="Tag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="References.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Reference.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="References.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

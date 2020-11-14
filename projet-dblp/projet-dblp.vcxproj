@@ -157,11 +157,13 @@
     <ClCompile Include="FileParser.cpp" />
     <ClCompile Include="projet-dblp.cpp" />
     <ClCompile Include="Reference.cpp" />
+    <ClCompile Include="References.cpp" />
     <ClCompile Include="Tag.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileParser.h" />
     <ClInclude Include="Reference.h" />
+    <ClInclude Include="References.h" />
     <ClInclude Include="Tag.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
