@@ -95,8 +95,8 @@ int main(int argc, char* argv[], char *envp[])
     // output refs
     vector<vector<Reference*>*> output_refs;
 
-    #pragma omp parallel for num_threads(files.size())
-    for (int i = 0; i < files.size(); i++) {
+    //#pragma omp parallel for num_threads(files.size())
+    for (int i = 0; i < (int) files.size(); i++) {
         cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " started." << endl;
         try {
             output_refs.push_back(files[i].parseFile(0, tags));
@@ -128,6 +128,8 @@ int main(int argc, char* argv[], char *envp[])
 
     cout << "time elapsed: " << chrono::duration_cast<chrono::milliseconds> (time_end - time_begin).count() << "ms" << endl;
    
+    _CrtDumpMemoryLeaks();
+
     ::exit(EXIT_SUCCESS);
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -22,14 +22,16 @@ Tag::Tag(string name_tag)
 	}*/
 }
 
-Tag::Tag(string name_tag, string sentence_to_parse)
+Tag::Tag(const string& name_tag, const string& sentence_to_parse)
 {
 	this->name_tag = name_tag;
 
 	size_t firstPos;
 	size_t lastPos;
 
-	if (regex_match(sentence_to_parse, regex(("<.+>.+")))) {
+	regex used_regex(("<.+>.+"));
+
+	if (regex_match(sentence_to_parse, used_regex)) {
 		firstPos = sentence_to_parse.find_first_of('>') + 1;
 		lastPos = sentence_to_parse.find_last_of("<");
 		this->element_to_parse = sentence_to_parse.substr(firstPos,lastPos-firstPos);
@@ -76,10 +78,13 @@ string Tag::getSentence() const
 	return this->element_to_parse;
 }
 
-int Tag::indexesTwoGram(const string& twogram) const
+int Tag::indexesTwoGram(const char twogram[2]) const
 {
-	char leftc = twogram.at(0);
-	char rightc = twogram.at(1);
+	//char leftc = twogram.at(0);
+	//char rightc = twogram.at(1);
+
+	char leftc = twogram[0];
+	char rightc = twogram[1];
 
 	int index = 0;
 	// indices matrices
@@ -132,21 +137,25 @@ int Tag::indexesTwoGram(const string& twogram) const
 
 void Tag::generateTwoGramMatrix()
 {
-	vector<string> twogramList;
-	string twoGram = "";
+	vector<char*> twogramList;
+	// string twoGram = "";
+	char twoGram[2] = {0};
 	int firstLetter = 0;
 	int secondLetter = 1;
 
 	while (secondLetter < this->element_to_parse.size()) {
 		//We build the actual twogram..
-		twoGram.push_back(element_to_parse.at(firstLetter));
-		twoGram.push_back(element_to_parse.at(secondLetter));
+		//twoGram.push_back(element_to_parse.at(firstLetter));
+		//twoGram.push_back(element_to_parse.at(secondLetter));
+
+		twoGram[0] = element_to_parse.at(firstLetter);
+		twoGram[0] = element_to_parse.at(secondLetter);
 
 		//.. to temporary store it in an array
 		twogramList.push_back(twoGram);
 
 		//and we reinitialize the string for the next twogram
-		twoGram.clear();
+		//twoGram.clear();
 		// twogram = "";
 		firstLetter++;
 		secondLetter++;

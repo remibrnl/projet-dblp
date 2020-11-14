@@ -36,11 +36,9 @@ vector<Reference*>* FileParser::parseFile(int limit, const vector<string>& tagNa
 		Reference* current_ref = new Reference(0);
 		int i_reference = 1;
 		bool opened_reference = false;
+		string line;
 
-		while (!fileStream.eof()) {
-			string line;
-			
-			fileStream >> line;
+		while (getline(fileStream, line)) {
 
 			//getline(fileStream, line);
 

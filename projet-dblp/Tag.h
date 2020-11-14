@@ -40,7 +40,7 @@ public:
 		\post The matrix is filled with 0
 		\return A new Tag object
 	*/
-	Tag(string name_tag, string sentence_to_parse);
+	Tag(const string& name_tag, const string& sentence_to_parse);
 
 	/**
 		\brief Copy constructor
@@ -69,7 +69,7 @@ public:
 		This methode take as parameter a two-gram like: "ar" , "F4", " r" or "aA"
 		It returns an index of the column number in the matrix, corresponding to the two-gram
 	*/
-	int indexesTwoGram(const string& twogram) const;
+	int indexesTwoGram(const char twogram[2]) const;
 
 	/**
 		\brief The method wich instantiate the matrix of the corresponding two-grams of a sentence
