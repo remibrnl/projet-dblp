@@ -19,18 +19,35 @@ using namespace std;
 class References
 {
 private:
+	// size : number of references
 	int size = 0;
-	vector<string> tags_names;
-	vector<vector<uint8_t[TOTAL_CHAR_NUMBER]>> two_gram_array;
 
+	// names of processed tags
+	vector<string> tags_names;
+
+	// array of array of matrixes
+	// a subarray represents a tag with its matrixes of two gram
+	vector<vector<uint8_t*>> two_gram_array;
+
+	// parse a file from a given path
 	void parse_file(const string& file_path);
-	void generatetwogram(const string& tag, const string& line);
+
+	// return a 2-gram matrix from a given line
+	uint8_t* generate_matrix(const string& line) const;
+
+	// return indexe for a given two_gram string
+	int indexes_two_gram(const string& two_gram) const;
 
 public:
 
+	// generate all matrixses for given paths
 	void parse_all(vector<string> files_paths);
 
+	// give the tags to process
 	References(vector<string> tags_names);
+
+	// TODO
+
 	References(const References& copy);
 	References& operator=(const References& copy);
 	~References();
