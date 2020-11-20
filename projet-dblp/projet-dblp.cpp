@@ -2,12 +2,15 @@
 //
 
 #include <iostream>
+#include <filesystem>
 #include <vector>
 #include "Tag.h"
 #include "FileParser.h"
 #include "Reference.h"
-#include <time.h>
 #include <chrono>
+
+using namespace std;
+namespace fs = std::filesystem;
 
 int main(int argc, char* argv[], char *envp[])
 {
@@ -19,7 +22,7 @@ int main(int argc, char* argv[], char *envp[])
     chrono::steady_clock::time_point time_begin = chrono::steady_clock::now();
 
     vector<string> tags;
-    vector<FileParser> files;
+    char* files_directory = nullptr;
     char* output_path = nullptr;
 
     bool reading[3] = {false, false, false};
@@ -68,7 +71,7 @@ int main(int argc, char* argv[], char *envp[])
 
         // files readings
         if (reading[1]) {
-            files.push_back(FileParser(argv[i]));
+            files_directory = argv[i];
 
             continue;
         }
@@ -83,12 +86,19 @@ int main(int argc, char* argv[], char *envp[])
     }
 
     // error command parameters check
-    if (tags.empty() || files.empty() || !output_path) {
+    if (tags.empty() || !files_directory || !output_path) {
         cout << "Error in command line argument." << endl;
         cout << "Usage:" << endl;
         cout << argv[0] << " -t <list of tags>  -f <paths of files> -o <output bitmap>" << endl;
 
         ::exit(EXIT_FAILURE);
+    }
+
+    // iterate files in the provided directory and create fileparser objects
+    vector<FileParser> files;
+
+    for (const auto& file : fs::directory_iterator(files_directory)) {
+        files.push_back(FileParser((string)file.path().string()));
     }
 
 
@@ -97,38 +107,30 @@ int main(int argc, char* argv[], char *envp[])
 
     #pragma omp parallel for num_threads(files.size())
     for (int i = 0; i < (int) files.size(); i++) {
-        cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " started." << endl;
+        cout << "thread:" << omp_get_thread_num() << " file:" << i << " started." << endl;
         try {
             output_refs.push_back(files[i].parseFile(0, tags));
         }
         catch (const exception& e) {
             cout << "Exception : " << e.what();
         }
-        cout << "thread:" << omp_get_thread_num() << " iteration:" << i << " done." << endl;
+        cout << "thread:" << omp_get_thread_num() << " file:" << i << " done." << endl;
     }
 
-
-
-
-    /*for (auto ref : *refs) {
-        auto ref_tags = ref->getTags();
-        for (auto tag : ref_tags) {
-            
-            //tag->getTwoGramMatrix();
-
-            cout << endl;
-       }
-    }*/
-
-    // clock_t clock_end = clock();
-    
     chrono::steady_clock::time_point time_end = chrono::steady_clock::now();
 
-	// cout << "time elapsed: " << double(clock_end - clock_begin) / CLOCKS_PER_SEC << "s";
-
     cout << "time elapsed: " << chrono::duration_cast<chrono::milliseconds> (time_end - time_begin).count() << "ms" << endl;
+
+
+    for (auto file : output_refs) {
+        for (auto ref : *file) {
+            for (auto tag : ref->getTags()) {
+                cout << tag->getSentence() << endl;
+            }
+        }
+    }
    
-    getchar();
+    //getchar();
 
     ::exit(EXIT_SUCCESS);
 }

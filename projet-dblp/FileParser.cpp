@@ -1,5 +1,7 @@
 #include "FileParser.h"
 
+#pragma warning(disable : 4996)
+
 FileParser::FileParser(string path_to_file)
 {
 	this->path_to_file = path_to_file;
