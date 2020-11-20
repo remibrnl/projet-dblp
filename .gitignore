@@ -261,7 +261,7 @@ __pycache__/
 *.pyc
 
 # Fichier a parser
-project-dblp/parsed_files
+projet-dblp/parsed_files
 
 # anciens fichiers
 projet-dblp/parsed_dblp.00.xml
