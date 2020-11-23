@@ -24,6 +24,7 @@ int main(int argc, char* argv[], char *envp[])
     vector<string> tags;
     char* files_directory = nullptr;
     char* output_path = nullptr;
+    bool no_ref_tag = false;
 
     bool reading[3] = {false, false, false};
     // 0     1      2
@@ -89,16 +90,28 @@ int main(int argc, char* argv[], char *envp[])
     if (tags.empty() || !files_directory || !output_path) {
         cout << "Error in command line argument." << endl;
         cout << "Usage:" << endl;
-        cout << argv[0] << " -t <list of tags>  -f <paths of files> -o <output bitmap>" << endl;
+        cout << argv[0] << " -t <list of tags>  -f <directory of files> -o <output bitmap>" << endl;
 
         ::exit(EXIT_FAILURE);
     }
+
+    // check no tag option
+    // no ref tag = 1 tag only
+    if (tags.size() == 1) {
+        no_ref_tag = true;
+    }
+
+    // print options
+    cout << "files_directory: " << files_directory << endl;
+    cout << "output_path: " << output_path << endl;
+    cout << "no_ref_tag: " << no_ref_tag << endl;
 
     // iterate files in the provided directory and create fileparser objects
     vector<FileParser> files;
 
     for (const auto& file : fs::directory_iterator(files_directory)) {
         files.push_back(FileParser((string)file.path().string()));
+        //cout << "file: " << file.path().string();
     }
 
 
@@ -109,7 +122,7 @@ int main(int argc, char* argv[], char *envp[])
     for (int i = 0; i < (int) files.size(); i++) {
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " started." << endl;
         try {
-            output_refs.push_back(files[i].parseFile(0, tags));
+            output_refs.push_back(files[i].parseFile(tags, no_ref_tag));
         }
         catch (const exception& e) {
             cout << "Exception : " << e.what();
