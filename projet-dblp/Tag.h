@@ -69,7 +69,7 @@ public:
 		This methode take as parameter a two-gram like: "ar" , "F4", " r" or "aA"
 		It returns an index of the column number in the matrix, corresponding to the two-gram
 	*/
-	int indexesTwoGram(const char twogram[2]) const;
+	int indexesTwoGram(const string& twogram) const;
 
 	/**
 		\brief The method wich instantiate the matrix of the corresponding two-grams of a sentence

@@ -19,7 +19,7 @@ int main(int argc, char* argv[], char *envp[])
     
     //clock_t clock_begin = clock();
     
-    chrono::steady_clock::time_point time_begin = chrono::steady_clock::now();
+    const chrono::steady_clock::time_point time_begin = chrono::steady_clock::now();
 
     vector<string> tags;
     char* files_directory = nullptr;
@@ -105,21 +105,21 @@ int main(int argc, char* argv[], char *envp[])
     cout << "files_directory: " << files_directory << endl;
     cout << "output_path: " << output_path << endl;
     cout << "no_ref_tag: " << no_ref_tag << endl;
+    cout << "max_threads: " << omp_get_max_threads() << endl << endl;
 
     // iterate files in the provided directory and create fileparser objects
     vector<FileParser> files;
 
     for (const auto& file : fs::directory_iterator(files_directory)) {
-        files.push_back(FileParser((string)file.path().string()));
-        //cout << "file: " << file.path().string();
+        files.emplace_back(FileParser(static_cast<string>(file.path().string())));
     }
 
 
     // output refs
     vector<vector<Reference*>*> output_refs;
-
-    #pragma omp parallel for num_threads(files.size())
-    for (int i = 0; i < (int) files.size(); i++) {
+	
+    #pragma omp parallel for num_threads(omp_get_max_threads())
+    for (int i = 0; i < static_cast<int>(files.size()); i++) {
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " started." << endl;
         try {
             output_refs.push_back(files[i].parseFile(tags, no_ref_tag));
@@ -130,18 +130,21 @@ int main(int argc, char* argv[], char *envp[])
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " done." << endl;
     }
 
-    chrono::steady_clock::time_point time_end = chrono::steady_clock::now();
+    const chrono::steady_clock::time_point time_end = chrono::steady_clock::now();
 
     cout << "time elapsed: " << chrono::duration_cast<chrono::milliseconds> (time_end - time_begin).count() << "ms" << endl;
 
-
+    /*
     for (auto file : output_refs) {
         for (auto ref : *file) {
             for (auto tag : ref->getTags()) {
-                cout << tag->getSentence() << endl;
+                tag->getTwoGramMatrix();
+                cout << endl;
+                //cout << tag->getSentence() << endl;
             }
         }
     }
+    */
    
     //getchar();
 
