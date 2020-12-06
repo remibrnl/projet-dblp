@@ -61,6 +61,10 @@ class FastMapCalculs
 		static double calculateXcoord(Reference& refToCalculate);
 		static double calculateYcoord(Reference& refToCalculate);
 
+		/*
+			This method start all the process;
+		*/
+		static void calculateCoord();
 		
 
 
