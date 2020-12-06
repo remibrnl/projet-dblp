@@ -42,10 +42,10 @@ Tag::Tag(const string& name_tag, const string& sentence_to_parse)
 	//cout << this->element_to_parse;
 	// initiate the 2-gram matrix
 
-	/*
+	
 	for (int col = 0; col < TOTAL_CHAR_NUMBER; col++) {
 		two_gram_matrix[col] = 0;
-	}*/
+	}
 
 	//generateTwoGramMatrix(sentence_to_parse);
 	generateTwoGramMatrix();
@@ -78,13 +78,10 @@ string Tag::getSentence() const
 	return this->element_to_parse;
 }
 
-int Tag::indexesTwoGram(const char twogram[2]) const
+int Tag::indexesTwoGram(const string& twogram) const
 {
-	//char leftc = twogram.at(0);
-	//char rightc = twogram.at(1);
-
-	char leftc = twogram[0];
-	char rightc = twogram[1];
+	char leftc = twogram.at(0);
+	char rightc = twogram.at(1);
 
 	int index = 0;
 	// indices matrices
@@ -137,26 +134,26 @@ int Tag::indexesTwoGram(const char twogram[2]) const
 
 void Tag::generateTwoGramMatrix()
 {
-	vector<char*> twogramList;
-	// string twoGram = "";
-	char twoGram[2] = {0};
+	vector<string> twogramList;
+	string twoGram = "";
+	// twoGram.reserve(2);
 	int firstLetter = 0;
 	int secondLetter = 1;
 
 	while (secondLetter < this->element_to_parse.size()) {
 		//We build the actual twogram..
-		//twoGram.push_back(element_to_parse.at(firstLetter));
-		//twoGram.push_back(element_to_parse.at(secondLetter));
+		twoGram.push_back(element_to_parse.at(firstLetter));
+		twoGram.push_back(element_to_parse.at(secondLetter));
 
-		twoGram[0] = element_to_parse.at(firstLetter);
-		twoGram[0] = element_to_parse.at(secondLetter);
+		//twoGram[0] = element_to_parse.at(firstLetter);
+		//twoGram[1] = element_to_parse.at(secondLetter);
 
 		//.. to temporary store it in an array
 		twogramList.push_back(twoGram);
 
 		//and we reinitialize the string for the next twogram
-		//twoGram.clear();
-		// twogram = "";
+		twoGram.clear();
+		
 		firstLetter++;
 		secondLetter++;
 	}
@@ -166,12 +163,12 @@ void Tag::generateTwoGramMatrix()
 	// à paralléliser faire attention aux conflits sur two_gram_matrix[indexToIncrement]
 
 
-	int i;
+	
 	
 	//#pragma omp parallel
 	{
 		//#pragma omp for private(i,indexToIncrement)
-			for (i=0; i < twogramList.size(); i++) {
+			for (int i=0; i < twogramList.size(); i++) {
 
 				indexToIncrement = indexesTwoGram(twogramList.at(i));
 
@@ -188,8 +185,8 @@ void Tag::generateTwoGramMatrix()
 
 void Tag::getTwoGramMatrix() const
 {
-	for (int i = 0; i < TOTAL_CHAR_NUMBER; i++) {
-		cout << two_gram_matrix[i];
+	for (unsigned int i : two_gram_matrix) {
+		cout << i;
 	}
 }
 
