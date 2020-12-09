@@ -102,3 +102,8 @@ Tag* Reference::getTag(string nameTag)
 		if (tag->getName() == nameTag) return tag;
 	}
 }
+
+int Reference::getReferenceNumber()
+{
+	return referenceNumber;
+}
