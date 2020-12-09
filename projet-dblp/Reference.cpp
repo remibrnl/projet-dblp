@@ -95,3 +95,10 @@ vector<Tag*> Reference::getTags() const
 {
 	return tags;
 }
+
+Tag* Reference::getTag(string nameTag)
+{
+	for (Tag* tag : tags) {
+		if (tag->getName() == nameTag) return tag;
+	}
+}

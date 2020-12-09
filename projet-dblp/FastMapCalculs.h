@@ -2,6 +2,7 @@
 #include <vector>
 #include "Reference.h"
 #include <exception>
+#include <cstdlib>
 
 class FastMapCalculs
 {
@@ -14,28 +15,29 @@ class FastMapCalculs
 		/**
 			Like this : [ Ref1 | Ref 2 | Distance 1-2]
 		*/
-		static std::vector<std::array<double, 3>> distancesMatrix;
+		static std::vector<std::array<double, 3>> distanceMatrix;
 		static std::vector<std::array<double, 3>> distancePMatrix; //This new matrix of distances is the one used to calculate the Y axe. This calculation is different from the usual distance calculation.
 
 		//This matrix contains all coordinates of the references
 		/*
 			Like this : [ RefNumber | coordX | coordY ]
 		*/
-		static std::vector<std::array<int, 3>> fialCoord; 
+		static std::vector<std::array<int, 3>> finalCoord; 
 
 	public:
 		/**
 			This method is a mathematical calculation to determine distance between two object of N Dimensions.
 			It returns its distance as a double variable.
 		*/
-		static double calculateDistance(Reference& firstRefNumber, Reference& secondRefNumber);
+		static double calculateDistance(Reference* firstRefNumber, Reference* secondRefNumber);
 
+		
 		/*
 			This method generates a Matrix of distances between different references.
 			The parameter is the number of references used in the Heuristic to determine later the X Axe.
 			Finally, after having determined the matrix, the X Axe is choosen as the biggets distance between all the distances referenced
 		*/
-		static void generateMatrixDistance(int numberOfDistances);
+		static void generateMatrixDistance(std::vector<std::vector<Reference*>*>& references, int numberOfDistances);
 
 		/*
 			These two methods are the getters in access on the Axe X and Axe Y;
@@ -58,13 +60,15 @@ class FastMapCalculs
 		/*
 			These methods calculate the coordinates x and y of each references
 		*/
-		static double calculateXcoord(Reference& refToCalculate);
-		static double calculateYcoord(Reference& refToCalculate);
+		static double calculateXcoord(Reference* refToCalculate);
+		static double calculateYcoord(Reference* refToCalculate);
 
 		/*
 			This method start all the process;
+			The parameters are a containers of all the references we want to operate on, and a number of the distances calculated by an heuristic to determine the axes
 		*/
-		static void calculateCoord();
+		static void calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks);
+
 		
 
 
