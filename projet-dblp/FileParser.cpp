@@ -22,7 +22,7 @@ void FileParser::setPath(string path_to_file)
 	this->path_to_file = path_to_file;
 }
 
-vector<Reference*>* FileParser::parseFile(const vector<string>& tagNames, bool no_ref_tag)
+vector<Reference*>* FileParser::parseFile(const vector<string>& tagNames, int &i_reference, bool no_ref_tag)
 {
 	// verif no_ref_tag
 	if (no_ref_tag && (tagNames.size() > 1)) {
@@ -40,7 +40,7 @@ vector<Reference*>* FileParser::parseFile(const vector<string>& tagNames, bool n
 	if (fileStream.is_open()) {
 
 		string line;
-		int i_reference = 0;
+		//int i_reference = 0;
 		Reference* current_ref = nullptr;
 
 		// just one tag per lines without ref tags

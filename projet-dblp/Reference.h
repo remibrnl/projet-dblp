@@ -74,5 +74,7 @@ class Reference
 		
 		
 		vector<Tag*> getTags() const;
+
+		int getReferenceNumber();
 };
 

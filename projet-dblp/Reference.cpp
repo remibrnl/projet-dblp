@@ -95,3 +95,8 @@ vector<Tag*> Reference::getTags() const
 {
 	return tags;
 }
+
+int Reference::getReferenceNumber()
+{
+	return referenceNumber;
+}
