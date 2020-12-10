@@ -8,11 +8,8 @@ class FastMapCalculs
 {
 	private:
 
-		static double AxeXDistance; //The biggest distance of the distancesMatrix
-		static double AxeYDistance; //The biggest distance P of the distancesMatrixP
-
-		static int AxeX;
-		static int AxeY;
+		static double AxeX;
+		static double AxeY;
 	
 		/*
 		 * Copies of the references used to make the axes
@@ -28,13 +25,12 @@ class FastMapCalculs
 			Like this : [ Ref1 | Ref 2 | Distance 1-2]
 		*/
 		static std::vector<std::array<double, 3>> distanceMatrix;
-		static std::vector<std::array<double, 3>> distancePMatrix; //This new matrix of distances is the one used to calculate the Y axe. This calculation is different from the usual distance calculation.
 
 		//This matrix contains all coordinates of the references
 		/*
 			Like this : [ RefNumber | coordX | coordY ]
 		*/
-		static std::vector<std::array<int, 3>> finalCoord; 
+		static std::vector<std::array<double, 3>> finalCoord; 
 
 	public:
 		/**
@@ -82,8 +78,6 @@ class FastMapCalculs
 		static void calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks);
 
 		
-
-
-
+		static void printCoords();
 };
 
