@@ -2,10 +2,10 @@
 
 double FastMapCalculs::AxeX = 0;
 double FastMapCalculs::AxeY = 0;
-Reference FastMapCalculs::AxeXReferenceA(0);
-Reference FastMapCalculs::AxeXReferenceB(0);
-Reference FastMapCalculs::AxeYReferenceA(0);
-Reference FastMapCalculs::AxeYReferenceB(0);
+Reference* FastMapCalculs::AxeXReferenceA = nullptr;
+Reference* FastMapCalculs::AxeXReferenceB = nullptr;
+Reference* FastMapCalculs::AxeYReferenceA = nullptr;
+Reference* FastMapCalculs::AxeYReferenceB = nullptr;
 std::vector<std::array<double, 3>> FastMapCalculs::distanceMatrix;
 std::vector<std::array<double, 3>> FastMapCalculs::finalCoord;
 
@@ -14,7 +14,8 @@ double FastMapCalculs::calculateDistance(Reference* firstRefNumber, Reference* s
     double distance = 0;
     for (int i = 0; i < TOTAL_CHAR_NUMBER; i++)
     {
-        distance += pow((firstRefNumber->getTag("title")->getTwoGram(i) - secondRefNumber->getTag("title")->getTwoGram(i)) , 2);
+        // distance += pow((firstRefNumber->getTag("title")->getTwoGram(i) - secondRefNumber->getTag("title")->getTwoGram(i)) , 2);
+        distance += pow((secondRefNumber->getTag("title")->getTwoGram(i) - firstRefNumber->getTag("title")->getTwoGram(i)), 2);
     }
     return sqrt(distance);
 }
@@ -49,34 +50,95 @@ void FastMapCalculs::generateMatrixDistance(std::vector<std::vector<Reference*>*
             AxeX = distance;
 
             // on copie les refs A et B de cette distance / copy constructor
-            AxeXReferenceA = *firstReference;
-            AxeXReferenceB = *secondReference;
+            AxeXReferenceA = firstReference;
+            AxeXReferenceB = secondReference;
         }
         std::array<double, 3> distanceInfo = { firstRandomIndex,secondRandomIndex,distance };
         distanceMatrix.push_back(distanceInfo);
+
+        // cout << distance << endl;
+        // cout << "A : " << AxeXReferenceA.getReferenceNumber() << endl;
+        // cout << "B : " << AxeXReferenceB.getReferenceNumber() << endl;
+        // cout << "X : " << AxeX << endl;
+
     }
 
-}
-
-void FastMapCalculs::generateMatrixDistanceP(std::vector<std::vector<Reference*>*>& references, int numberOfDistances)
-{
-    
 }
 
 double FastMapCalculs::calculateXcoord(Reference* refToCalculate)
 {
     // param : AxeX, reference a et reference b qui font l'axe X
 
-	// x = (Dan² + X² + dbn²)/X
+	// x = (Dan² + X² - dbn²)/X
 	
-    double xpos = ( pow(calculateDistance(refToCalculate, &AxeXReferenceA), 2) + pow(calculateDistance(refToCalculate, &AxeXReferenceB), 2) + pow(AxeX, 2) ) / AxeX;
+    double xpos = 0.0;
+
+    //xpos = ( pow(calculateDistance(refToCalculate, AxeXReferenceA), 2) - pow(calculateDistance(refToCalculate, AxeXReferenceB), 2) + pow(AxeX, 2) ) / AxeX;
 	
+    xpos = (pow(calculateDistance(refToCalculate, AxeXReferenceA), 2) - pow(calculateDistance(refToCalculate, AxeXReferenceB), 2) + pow(AxeX, 2)) / AxeX*2;
+
+    cout << "AxeX: " << AxeX << "  Dan: " << calculateDistance(refToCalculate, AxeXReferenceA) << "  Dbn: " << calculateDistance(refToCalculate, AxeXReferenceB) << "  xpos: " << xpos << endl;
+
     return xpos;
 }
 
-double FastMapCalculs::calculateYcoord(Reference* refToCalculate)
+void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& references)
 {
-    return 0;
+    //CHERCHER, POUR CHAUE LIGNE DE LA MATRICE DE DISTANCE, LES ID DES REFERENCES QUI ONT SERVI A CALCULER LA DISTANCE
+    // CHERCHER LES COORD X CORRESPONDANT AUX ID
+    // FAIRE LE CALCUL DISTANCE MODIFIEE = sqrt(D² - (x1 -x2)²)
+    // SI AXE Y < DISTANCE MODIFIEE, AXE Y = DISTANCE MODIFIEE
+
+    int firstReferenceID = 0;
+    int secondReferenceID = 0;
+    double firstXcoord;
+    double secondXcoord;
+    int maxRefIdA = 0;
+    int maxRefIdB = 0;
+
+    //for(int loop = 0 ; loop<distanceMatrix.size(); loop++)
+    for (std::array<double, 3> loop : distanceMatrix)
+    {
+        //firstReferenceID = distanceMatrix.at(loop).at(0);
+        //secondReferenceID = distanceMatrix.at(loop).at(1);
+        firstReferenceID = loop.at(0);
+        secondReferenceID = loop.at(1);
+
+        //VERY LONG PROCESS; A PARALLELISER
+        #pragma omp parallel for
+        for(int search = 0; search < finalCoord.size(); search++){
+            if( firstReferenceID == finalCoord.at(search).at(0)){
+                firstXcoord = finalCoord.at(search).at(1);
+            }else if(secondReferenceID == finalCoord.at(search).at(0)){
+                secondXcoord = finalCoord.at(search).at(1);
+            }
+        }
+
+        // D'² = D² - (x1 - x2)²
+        // double newD = sqrt(pow(distanceMatrix.at(loop).at(2), 2) - pow((firstXcoord - secondXcoord), 2));
+        double newD = sqrt(pow(loop.at(2), 2) - pow((firstXcoord - secondXcoord), 2));
+
+        if (newD > AxeY) {
+            AxeY = newD;
+            maxRefIdA = firstReferenceID;
+            maxRefIdB = secondReferenceID;
+        }
+    }
+
+
+    //RECHERCHE DE L'OBJET REFERENCE CORRESPONDANT
+    //#pragma omp parallel for
+    for(std::vector<Reference*>* file : references) {
+        for(Reference* ref : *file) {
+            if(ref->getReferenceNumber() == maxRefIdA){
+                AxeYReferenceA = ref;
+            }
+            else if(ref->getReferenceNumber() == maxRefIdB){
+                AxeYReferenceB = ref;
+            }
+        }
+    }
+
 }
 
 void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks)
@@ -89,7 +151,9 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
 	// remplire matrice des distances ref a ref des ref selectionnees au hasard
     generateMatrixDistance(references, numberOfRandomPicks);
 
-	
+    cout << "AxeXReferenceA : " << AxeXReferenceA->getReferenceNumber() << endl;
+    cout << "AxeXReferenceB : " << AxeXReferenceB->getReferenceNumber() << endl;
+    cout << "AxeX : " << AxeX << endl;
 
     //Etape 2:
     // Calcul projeté des refs sur AxeX
@@ -102,11 +166,12 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
         }
     }
 
-    /*
+    
     //Etape 3:
-    generateMatrixDistanceP(references, numberOfRandomPicks);
+    // generateAxeY(references);
 
     //Etape 4:
+    /*
     for (int i = 0; i < references.size(); i++) {
         for (int j = 0; j < references.at(i)->size(); j++)
         {
@@ -119,7 +184,10 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
 
 void FastMapCalculs::printCoords()
 {
+    cout << "AxeX : " << AxeX << endl;
+    cout << "AxeY : " << AxeY << endl;
+
     for (std::array<double, 3> ref : finalCoord) {
-        cout << "id: " << ref.at(0) << ", x: " << ref.at(1) << ", y: " << ref.at(2) << endl;
+        cout << "id: " << ref.at(0) << " x: " << ref.at(1) << " y: " << ref.at(2) << endl;
     }
 }

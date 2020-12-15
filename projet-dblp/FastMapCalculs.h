@@ -17,10 +17,10 @@ class FastMapCalculs
 		/*
 		 * Copies of the references used to make the axes
 		 */
-		static Reference AxeXReferenceA;
-		static Reference AxeXReferenceB;
-		static Reference AxeYReferenceA;
-		static Reference AxeYReferenceB;
+		static Reference* AxeXReferenceA;
+		static Reference* AxeXReferenceB;
+		static Reference* AxeYReferenceA;
+		static Reference* AxeYReferenceB;
 	
 
 		//This matrix contains all the distances on the references, first index is the number of the first references, second index is for the second, and the last is the distance between the two references
@@ -66,7 +66,7 @@ class FastMapCalculs
 
 			As a condition, the x coordinates must be calculated
 		*/
-		static void generateMatrixDistanceP(std::vector<std::vector<Reference*>*>& references, int numberOfDistances);
+		static void generateAxeY(std::vector<std::vector<Reference*>*>& references);
 
 		/*
 			These methods calculate the coordinates x and y of each references

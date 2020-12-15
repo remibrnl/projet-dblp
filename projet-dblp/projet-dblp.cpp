@@ -143,14 +143,14 @@ int main(int argc, char* argv[], char *envp[])
 
     cout << "start coordinates computing." << endl;
 
-    FastMapCalculs::calculateCoord(output_refs, 20);
+    FastMapCalculs::calculateCoord(output_refs, 100000);
 
     cout << "end coordinates computing." << endl;
 
-    // FastMapCalculs::printCoords();
-
     const chrono::steady_clock::time_point fastmap_time_end = chrono::steady_clock::now();
     cout << "coordinates computing time elapsed: " << chrono::duration_cast<chrono::milliseconds> (fastmap_time_end - fastmap_time_begin).count() << "ms" << endl;
+
+    FastMapCalculs::printCoords();
 
     /*
     for (auto file : output_refs) {
