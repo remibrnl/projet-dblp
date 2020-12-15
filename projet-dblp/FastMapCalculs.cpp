@@ -1,8 +1,13 @@
 #include "FastMapCalculs.h"
-#include <cmath>
-#include <array>
 
-#define TOTAL_CHAR_NUMBER 1369
+double FastMapCalculs::AxeX = 0;
+double FastMapCalculs::AxeY = 0;
+Reference FastMapCalculs::AxeXReferenceA(0);
+Reference FastMapCalculs::AxeXReferenceB(0);
+Reference FastMapCalculs::AxeYReferenceA(0);
+Reference FastMapCalculs::AxeYReferenceB(0);
+std::vector<std::array<double, 3>> FastMapCalculs::distanceMatrix;
+std::vector<std::array<double, 3>> FastMapCalculs::finalCoord;
 
 double FastMapCalculs::calculateDistance(Reference* firstRefNumber, Reference* secondRefNumber)
 {
@@ -114,7 +119,7 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
 
 void FastMapCalculs::printCoords()
 {
-    for (auto ref : finalCoord) {
+    for (std::array<double, 3> ref : finalCoord) {
         cout << "id: " << ref.at(0) << ", x: " << ref.at(1) << ", y: " << ref.at(2) << endl;
     }
 }

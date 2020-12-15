@@ -56,10 +56,6 @@ Tag::Tag(const Tag& copy)
 	name_tag = copy.name_tag;
 	element_to_parse = copy.element_to_parse;
 
-	// matrix copy
-
-	cout << "COPY";
-
 	int size = CHAR_NUMBER * CHAR_NUMBER;
 
 	for (int i = 0; i < size; i++) {

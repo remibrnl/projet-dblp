@@ -1,8 +1,11 @@
 #pragma once
 #include <vector>
-#include "Reference.h"
 #include <exception>
 #include <cstdlib>
+#include <cmath>
+#include <array>
+#include "Reference.h"
+#include "Tag.h"
 
 class FastMapCalculs
 {
@@ -80,4 +83,3 @@ class FastMapCalculs
 		
 		static void printCoords();
 };
-
