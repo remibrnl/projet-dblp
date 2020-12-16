@@ -42,7 +42,16 @@ class FastMapCalculs
 		*/
 		static double calculateDistance(Reference* firstRefNumber, Reference* secondRefNumber);
 
-		
+		/**
+			This method is used to determine the new distance used to calculate the Y Axe
+			It is used to calculates the Y coordinates of each references of the array
+
+			The same calculation is used in generateYAxe : D'² = D -(X1 -X2)²
+
+			The X Coordinates are given as parameter to win execution time, and avoid the research in the finalCoord array, which could make loose a lot of time
+		*/
+		static double calculateModifiedDistance(Reference* firstRefNumber,double firstxCoordinate, Reference* secondRefNumber, double secondxCoordinate);
+
 		/*
 			This method generates a Matrix of distances between different references.
 			The parameter is the number of references used in the Heuristic to determine later the X Axe.
@@ -56,6 +65,11 @@ class FastMapCalculs
 		static double getAxeX();
 		static double getAxeY();
 		
+		/*
+			These two methods are the getters on the x and y coordinates of a single reference. The id of the reference only is required to make the research
+		*/
+		static double getXCoordinate(int referenceNumber);
+		static double getYCoordinate(int referenceNumber);
 		/*
 			In this method, the matrix generated is calculated based on the previous distances matrix.
 			The new distances used to calculate Y Axe are calculated following:
@@ -72,7 +86,7 @@ class FastMapCalculs
 			These methods calculate the coordinates x and y of each references
 		*/
 		static double calculateXcoord(Reference* refToCalculate);
-		static double calculateYcoord(Reference* refToCalculate);
+		static double calculateYcoord(Reference* refToCalculate, double xCoordinates);
 
 		/*
 			This method start all the process;
