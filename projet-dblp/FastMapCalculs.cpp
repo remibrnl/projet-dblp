@@ -1,5 +1,6 @@
 #include "FastMapCalculs.h"
 
+string tagName = "";
 double FastMapCalculs::AxeX = 0;
 double FastMapCalculs::AxeY = 0;
 Reference* FastMapCalculs::AxeXReferenceA = nullptr;
@@ -15,7 +16,7 @@ double FastMapCalculs::calculateDistance(Reference* firstRefNumber, Reference* s
     for (int i = 0; i < TOTAL_CHAR_NUMBER; i++)
     {
         // distance += pow((firstRefNumber->getTag("title")->getTwoGram(i) - secondRefNumber->getTag("title")->getTwoGram(i)) , 2);
-        distance += pow((secondRefNumber->getTag("title")->getTwoGram(i) - firstRefNumber->getTag("title")->getTwoGram(i)), 2);
+        distance += pow((secondRefNumber->getTag(tagName)->getTwoGram(i) - firstRefNumber->getTag(tagName)->getTwoGram(i)), 2);
     }
     return sqrt(distance);
 }
@@ -189,8 +190,24 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
 
 }
 
-void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks)
+void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks, string tagName)
 {
+    //On définit sur quelle balise XML les opérations vont se faire
+    FastMapCalculs::tagName = tagName;
+
+
+    generateMatrixDistance(references, numberOfRandomPicks);
+    cout << "Axe X: " << AxeX << endl;
+    
+    cout << "La premiere reference a le numero: " << AxeXReferenceA->getReferenceNumber() << endl;
+    cout << "De contenu: " << AxeXReferenceA->getTag(tagName)->getSentence() << endl;
+    cout << "De coordonnee x: " << calculateXcoord(AxeXReferenceA) << endl;
+
+    cout << "La premiere reference a le numero: " << AxeXReferenceB->getReferenceNumber() << endl;
+    cout << "De contenu: " << AxeXReferenceB->getTag(tagName)->getSentence() << endl;
+    cout << "De coordonnee x: " << calculateXcoord(AxeXReferenceB) << endl;
+
+    /*
     // Etape 1 :
 	// Heuristique : comparaison deux à deux de références sélectionnées au hasard
     // But : calculer longueur axe X max
@@ -200,7 +217,9 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     generateMatrixDistance(references, numberOfRandomPicks);
 
     cout << "AxeXReferenceA : " << AxeXReferenceA->getReferenceNumber() << " Element Parsed :"<< AxeXReferenceA->getTag("title")->getSentence() << endl;
+    cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceA->getReferenceNumber()) << endl;
     cout << "AxeXReferenceB : " << AxeXReferenceB->getReferenceNumber() << " Element Parsed :"<< AxeXReferenceB->getTag("title")->getSentence() << endl;
+    cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceB->getReferenceNumber()) << endl;
     cout << "AxeX : " << AxeX << endl;
 
     //Etape 2:
@@ -235,7 +254,7 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
             finalCoord.at(j).at(2) = calculateYcoord(references.at(i)->at(j),xCoord);
         }
     }
-    
+    */
 }
 
 void FastMapCalculs::printCoords()

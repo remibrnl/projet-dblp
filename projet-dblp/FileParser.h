@@ -20,7 +20,6 @@ class FileParser
 		//iostream input_stream;
 
 	public:
-		FileParser();
 		FileParser(string path_to_file);
 		FileParser(const FileParser& copy);
 

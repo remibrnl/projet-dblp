@@ -145,7 +145,7 @@ int main(int argc, char* argv[], char *envp[])
 
     cout << "start coordinates computing." << endl;
 
-    FastMapCalculs::calculateCoord(output_refs, 100000);
+    FastMapCalculs::calculateCoord(output_refs, 10000);
 
     cout << "end coordinates computing." << endl;
 

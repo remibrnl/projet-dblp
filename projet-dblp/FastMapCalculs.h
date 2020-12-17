@@ -11,6 +11,7 @@ class FastMapCalculs
 {
 	private:
 
+		static string tagName;
 		static double AxeX;
 		static double AxeY;
 	
@@ -92,7 +93,7 @@ class FastMapCalculs
 			This method start all the process;
 			The parameters are a containers of all the references we want to operate on, and a number of the distances calculated by an heuristic to determine the axes
 		*/
-		static void calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks);
+		static void calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks, string tagName);
 
 		
 		static void printCoords();
