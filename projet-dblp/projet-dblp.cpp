@@ -4,22 +4,21 @@
 #include <iostream>
 #include <filesystem>
 #include <vector>
+#include <chrono>
 #include "Tag.h"
 #include "FileParser.h"
 #include "Reference.h"
-#include <chrono>
+#include "FastMapCalculs.h"
 
 using namespace std;
 namespace fs = std::filesystem;
 
 int main(int argc, char* argv[], char *envp[])
 {
+    // COMMAND LINE READING
+
     // command:
     // ./prog.exe -t <list of tags>  -f <paths of files> -o <output bitmap>
-    
-    //clock_t clock_begin = clock();
-    
-    const chrono::steady_clock::time_point time_begin = chrono::steady_clock::now();
 
     vector<string> tags;
     char* files_directory = nullptr;
@@ -107,6 +106,11 @@ int main(int argc, char* argv[], char *envp[])
     cout << "no_ref_tag: " << no_ref_tag << endl;
     cout << "max_threads: " << omp_get_max_threads() << endl << endl;
 
+
+    // PARSING REFERENCES
+    
+    const chrono::steady_clock::time_point parsing_time_begin = chrono::steady_clock::now();
+
     // iterate files in the provided directory and create fileparser objects
     vector<FileParser> files;
 
@@ -115,7 +119,6 @@ int main(int argc, char* argv[], char *envp[])
     }
 
 
-    // output refs
     vector<vector<Reference*>*> output_refs;
 	
     int i_reference = 0;
@@ -132,9 +135,24 @@ int main(int argc, char* argv[], char *envp[])
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " done." << endl;
     }
 
-    const chrono::steady_clock::time_point time_end = chrono::steady_clock::now();
+    const chrono::steady_clock::time_point parsing_time_end = chrono::steady_clock::now();
+    cout << "parsing time elapsed: " << chrono::duration_cast<chrono::milliseconds> (parsing_time_end - parsing_time_begin).count() << "ms" << endl;
 
-    cout << "time elapsed: " << chrono::duration_cast<chrono::milliseconds> (time_end - time_begin).count() << "ms" << endl;
+
+    // COMPUTE COORDINATES
+
+    const chrono::steady_clock::time_point fastmap_time_begin = chrono::steady_clock::now();
+
+    cout << "start coordinates computing." << endl;
+
+    FastMapCalculs::calculateCoord(output_refs, 100000);
+
+    cout << "end coordinates computing." << endl;
+
+    const chrono::steady_clock::time_point fastmap_time_end = chrono::steady_clock::now();
+    cout << "coordinates computing time elapsed: " << chrono::duration_cast<chrono::milliseconds> (fastmap_time_end - fastmap_time_begin).count() << "ms" << endl;
+
+    FastMapCalculs::printCoords();
 
     /*
     for (auto file : output_refs) {
@@ -151,9 +169,6 @@ int main(int argc, char* argv[], char *envp[])
         }
     }
     */
-    
-   
-    //getchar();
 
     ::exit(EXIT_SUCCESS);
 }

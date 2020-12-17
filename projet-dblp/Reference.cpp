@@ -15,6 +15,18 @@ Reference::Reference(const Reference& copy)
 		tags.push_back(new Tag(*tag));
 	}
 }
+Reference& Reference::operator=(const Reference& copy)
+{
+	referenceNumber = copy.referenceNumber;
+	link_to_reference = copy.link_to_reference;
+	tagNames = copy.tagNames;
+
+	for (Tag* tag : copy.tags) {
+		tags.push_back(new Tag(*tag));
+	}
+
+	return *this;
+}
 /*
 Reference::Reference(int Number, string URL_link, vector<string>  tagNames)
 {
@@ -94,6 +106,13 @@ void Reference::DelTag(Tag * tag, string tagName)
 vector<Tag*> Reference::getTags() const
 {
 	return tags;
+}
+
+Tag* Reference::getTag(string nameTag)
+{
+	for (Tag* tag : tags) {
+		if (tag->getName() == nameTag) return tag;
+	}
 }
 
 int Reference::getReferenceNumber()

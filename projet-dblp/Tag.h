@@ -79,5 +79,9 @@ public:
 	void generateTwoGramMatrix();
 
 	void getTwoGramMatrix() const;
+
+	inline uint8_t getTwoGram(int index) {
+		return two_gram_matrix[index];
+	};
 };
 

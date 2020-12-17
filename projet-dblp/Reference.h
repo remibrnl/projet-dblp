@@ -54,6 +54,8 @@ class Reference
 		*/
 		Reference(const Reference& copy);
 
+		Reference& operator=(const Reference& copy);
+
 		/**
 			\brief Destructor of the class
 			\post All the Tags of the Array are deleted
@@ -74,6 +76,8 @@ class Reference
 		
 		
 		vector<Tag*> getTags() const;
+
+		Tag* getTag(string nameTag);
 
 		int getReferenceNumber();
 };
