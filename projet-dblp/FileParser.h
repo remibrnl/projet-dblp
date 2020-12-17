@@ -30,7 +30,7 @@ class FileParser
 		// pas sur ??
 		// Reference& create_reference(iostream file);
 
-		vector<Reference*>* parseFile(const vector<string>& tagNames, bool no_ref_tag);
+		vector<Reference*>* parseFile(const vector<string>& tagNames, int& i_reference, bool no_ref_tag);
 
 };
 

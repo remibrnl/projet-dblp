@@ -121,11 +121,13 @@ int main(int argc, char* argv[], char *envp[])
 
     vector<vector<Reference*>*> output_refs;
 	
-    #pragma omp parallel for num_threads(omp_get_max_threads())
+    int i_reference = 0;
+
+    #pragma omp parallel for shared(i_reference) num_threads(omp_get_max_threads())
     for (int i = 0; i < static_cast<int>(files.size()); i++) {
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " started." << endl;
         try {
-            output_refs.push_back(files[i].parseFile(tags, no_ref_tag));
+            output_refs.push_back(files[i].parseFile(tags, i_reference, no_ref_tag));
         }
         catch (const exception& e) {
             cout << "Exception : " << e.what();
@@ -155,11 +157,15 @@ int main(int argc, char* argv[], char *envp[])
     /*
     for (auto file : output_refs) {
         for (auto ref : *file) {
+            
             for (auto tag : ref->getTags()) {
                 tag->getTwoGramMatrix();
                 cout << endl;
                 //cout << tag->getSentence() << endl;
             }
+            
+
+            cout << ref->getReferenceNumber() << "  ";
         }
     }
     */
