@@ -11,7 +11,7 @@ class FastMapCalculs
 {
 	private:
 
-		static string tagName;
+		static std::string tagName;
 		static double AxeX;
 		static double AxeY;
 	

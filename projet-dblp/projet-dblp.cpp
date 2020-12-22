@@ -145,7 +145,16 @@ int main(int argc, char* argv[], char *envp[])
 
     cout << "start coordinates computing." << endl;
 
-    FastMapCalculs::calculateCoord(output_refs, 10000);
+    for (string Tag : tags) {
+        cout << "La balise HTML parsee est :"<< Tag << endl;
+
+        //Calculate the FastMap Reductions
+        FastMapCalculs::calculateCoord(output_refs, 50000, Tag);
+
+        //Generate BitMap
+        //The method to generate the bitmap
+    }
+    
 
     cout << "end coordinates computing." << endl;
 
