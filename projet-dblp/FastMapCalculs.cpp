@@ -130,14 +130,15 @@ double FastMapCalculs::calculateYcoord(Reference* refToCalculate, double xCoordi
     }
 
     //We collect the coordinate X of the references used to determine the Y Axe
-    double AxeYrefACoordX = 0.0;    //getXCoordinate(AxeXReferenceA->getReferenceNumber());
-    double AxeYrefBCoordX = AxeX;   //getXCoordinate(AxeXReferenceB->getReferenceNumber());
-                                                                               
+    //double AxeYrefACoordX = 0.0;    //getXCoordinate(AxeXReferenceA->getReferenceNumber());
+    //double AxeYrefBCoordX = AxeX;   //getXCoordinate(AxeXReferenceB->getReferenceNumber());
 
-    double newDistancetoA = calculateModifiedDistance(refToCalculate, xCoordinate, AxeYReferenceA, AxeYrefACoordX);
-    double newDistancetoB = calculateModifiedDistance(refToCalculate, xCoordinate, AxeYReferenceB, AxeYrefBCoordX);
+    double newDistancetoA = calculateDistance(refToCalculate, AxeYReferenceA);
+    double newDistancetoB = calculateDistance(refToCalculate, AxeYReferenceB);
+    
     cout << "ref: " << refToCalculate->getReferenceNumber() << endl;
-    cout << "Distance to A: " << newDistancetoA << "Distance to B:" << newDistancetoB << endl;
+    cout << "Distance to A: " << newDistancetoA << " Distance to B:" << newDistancetoB << endl;
+
     double ypos = (pow(newDistancetoA, 2) - pow(newDistancetoB, 2) + pow(AxeY, 2)) / AxeY * 2;
 
     //cout << "AxeY: " << AxeY << "  Dan: " << newDistancetoA << "  Dbn: " << newDistancetoB << "  ypos: " << ypos << endl;

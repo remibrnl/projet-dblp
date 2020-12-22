@@ -149,7 +149,7 @@ int main(int argc, char* argv[], char *envp[])
         cout << "La balise HTML parsee est :"<< Tag << endl;
 
         //Calculate the FastMap Reductions
-        FastMapCalculs::calculateCoord(output_refs, 50000, Tag);
+        FastMapCalculs::calculateCoord(output_refs, 100000, Tag);
 
         //Generate BitMap
         //The method to generate the bitmap
