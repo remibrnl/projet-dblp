@@ -155,14 +155,14 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
     // Determine the Axe Y, which is the maximum of these modified distances
 
     //These are the informations searched during the two first steps
-    int firstReferenceID = 0;
-    int secondReferenceID = 0;
+    int firstReferenceID = -1;
+    int secondReferenceID = -1;
     double firstXcoord = 0;
     double secondXcoord = 0;
 
     //These are the id determined when searching the Axe Y
-    int maxRefIdA = 0;
-    int maxRefIdB = 0;
+    int maxRefIdA = -1;
+    int maxRefIdB = -1;
 
     //for(int loop = 0 ; loop<distanceMatrix.size(); loop++)
     for (std::array<double, 3> loop : distanceMatrix)
@@ -188,7 +188,7 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
         
         if (newD > AxeY) {
             AxeY = newD;
-           
+
             maxRefIdA = firstReferenceID;
             maxRefIdB = secondReferenceID;
         }
@@ -250,7 +250,7 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     for (int i = 0; i < references.size(); i++) {
         for (int j = 0; j < references.at(i)->size(); j++)
         {
-            finalCoord.push_back({ (double)references.at(i)->at(j)->getReferenceNumber(), calculateXcoord(references.at(i)->at(j)), 0 });
+            finalCoord.push_back({(double) references.at(i)->at(j)->getReferenceNumber(), calculateXcoord(references.at(i)->at(j)), 0 });
         }
     }
 

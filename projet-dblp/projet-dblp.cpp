@@ -133,7 +133,7 @@ int main(int argc, char* argv[], char *envp[])
             output_refs.push_back(files[i].parseFile(tags, i_reference, no_ref_tag));
         }
         catch (const exception& e) {
-            cout << "Exception : " << e.what();
+            cerr << "Exception : " << e.what();
         }
         cout << "thread:" << omp_get_thread_num() << " file:" << i << " done." << endl;
     }
@@ -152,7 +152,13 @@ int main(int argc, char* argv[], char *envp[])
         cout << "La balise HTML parsee est :"<< Tag << endl;
 
         //Calculate the FastMap Reductions
-        FastMapCalculs::calculateCoord(output_refs, 100000, Tag);
+
+        try {
+            FastMapCalculs::calculateCoord(output_refs, 100000, Tag);
+        }
+        catch (const exception& e) {
+            cerr << "Exception : " << e.what() << endl;
+        }
 
         //Generate BitMap
         //The method to generate the bitmap
