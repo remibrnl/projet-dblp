@@ -237,6 +237,11 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     // remplire matrice des distances ref a ref des ref selectionnees au hasard
     generateMatrixDistance(references, numberOfRandomPicks);
 
+    // assert
+    if (AxeXReferenceA == nullptr || AxeXReferenceB == nullptr) {
+        cerr << "assert AxeXReferenceA/B = nullptr" << endl;
+        ::exit(EXIT_FAILURE);
+    }
 
     //Etape 2:
     // Calcul projeté des refs sur AxeX
@@ -260,6 +265,12 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     //Etape 3:
     generateAxeY(references);
 
+    // assert
+    if (AxeYReferenceA == nullptr || AxeYReferenceB == nullptr) {
+        cerr << "assert AxeYReferenceA/B = nullptr" << endl;
+        ::exit(EXIT_FAILURE);
+    }
+
     cout << "AxeYReferenceA : " << AxeYReferenceA->getReferenceNumber() << " Element Parsed :" << AxeYReferenceA->getTag("title")->getSentence() << endl<<endl;
     cout << "AxeYReferenceB : " << AxeYReferenceB->getReferenceNumber() << " Element Parsed :" << AxeYReferenceB->getTag("title")->getSentence() << endl;
     cout << "AxeY : " << AxeY << endl;
@@ -268,7 +279,7 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     //Etape 4
     //Calculations of the coordinates Y of each references
     //For Each File and for each references, 
-   // #pragma omp parallel for
+    // #pragma omp parallel for num_threads(omp_get_max_threads())
     for (int i = 0; i < references.size(); i++) {
         for (int j = 0; j < references.at(i)->size(); j++)
         {

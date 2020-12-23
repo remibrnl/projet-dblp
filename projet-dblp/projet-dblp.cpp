@@ -103,6 +103,9 @@ int main(int argc, char* argv[], char *envp[])
     // print options
     cout << "files_directory: " << files_directory << endl;
     cout << "output_path: " << output_path << endl;
+    for (Tag tag : tags) {
+        cout << "tags: " << tag.getName() << endl;
+    }
     cout << "no_ref_tag: " << no_ref_tag << endl;
     cout << "max_threads: " << omp_get_max_threads() << endl << endl;
 
