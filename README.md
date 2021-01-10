@@ -14,13 +14,13 @@ Files have to be parsed with [UParser](https://github.com/skatos-ux/UParser) bef
 ./projet-dblp.exe -t <list of tags>  -f <paths of files> -o <output bitmap>
 ```
 
-list of tags
+* list of tags
 : list of one or multiples XML tags to analyse
 
-paths of files
+* paths of files
 : paths of previously parsed XML files (view [parser repo](https://github.com/skatos-ux/UParser))
 
-output bitmap
+* output bitmap
 : output bitmap file (not implemented)
 
 ## Examples :books:
