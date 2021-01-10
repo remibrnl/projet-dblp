@@ -40,7 +40,6 @@ vector<Reference*>* FileParser::parseFile(const vector<string>& tagNames, int &i
 	if (fileStream.is_open()) {
 
 		string line;
-		//int i_reference = 0;
 		Reference* current_ref = nullptr;
 
 		// just one tag per lines without ref tags
@@ -68,8 +67,6 @@ vector<Reference*>* FileParser::parseFile(const vector<string>& tagNames, int &i
 			i_reference++;
 
 			while (getline(fileStream, line)) {
-
-				//getline(fileStream, line);
 
 				if (line.empty()) break;
 
