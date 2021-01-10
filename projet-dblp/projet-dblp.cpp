@@ -172,21 +172,16 @@ int main(int argc, char* argv[], char *envp[])
 
     FastMapCalculs::printCoords();
 
-    /*
-    for (auto file : output_refs) {
-        for (auto ref : *file) {
-            
-            for (auto tag : ref->getTags()) {
-                tag->getTwoGramMatrix();
-                cout << endl;
-                //cout << tag->getSentence() << endl;
-            }
-            
+    cout << "deleting objects..." << endl;
 
-            cout << ref->getReferenceNumber() << "  ";
+    for (auto file : output_refs) {
+        for (auto ref : *file) {  
+            delete ref;
         }
     }
-    */
+   
+    cout << "objects deleted, closing." << endl;
+
 
     ::exit(EXIT_SUCCESS);
 }
