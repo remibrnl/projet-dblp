@@ -1,4 +1,6 @@
 #include "FastMapCalculs.h"
+//In this file, all the "cout" statement have been left under commentary to let you understand how the code can work, and to make your debugging session less difficult
+
 
 std::string FastMapCalculs::tagName;
 double FastMapCalculs::AxeX = 0;
@@ -47,6 +49,7 @@ void FastMapCalculs::generateMatrixDistance(std::vector<std::vector<Reference*>*
         randomFileA = rand() % references.size();
         randomFileB = rand() % references.size();
 
+        //Then in each file we choose randomly references to compute
         double firstRandomIndex = rand() % references.at(randomFileA)->size();
         double secondRandomIndex = rand() % references.at(randomFileB)->size();
         
@@ -56,14 +59,16 @@ void FastMapCalculs::generateMatrixDistance(std::vector<std::vector<Reference*>*
 
         double distance = calculateDistance(firstReference, secondReference);
         if (AxeX < distance) {
-            // on recalcule l'axe X
+            // We modify the Axe X if we found a bigger value of distance
             AxeX = distance;
 
-            // on copie les refs A et B de cette distance / copy constructor
+            //We copy the references corresponding to the Calculated distance, and keep it as attribute and to not have to look for them in a loop after
             AxeXReferenceA = firstReference;
             AxeXReferenceB = secondReference;
         }
         std::array<double, 3> distanceInfo = { firstRandomIndex,secondRandomIndex,distance };
+
+        //After having created the array with the two references ID and the distance value, we add it to the Arrayof distances,  attribute of the class FastMapCalculs
         distanceMatrix.push_back(distanceInfo);
 
         // cout << distance << endl;
@@ -129,10 +134,6 @@ double FastMapCalculs::calculateYcoord(Reference* refToCalculate, double xCoordi
         return AxeY;
     }
 
-    //We collect the coordinate X of the references used to determine the Y Axe
-    //double AxeYrefACoordX = 0.0;    //getXCoordinate(AxeXReferenceA->getReferenceNumber());
-    //double AxeYrefBCoordX = AxeX;   //getXCoordinate(AxeXReferenceB->getReferenceNumber());
-
     double newDistancetoA = calculateDistance(refToCalculate, AxeYReferenceA);
     double newDistancetoB = calculateDistance(refToCalculate, AxeYReferenceB);
     
@@ -160,15 +161,13 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
     double firstXcoord = 0;
     double secondXcoord = 0;
 
-    //These are the id determined when searching the Axe Y
+    //These will be the final ID determined when searching the Axe Y, we initialze them at -1 to avoid computation conflicts
     int maxRefIdA = -1;
     int maxRefIdB = -1;
 
-    //for(int loop = 0 ; loop<distanceMatrix.size(); loop++)
     for (std::array<double, 3> loop : distanceMatrix)
     {
-        //firstReferenceID = distanceMatrix.at(loop).at(0);
-        //secondReferenceID = distanceMatrix.at(loop).at(1);
+        //For every distance calculated we must get the id of the references
         firstReferenceID = loop.at(0);
         secondReferenceID = loop.at(1);
 
@@ -182,10 +181,9 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
         }
 
         // D'² = D² - (x1 - x2)²
-        // double newD = sqrt(pow(distanceMatrix.at(loop).at(2), 2) - pow((firstXcoord - secondXcoord), 2));
         double newD = sqrt(pow(loop.at(2), 2) - pow((firstXcoord - secondXcoord), 2));
 
-        
+        //We Change the value of the Axe Y if we find a grater value
         if (newD > AxeY) {
             AxeY = newD;
 
@@ -194,8 +192,11 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
         }
     }
 
-    //RECHERCHE DE L'OBJET REFERENCE CORRESPONDANT //paralleliser
-    //#pragma omp parallel for
+    //Research of the Corresponding references Objects
+
+    //This part is the most time consuming
+    //Due to a implementation of the code, which is to avoid to create objects to save memory, we have to loop a long time on the array of reference to get the good reference
+    //So the big way of improve this project is to work on this part of the Calculations
     for(std::vector<Reference*>* file : references) {
         for(Reference* ref : *file) {
             if(ref->getReferenceNumber() == maxRefIdA){
@@ -204,16 +205,13 @@ void FastMapCalculs::generateAxeY(std::vector<std::vector<Reference*>*>& referen
             else if(ref->getReferenceNumber() == maxRefIdB){
                 AxeYReferenceB = ref;
             }
-
-            
         }
     }
-
 }
 
 void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& references, int numberOfRandomPicks, string name)
 {
-    //On définit sur quelle balise XML les opérations vont se faire
+    //We define on which XML tag the operations will proceed
     tagName = name;
 
     /*
@@ -230,11 +228,11 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     */
 
 
-    // Etape 1 :
-    // Heuristique : comparaison deux à deux de références sélectionnées au hasard
-    // But : calculer longueur axe X max
+    // Step 1:
+    // Heuristic : We compare two by two randomly picked references and determine their distance
+    // Goal : calculate longueur axe X max
 
-    // remplire matrice des distances ref a ref des ref selectionnees au hasard
+    // Fill the distance Matrix with the distances value we calculated
     generateMatrixDistance(references, numberOfRandomPicks);
 
     // assert
@@ -243,8 +241,8 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
         ::exit(EXIT_FAILURE);
     }
 
-    //Etape 2:
-    // Calcul projeté des refs sur AxeX
+    //Step 2:
+    // Calculation of the X coordinates of the references
     //For each files and
     //for each reference, operate on the reference to determine its X coordinate
     for (int i = 0; i < references.size(); i++) {
@@ -255,14 +253,15 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     }
 
     cout << "AxeXReferenceA : " << AxeXReferenceA->getReferenceNumber() << " Element Parsed :" << AxeXReferenceA->getTag("title")->getSentence() << endl;
-    cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceA->getReferenceNumber()) << endl;
+    //cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceA->getReferenceNumber()) << endl;
     cout << endl;
     cout << "AxeXReferenceB : " << AxeXReferenceB->getReferenceNumber() << " Element Parsed :" << AxeXReferenceB->getTag("title")->getSentence() << endl;
-    cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceB->getReferenceNumber()) << endl;
+    //cout << "a pour coordonnes x :" << getXCoordinate(AxeXReferenceB->getReferenceNumber()) << endl;
     cout << "AxeX : " << AxeX << endl;
 
 
-    //Etape 3:
+    //Step 3:
+    // Goal : Operate on the same matrix distance created earlier, and Make an operation on every distances calculated to determine a new dimension
     generateAxeY(references);
 
     // assert
@@ -279,17 +278,13 @@ void FastMapCalculs::calculateCoord(std::vector<std::vector<Reference*>*>& refer
     //Etape 4
     //Calculations of the coordinates Y of each references
     //For Each File and for each references, 
-    // #pragma omp parallel for num_threads(omp_get_max_threads())
     for (int i = 0; i < references.size(); i++) {
         for (int j = 0; j < references.at(i)->size(); j++)
         {
             double xCoord = getXCoordinate(references.at(i)->at(j)->getReferenceNumber()); //This step make the calculation very long
             finalCoord.at(j).at(2) = calculateYcoord(references.at(i)->at(j), xCoord);
         }
-    }
-
-    //free(ref); //Once the y coordinate calculated, we don't need the reference anymore and  we free the object
-    
+    }    
 }
 
 void FastMapCalculs::printCoords()
