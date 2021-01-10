@@ -113,7 +113,7 @@ double FastMapCalculs::calculateXcoord(Reference* refToCalculate)
     double firstDistance = calculateDistance(refToCalculate, AxeXReferenceA);
     double secondDistance = calculateDistance(refToCalculate, AxeXReferenceB);
 
-    double xpos = (pow(firstDistance, 2) - pow(secondDistance, 2) + pow(AxeX, 2)) / AxeX*2;
+    double xpos = (pow(firstDistance, 2) - pow(secondDistance, 2) + pow(AxeX, 2)) / (AxeX*2);
 
     //cout << "AxeX: " << AxeX << "  Dan: " << calculateDistance(refToCalculate, AxeXReferenceA) << "  Dbn: " << calculateDistance(refToCalculate, AxeXReferenceB) << "  xpos: " << xpos << endl;
   
@@ -136,10 +136,10 @@ double FastMapCalculs::calculateYcoord(Reference* refToCalculate, double xCoordi
     double newDistancetoA = calculateDistance(refToCalculate, AxeYReferenceA);
     double newDistancetoB = calculateDistance(refToCalculate, AxeYReferenceB);
     
-    cout << "ref: " << refToCalculate->getReferenceNumber() << endl;
-    cout << "Distance to A: " << newDistancetoA << " Distance to B:" << newDistancetoB << endl;
+    //cout << "ref: " << refToCalculate->getReferenceNumber() << endl;
+    //cout << "Distance to A: " << newDistancetoA << " Distance to B:" << newDistancetoB << endl;
 
-    double ypos = (pow(newDistancetoA, 2) - pow(newDistancetoB, 2) + pow(AxeY, 2)) / AxeY * 2;
+    double ypos = (pow(newDistancetoA, 2) - pow(newDistancetoB, 2) + pow(AxeY, 2)) /( AxeY * 2);
 
     //cout << "AxeY: " << AxeY << "  Dan: " << newDistancetoA << "  Dbn: " << newDistancetoB << "  ypos: " << ypos << endl;
     
