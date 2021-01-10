@@ -22,7 +22,7 @@ Files have to be parsed with [UParser](https://github.com/skatos-ux/UParser) bef
 
 ```bash
 ./projet-dblp.exe -t title -f parsed_files  -o image.bmp
-./projet-dblp.exe -t author -f dblp_files  -o generated.bmp
+./projet-dblp.exe -t title author -f dblp_files  -o generated.bmp
 ```
 
 ## IDE
