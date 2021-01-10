@@ -15,7 +15,7 @@ Files have to be parsed with [UParser](https://github.com/skatos-ux/UParser) bef
 ```
 
 - list of tags : list of one or multiples XML tags to analyse
-- paths of files : paths of previously parsed XML files (view [parser repo](https://github.com/skatos-ux/UParser))
+- paths of files : paths of previously parsed XML files (view [UParser repo](https://github.com/skatos-ux/UParser))
 - output bitmap : output bitmap file (not implemented)
 
 ## Examples :books:
