@@ -35,4 +35,4 @@ Files have to be parsed with [UParser](https://github.com/skatos-ux/UParser) bef
 
 The 2-grams used are all the combinations composed with letters a-z, numbers 0-9 and the blanck charater " ".
 
--The algorithm FastMap (geometrical computes) is used to compute all the matrix dimensions into two singles coordinates
+- The algorithm FastMap (geometrical computes) is used to compute all the matrix dimensions into two singles coordinates
