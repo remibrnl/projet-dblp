@@ -28,3 +28,11 @@ Files have to be parsed with [UParser](https://github.com/skatos-ux/UParser) bef
 ## IDE
 
 [Visual Studio 2019](https://visualstudio.microsoft.com) is the IDE for this project.
+
+## Methods Used 
+
+- Analisys of sentence/words with 2-grams : The Word "testing" is parsed as "te","es","st","ti",.... and a matrix is initaliazed with the number of occurence of each two-gram.
+
+The 2-grams used are all the combinations composed with letters a-z, numbers 0-9 and the blanck charater " ".
+
+-The algorithm FastMap (geometrical computes) is used to compute all the matrix dimensions into two singles coordinates
